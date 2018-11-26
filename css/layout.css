@@ -16,14 +16,12 @@
   header nav ul {
     display: none;
   }
-
   header nav .auth {
     margin: 0;
     padding: 0;
     top: 0;
   }
-
-  header nav .auth img {
+  header nav .auth .menu {
     display: inline-block !important;
     width: 34px;
     height: 30px;
@@ -34,56 +32,47 @@
     background: none;
     cursor: pointer;
   }
-  header nav .auth a {
+  header nav .auth a.login {
     display: none;
   }
 
-  footer .left,
-  footer .right {
-    display:block;
+  main .col-sm-12 {
+    padding: 0;
+    margin: 0;
   }
 
-
-  footer .col {
-    flex-basis: auto;
+  /* main content columns collapsed to one column */
+  aside img {
+    width: 100%;
   }
-
-  footer .left {
-    text-align: center;
+  section.homepage h1 {
+    margin: 0 0 5% 0 !important;
   }
-
-  footer .right ul {
-    float: none !important;
-    display: flex;
-    justify-content: center;
+  section.homepage ul {
+    padding-bottom: 10% !important;
   }
 
 }
 
-/* Tablet Styles */
-@media only screen and (min-width: 755px) and (max-width: 799px) {
 
+@media only screen and (min-width: 755px) and (max-width: 799px) {
+  /* Decrease nav font size */
   header {
     font-size: 12pt !important;
   }
-  header nav ul li {
-    margin: 22px 10px !important;
-  }
+}
 
-  footer .left,
-  footer .right {
-    display:block;
+@media only screen and (max-width: 799px) {
+  /* footer columns collapsed to one column */
+  footer {
+    height: 75px !important;
   }
-
   footer .col {
     flex-basis: auto;
   }
-
-  footer .right ul {
-    position: relative;
-    left: 0;
+  footer .left {
+    text-align: center;
   }
-
   footer .right ul {
     float: none !important;
     display: flex;
@@ -91,22 +80,24 @@
   }
 }
 
+
+/* Tablets and wide screens */
 @media only screen and (min-width: 800px) and (max-width: 859px) {
+  /* Decrease nav font size */
   header {
     font-size: 13pt !important;
   }
-  header nav ul li {
-    margin: 22px 10px !important;
-  }
 }
 
-@media only screen and (min-width: 860px) and (max-width: 869px) {
+@media only screen and (max-width: 869px) {
+  /* Decrease spacing between nav elements by two pixels */
   header nav ul li {
     margin: 22px 10px !important;
   }
 }
 
 @media only screen and (min-width: 870px) and (max-width: 879px) {
+  /* Decrease spacing between nav elements by one pixel */
   header nav ul li {
     margin: 22px 12px !important;
   }
@@ -114,18 +105,16 @@
 }
 
 @media only screen and (min-width: 880px) and (max-width: 894px) {
+  /* Decrease spacing between nav elements by one pixel */
   header nav ul li {
     margin: 22px 13px !important;
   }
 }
 
 @media only screen and (min-width: 895px) and (max-width: 919px) {
+  /* Decrease spacing between nav elements by one pixel */
   header nav ul li {
     margin: 22px 14px !important;
   }
-}
-
-/* Desktop & Large Tablet Styles */
-@media only screen and (min-width: 920px) {
 }
 

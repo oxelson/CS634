@@ -3,7 +3,6 @@
  *
  * @authors: Abdel-Ghaffar, Nguyen, & Oxelson Ganter
  */
-
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Quintessential');
 @import url("layout.css") all;
 @import url("header.css") all;
@@ -11,40 +10,66 @@
 
 
 body {
+  padding-bottom: 20px;
   font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
   background: #000000 url('../images/floral-background.png') no-repeat fixed bottom right;
+  background-size:contain;
   color: #FFFFFF;
 }
 
 main {
-  border: 1px solid #0000FF;
   min-height: 200px;
 }
 
-
 /* Override bootstrap */
-
 main .container {
   max-width: 1900px;
 }
 
+.hidden {
+  display:none;
+}
+
 h1 {
   font-family: 'Quintessential', 'Kaushan Script', cursive;
-  font-size: 3em;
+  font-size: 5vw;
 }
 
-aside {
-  border: 1px solid #FF0000;
-  width: 30%;
-}
-
+/* left-side image */
 aside img {
   width: 100%;
-  border: 1px solid #000000;
 }
 
+/* right-side cotnent */
 section {
-  border: 1px solid #00FF00;
-  width: 65%;
+  text-align: center;
+}
+
+section.homepage h1 {
+  margin: 20% 0 10% 0;
+}
+
+section.homepage ul {
+  list-style-type: none;
+  padding: 0;
+  background: none;
+  display: flex;
+  justify-content: center;
+}
+
+section.homepage ul li {
+  font-size: 1.5vw;
+  display: inline;
+  margin-left: 25px;
+  padding: 0;
+  float: left;
+}
+
+section.homepage ul li::after { 
+    content: "\0000a0 \0000a0 \0000a0 \0000a0 \0000a0 \0000a0 \2022";
+}
+
+section.homepage ul li.last::after { 
+    content: none;
 }
 

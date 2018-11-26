@@ -3,9 +3,10 @@
  *
  * @authors: Hossam Abdel-Ghaffar, Long Nguyen, & Jennifer Oxelson Ganter
  */
-
 footer {
-
+  width:100%;
+  position: fixed;
+  bottom: 0;
 }
 
 /* Override bootstrap */

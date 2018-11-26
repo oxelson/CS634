@@ -26,10 +26,10 @@ header nav {
   background: transparent url('../images/clef.png') no-repeat 0 17px;
 }
 
-header nav a,
-header nav a:active,
-header nav a:hover,
-header nav a:visited {
+header a,
+header a:active,
+header a:hover,
+header a:visited {
   text-decoration: none;
   color: #FFFFFF;
 }
@@ -64,7 +64,7 @@ header nav .auth {
   float: right;
 }
 
-header nav .auth img {
+header nav .auth .menu {
   display: none;
 }
 
@@ -82,3 +82,30 @@ header .left {
 header .right {
   background: transparent url('../images/bar-right.png') no-repeat 0 20px;
 }
+
+/* drop down menu for smaller vie wports */
+header #menu_nav.col {
+  font-size: 10pt;
+}
+
+header #menu_nav.col ul {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+  background: none;
+}
+
+header #menu_nav.col ul li {
+  width: 33%;
+  display: inline;
+  margin: 5px 0;
+  padding: 0;
+  float: left;
+}
+
+header .nobg {
+  background: none;
+}
+
