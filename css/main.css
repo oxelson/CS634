@@ -1,0 +1,50 @@
+/**
+ * Main style sheet for website.
+ *
+ * @authors: Abdel-Ghaffar, Nguyen, & Oxelson Ganter
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Quintessential');
+@import url("layout.css") all;
+@import url("header.css") all;
+@import url("footer.css") all;
+
+
+body {
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  background: #000000 url('../images/floral-background.png') no-repeat fixed bottom right;
+  color: #FFFFFF;
+}
+
+main {
+  border: 1px solid #0000FF;
+  min-height: 200px;
+}
+
+
+/* Override bootstrap */
+
+main .container {
+  max-width: 1900px;
+}
+
+h1 {
+  font-family: 'Quintessential', 'Kaushan Script', cursive;
+  font-size: 3em;
+}
+
+aside {
+  border: 1px solid #FF0000;
+  width: 30%;
+}
+
+aside img {
+  width: 100%;
+  border: 1px solid #000000;
+}
+
+section {
+  border: 1px solid #00FF00;
+  width: 65%;
+}
+

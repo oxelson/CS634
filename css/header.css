@@ -1,0 +1,84 @@
+/**
+ * Header CSS.
+ *
+ * @authors: Hossam Abdel-Ghaffar, Long Nguyen, & Jennifer Oxelson Ganter
+ */
+header {
+  /*position:fixed;*/
+  font-size: 14pt;
+}
+
+/* Override bootstrap */
+header .container {
+  max-width: 1900px;
+}
+
+/* Override bootstrap */
+header .row {
+  height: 80px;
+  margin: 0 !important;
+  background: transparent url('../images/bar-fill.png') repeat-x 0 20px;
+}
+
+/* Main navigation bar */
+header nav {
+  padding: 0 !important;
+  background: transparent url('../images/clef.png') no-repeat 0 17px;
+}
+
+header nav a,
+header nav a:active,
+header nav a:hover,
+header nav a:visited {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+header nav a:active,
+header nav a:hover {
+  text-decoration: none;
+  color: #17A2B8;
+}
+
+header nav a:active {
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0 0 0 60px;
+  padding: 0;
+  float: left;
+  background: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 22px 15px;
+  padding: 0;
+  float: left;
+}
+
+header nav .auth {
+  margin: 22px 0px;
+  float: right;
+}
+
+header nav .auth img {
+  display: none;
+}
+
+/* Left & right side of music bar */
+header .left,
+header .right {
+  padding: 0 !important;
+  max-width: 10px !important;
+}
+
+header .left {
+  background: transparent url('../images/bar-left.png') no-repeat 0 20px;
+}
+
+header .right {
+  background: transparent url('../images/bar-right.png') no-repeat 0 20px;
+}

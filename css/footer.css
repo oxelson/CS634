@@ -1,0 +1,50 @@
+/**
+ * Footer CSS.
+ *
+ * @authors: Hossam Abdel-Ghaffar, Long Nguyen, & Jennifer Oxelson Ganter
+ */
+
+footer {
+
+}
+
+/* Override bootstrap */
+footer .container {
+  max-width: 1900px;
+}
+
+
+/* Override bootstrap */
+footer .row {
+  height: 30px;
+  margin: 0;
+}
+
+/* Left & right side of footer */
+footer .left,
+footer .right {
+  padding: 0 !important;
+}
+
+footer .left {
+  font-size: 9pt;
+  padding-top: 5px !important;
+  line-height: 30px;
+  vertical-align: bottom;
+}
+
+
+/* Icons */
+footer .right ul {
+  list-style-type: none;
+  padding: 0;
+  float: right;
+  background: none;
+}
+
+footer .right ul li {
+  display: inline;
+  margin-left: 15px;
+  padding: 0;
+  float: left;
+}

@@ -1,0 +1,131 @@
+/**
+ * Layout CSS.
+ *
+ * @authors: Hossam Abdel-Ghaffar, Long Nguyen, & Jennifer Oxelson Ganter
+ */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+/* Mobile Styles & Small Tablets */
+@media only screen and (max-width: 754px) {
+
+  /* Hide the nav links & show the menu icon */
+  header nav ul {
+    display: none;
+  }
+
+  header nav .auth {
+    margin: 0;
+    padding: 0;
+    top: 0;
+  }
+
+  header nav .auth img {
+    display: inline-block !important;
+    width: 34px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -1px;
+    background: none;
+    cursor: pointer;
+  }
+  header nav .auth a {
+    display: none;
+  }
+
+  footer .left,
+  footer .right {
+    display:block;
+  }
+
+
+  footer .col {
+    flex-basis: auto;
+  }
+
+  footer .left {
+    text-align: center;
+  }
+
+  footer .right ul {
+    float: none !important;
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 755px) and (max-width: 799px) {
+
+  header {
+    font-size: 12pt !important;
+  }
+  header nav ul li {
+    margin: 22px 10px !important;
+  }
+
+  footer .left,
+  footer .right {
+    display:block;
+  }
+
+  footer .col {
+    flex-basis: auto;
+  }
+
+  footer .right ul {
+    position: relative;
+    left: 0;
+  }
+
+  footer .right ul {
+    float: none !important;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 859px) {
+  header {
+    font-size: 13pt !important;
+  }
+  header nav ul li {
+    margin: 22px 10px !important;
+  }
+}
+
+@media only screen and (min-width: 860px) and (max-width: 869px) {
+  header nav ul li {
+    margin: 22px 10px !important;
+  }
+}
+
+@media only screen and (min-width: 870px) and (max-width: 879px) {
+  header nav ul li {
+    margin: 22px 12px !important;
+  }
+
+}
+
+@media only screen and (min-width: 880px) and (max-width: 894px) {
+  header nav ul li {
+    margin: 22px 13px !important;
+  }
+}
+
+@media only screen and (min-width: 895px) and (max-width: 919px) {
+  header nav ul li {
+    margin: 22px 14px !important;
+  }
+}
+
+/* Desktop & Large Tablet Styles */
+@media only screen and (min-width: 920px) {
+}
+
