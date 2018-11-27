@@ -14,6 +14,11 @@ jQuery(document).ready(function(){
     }
   });
 
+  /* Hide the menu if the window is resized.  */
+  $( window ).resize(function() {
+      $("#menu_nav").addClass("hidden");
+  });
+
   /* If nav menu is click */
   jQuery(".menu").click(function(e) {
     // Hide/show menu depending on its current state.
