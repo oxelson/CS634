@@ -7,8 +7,9 @@ jQuery(document).ready(function(){
   /* Populate the dropdown menu with the links in the nav bar */
   $.each($("nav a"), function( index, value ) {
     if (!$(this).hasClass("menu")) {
+      var link = $(this).clone();
       var element = $("<li></li>")
-      $(element).append($(this));
+      $(element).append($(link));
       $("#menu_nav ul").append($(element));
     }
   });
