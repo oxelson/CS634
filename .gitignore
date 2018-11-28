@@ -1,0 +1,27 @@
+#############
+# IDE files #
+#############
+#
+# intelliJ
+#
+.idea/
+ide/intellij/
+rosetta.iml
+out/
+#
+# Eclipse files
+#
+.classpath
+.project
+.settings
+
+######################
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+*.swp
+*.*~
+._*
