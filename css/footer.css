@@ -5,8 +5,15 @@
  */
 footer {
   width:100%;
-  position: fixed;
-  bottom: 0;
+}
+
+
+footer a,
+footer a:active,
+footer a:hover,
+footer a:visited {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 /* Override bootstrap */
