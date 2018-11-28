@@ -1,0 +1,515 @@
+{
+  "albums": [
+    {
+      "title": "J.S. Bach, Cello Suites, Volume 2",
+      "performers": "Tanya Anisimova",
+      "composer": "Johann Sebastian Bach",
+      "date": "2004",
+      "cover": "bach2004-1.png",
+      "genre": "Classical",
+      "label": "Celle-stial Records",
+      "time": "1 Hour 19 Minutes",
+      "purchase": [
+        {
+          "store": "iTunes",
+          "icon": "apple-teal.png",
+          "url": "https://itunes.apple.com/us/album/j-s-bach-cello-suites-volume-2/73201337?app=itunes"
+        },
+        {
+          "store": "Amazon Smile",
+          "icon": "amazonsmile-teal.png",
+          "url": "https://www.amazon.com/Cello-Suites-J-S-Bach-2/dp/B0012K6ZM4/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543350316&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+        }
+      ],
+      "listen": [
+        {
+          "venue": "Spotify",
+          "icon": "spotify-teal.png",
+          "url": "https://open.spotify.com/album/6DeCExU0wCUdGdOUBDMfLF"
+        }
+      ],
+      "songs": [
+        {
+          "track": 1,
+          "title": "Suite # 2 in D minor, BWV 1008, Improvisation",
+          "duration": "1:22",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/suite-2-in-d-minor-bwv-1008-improvisation/73201337?i=73200613&app=itunes"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/dp/B0012K6NOO/ref=dm_ws_tlw_trk1"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/6DeCExU0wCUdGdOUBDMfLF"
+            }
+          ]
+        },
+        {
+          "track": 2,
+          "title": "Prelude and Cadenza",
+          "duration": "5:28",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/prelude-and-cadenza/73201337?i=73200618&app=itunes"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/dp/B0012K4GEI/ref=dm_ws_tlw_trk2"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/6DeCExU0wCUdGdOUBDMfLF"
+            }
+          ]
+        },
+        {
+          "track": 3,
+          "title": "Allemande",
+          "duration": "3:57",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/allemande/73201337?i=73200628&app=itunes"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/dp/B0012K6NOY/ref=dm_ws_tlw_trk3"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/6DeCExU0wCUdGdOUBDMfLF"
+            }
+          ]
+        },
+        {
+          "track": 4,
+          "title": "Courante",
+          "duration": "2:04",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/courante/73201337?i=73200659&app=itunes"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/dp/B0012K2FEQ/ref=dm_ws_tlw_trk4"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/6DeCExU0wCUdGdOUBDMfLF"
+            }
+          ]
+        },
+        {
+          "track": 5,
+          "title": "Sarabande",
+          "duration": "5:02",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/sarabande/73201337?i=73200724&app=itunes"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/dp/B0012K6NP8/ref=dm_ws_tlw_trk5"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/6DeCExU0wCUdGdOUBDMfLF"
+            }
+          ]
+        },
+        {
+          "track": 6,
+          "title": "Improvisation",
+          "duration": "1:48",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/improvisation/73201337?i=73200760&app=itunes"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/dp/B0012K9GUC/ref=dm_ws_tlw_trk6"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/6DeCExU0wCUdGdOUBDMfLF"
+            }
+          ]
+        },
+        {
+          "track": 7,
+          "title": "Menuet I &amp; II",
+          "duration": "3:23",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/menuet-i-ii/73201337?i=73200768&app=itunes"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/dp/B0012K9GUW/ref=dm_ws_tlw_trk7"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/6DeCExU0wCUdGdOUBDMfLF"
+            }
+          ]
+        },
+        {
+          "track": 8,
+          "title": "Gigue",
+          "duration": "2:42",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/gigue/73201337?i=73200789&app=itunes"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/dp/B0012K2FF0/ref=dm_ws_tlw_trk8"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/6DeCExU0wCUdGdOUBDMfLF"
+            }
+          ]
+        },
+        {
+          "track": 9,
+          "title": "Suite # 4 in G ( E flat ) Major, BWV 1010, Prelude",
+          "duration": "4:50",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/suite-4-in-g-e-flat-major-bwv-1010-prelude/73201337?i=73200792&app=itunes"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/dp/B0012K6NPS/ref=dm_ws_tlw_trk9"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/6DeCExU0wCUdGdOUBDMfLF"
+            }
+          ]
+        },
+        {
+          "track": 10,
+          "title": "Allemande",
+          "duration": "4:28",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/allemande/73201337?i=73200883&app=itunes"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/dp/B0012K4GFM/ref=dm_ws_tlw_trk10"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/6DeCExU0wCUdGdOUBDMfLF"
+            }
+          ]
+        },
+        {
+          "track": 11,
+          "title": "Courante",
+          "duration": "3:40",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/courante/73201337?i=73200894&app=itunes"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/dp/B0012K6NQ2/ref=dm_ws_tlw_trk11"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/6DeCExU0wCUdGdOUBDMfLF"
+            }
+          ]
+        },
+        {
+          "track": 12,
+          "title": "Sarabande",
+          "duration": "5:15",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/sarabande/73201337?i=73200911&app=itunes"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/dp/B0012K4GFW/ref=dm_ws_tlw_trk12"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/6DeCExU0wCUdGdOUBDMfLF"
+            }
+          ]
+        },
+        {
+          "track": 13,
+          "title": "Bourree I &amp; II",
+          "duration": "4:09",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/bourree-i-ii/73201337?i=73200953&app=itunes"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/dp/B0012K4GG6/ref=dm_ws_tlw_trk13"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/6DeCExU0wCUdGdOUBDMfLF"
+            }
+          ]
+        },
+        {
+          "track": 14,
+          "title": "Gigue",
+          "duration": "2:59",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/gigue/73201337?i=73201048&app=itunes"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/dp/B0012K7QAO/ref=dm_ws_tlw_trk14"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/6DeCExU0wCUdGdOUBDMfLF"
+            }
+          ]
+        },
+        {
+          "track": 15,
+          "title": "Suite # 6 in C ( D ) Major, Prelude",
+          "duration": "5:01",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/suite-6-in-c-d-major-prelude/73201337?i=73201050&app=itunes"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/dp/B0012K7QAY/ref=dm_ws_tlw_trk15"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/6DeCExU0wCUdGdOUBDMfLF"
+            }
+          ]
+        },
+        {
+          "track": 16,
+          "title": "Allemande",
+          "duration": "6:18",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/allemande/73201337?i=73201101&app=itunes"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/dp/B0012K9GWA/ref=dm_ws_tlw_trk16"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/6DeCExU0wCUdGdOUBDMfLF"
+            }
+          ]
+        },
+        {
+          "track": 17,
+          "title": "Courante",
+          "duration": "3:44",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/courante/73201337?i=73201163&app=itunes"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/dp/B0012K6NQM/ref=dm_ws_tlw_trk17"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/6DeCExU0wCUdGdOUBDMfLF"
+            }
+          ]
+        },
+        {
+          "track": 18,
+          "title": "Sarabande",
+          "duration": "5:05",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/courante/73201337?i=73201163&app=itunes"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/dp/B0012K4GHA/ref=dm_ws_tlw_trk18"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/6DeCExU0wCUdGdOUBDMfLF"
+            }
+          ]
+        },
+        {
+          "track": 19,
+          "title": "Gavotte I &amp; II",
+          "duration": "4:09",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/gavotte-i-ii/73201337?i=73201256&app=itunes"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/dp/B0012K7QB8/ref=dm_ws_tlw_trk19"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/6DeCExU0wCUdGdOUBDMfLF"
+            }
+          ]
+        },
+        {
+          "track": 20,
+          "title": "Gigue",
+          "duration": "4:17",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/gigue/73201337?i=73201307&app=itunes"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/dp/B0012K4GHK/ref=dm_ws_tlw_trk20"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/6DeCExU0wCUdGdOUBDMfLF"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
