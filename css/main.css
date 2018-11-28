@@ -37,6 +37,13 @@ h1 {
   font-size: 5vw;
 }
 
+.deemp {
+  color: #5F5F5F;
+}
+
+.title {
+  font-size: 12pt;
+}
 
 /* left-side image */
 aside img {
@@ -69,11 +76,11 @@ section.homepage ul li {
 }
 
 section.homepage ul li::after { 
-    content: "\0000a0 \0000a0 \0000a0 \0000a0 \0000a0 \0000a0 \2022";
+   content: "\0000a0 \0000a0 \0000a0 \0000a0 \0000a0 \0000a0 \2022";
 }
 
 section.homepage ul li.last::after { 
-    content: none;
+  content: none;
 }
 
 /* Sub-page layout */
@@ -159,7 +166,37 @@ section.homepage ul li.last::after {
   display: block;
 }
 
-.subpage .fill ul li .content img {
+.subpage .fill ul li .content img,
+.subpage .fill .albumImage img {
   border: 1px solid #000000;
 }
 
+/* album */
+.subpage .fill .albumImage{
+  border: 1px solid #FF0000;
+  width: 30%;
+}
+
+.subpage .fill .albumData {
+  border: 1px solid #FF0000;
+  width: 70%;
+}
+
+
+.subpage .fill .albumData b {
+  display: block;
+}
+
+.subpage .fill .albumData ul.links {
+  border: 1px solid #000000;
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.subpage .fill .albumData ul.links li {
+  border: 1px solid #000000;
+  margin: 0;
+  padding: 0;
+}
