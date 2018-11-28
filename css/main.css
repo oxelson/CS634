@@ -1,13 +1,12 @@
 /**
- * Main style sheet for website.
+ * Main CSS.
  *
- * @authors: Abdel-Ghaffar, Nguyen, & Oxelson Ganter
+ * @authors: Hossam Abdel-Ghaffar, Long Nguyen, & Jennifer Oxelson Ganter
  */
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Quintessential');
 @import url("layout.css") all;
 @import url("header.css") all;
 @import url("footer.css") all;
-
 
 body {
   padding-bottom: 20px;
@@ -19,7 +18,9 @@ body {
 
 main {
   min-height: 200px;
+  margin-bottom: 20px;
 }
+
 
 /* Override bootstrap */
 main .container {
@@ -28,12 +29,14 @@ main .container {
 
 .hidden {
   display:none;
+  height:0;
 }
 
 h1 {
   font-family: 'Quintessential', 'Kaushan Script', cursive;
   font-size: 5vw;
 }
+
 
 /* left-side image */
 aside img {
@@ -71,5 +74,92 @@ section.homepage ul li::after {
 
 section.homepage ul li.last::after { 
     content: none;
+}
+
+/* Sub-page layout */
+.subpage .left h1 {
+  float:right;
+  color: #5F5F5F;
+  padding-bottom: 2px;
+}
+
+/* Sub-page navigation */
+.subpage nav a,
+.subpage nav a:active,
+.subpage nav a:hover,
+.subpage nav a:visited {
+  text-decoration: none;
+  color: #5F5F5F;
+}
+
+.subpage nav a:active,
+.subpage nav a:hover,
+.subpage nav .active {
+  text-decoration: none;
+  color: #17A2B8;
+}
+
+.subpage nav .active {
+  background-color: white !important;
+}
+
+.subpage nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 3%;
+  background: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.subpage nav ul li {
+  width: 25%;
+  font-size: 1.5vw;
+  display: inline;
+  margin-left: 25px;
+  padding: 0;
+  float: left;
+  border: 1px solid #5F5F5F;
+  text-align: center;
+}
+
+/* Sub-page content */
+.subpage .fill {
+  margin-top: 3%;
+  border: 2px solid #5F5F5F;
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 2%;
+  overflow: hidden;
+  font-size: 9pt;
+  text-align: left;
+}
+
+.subpage .fill ul {
+  list-style-type: none;
+  width:100%;
+  padding: 0;
+  margin: 0;
+  background: none;
+  float: left;
+}
+
+.subpage .fill ul li {
+  width: 33%;
+  display: inline;
+  margin-top: 20px;
+  padding: 10px;
+  float: left;
+}
+
+.subpage .fill ul li .content {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.subpage .fill ul li .content img {
+  border: 1px solid #000000;
 }
 

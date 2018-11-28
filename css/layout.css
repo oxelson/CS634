@@ -10,11 +10,8 @@
 }
 
 /* Mobile Styles & Small Tablets */
-@media only screen and (max-width: 400px) {
-  body {
-    border: 1px solid #FF0000;
-  }
-  /* main content columns collapsed to one column */
+@media only screen and (max-width: 575px) {
+  /* Main content columns collapsed to one column */
   main .col-sm-12 {
     padding: 0;
     margin: 0;
@@ -22,13 +19,40 @@
   aside img {
     width: 100%;
   }
+  section {
+    margin: 0;
+    padding: 0;
+  }
   section.homepage h1 {
+    font-size: 3em;
     margin: 0 0 5% 0 !important;
   }
   section.homepage ul {
-    padding-bottom: 10% !important;
+    margin-bottom: 0 !important;
+  }
+  section.homepage ul li {
+    font-size: 9pt !important;
   }
 
+  /* Sub-page columns collapsed to one column  */
+  .subpage .left h1 {
+    font-size: 3em;
+    float: none !important;
+    text-align: center;
+  }
+
+  .subpage nav ul {
+    justify-content: center !important;
+  }
+
+  .subpage nav ul li {
+    font-size: 9pt !important;
+  }
+
+  .subpage aside {
+    display:none;
+    height:0;
+  }
 }
 
 @media only screen and (max-width: 754px) {
@@ -81,8 +105,12 @@
     display: flex;
     justify-content: center;
   }
-}
 
+  /* Decrease number of elements in a row */
+  .subpage .fill ul li {
+    width: 100% !important;
+  }
+}
 
 /* Tablets and wide screens */
 @media only screen and (min-width: 800px) and (max-width: 859px) {
@@ -104,8 +132,8 @@
   header nav ul li {
     margin: 22px 12px !important;
   }
-
 }
+
 
 @media only screen and (min-width: 880px) and (max-width: 894px) {
   /* Decrease spacing between nav elements by one pixel */
@@ -121,3 +149,9 @@
   }
 }
 
+@media only screen and (min-width: 800px) and (max-width: 1199px) {
+  /* Decrease number of elements in a row */
+  .subpage .fill ul li {
+    width: 45% !important;
+  }
+}
