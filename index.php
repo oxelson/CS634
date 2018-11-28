@@ -1,3 +1,4 @@
+<!-- HOMEPAGE -->
 <!DOCTYPE HTML>
   <html>
     <head>
@@ -8,9 +9,11 @@
     <body>
      <?php include 'header.php';?>
 
+       <div class="row">
+
          <!-- left side -->
          <aside class="col-sm-4 col-xs-12">
-          <img src="images/tanya-homepage.png" alt="Photo of Tanya Anisimova by Paul Purpura."/>
+          <img src="/images/tanya-homepage.png" alt="Photo of Tanya Anisimova by Paul Purpura."/>
          </aside>
 
          <!-- right side -->
@@ -20,7 +23,10 @@
             <li>CELLIST</li>
             <li>COMPOSER</li>
             <li class="last">ARTIST</li>
-         </section> <!-- /.right -->
+         </section> 
+
+
+       </div> <!-- /.row -->
 
       <?php include 'footer.php';?>
 
