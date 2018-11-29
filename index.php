@@ -25,7 +25,6 @@
             <li class="last">ARTIST</li>
          </section> 
 
-
        </div> <!-- /.row -->
 
       <?php include 'footer.php';?>
