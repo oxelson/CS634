@@ -48,32 +48,75 @@ let Album = (function () {
       }
     }
     console.log(album);
+
+    let row = $('<div class="row"></div>');
+    let albumCover = $('<div class="col-sm-3 col-xs-12 albumCover"></div> <!-- /.albumImage -->');
+
+    // Create and attach album cover image.
+    let image = '<img src="/images/' + album.cover + '" alt="' + album.title + '"/>';
+    $(albumCover).append($(image));
+
+
+    // Create list for displaying listen & purchase links.
+    let linkList = '<ul class="links"></ul>';
+
+    // If the album can be listened to.
+    if (album.listen.length >= 1) {
+      let listen = '<li><b>Listen:</b></li>';
+      let iconsList = '<ul class="icons"></ul>';
+      for (var icon = 0; icon < album.listen.length; icon++) {
+        let element = '<li></li>';
+        let iconLink = '<a href="' + album.listen.url + '"><img src="/images/' + album.listen.icon + '" alt="Listen on ' + album.listen.venue + '"></a>';
+        $(element).append($(iconLink));
+      }
+    }
+    $(element).append($(iconLink));
+    // Purchase album.
+    let purchase = '<li><b>Purchase:</b></li>';
+    let iconsList = '<ul class="icons"></ul>';
+    for (var pIcon = 0; pIcon < album.purchase.length; pIcon++) {
+      let element = '<li></li>';
+      let iconLink = '<a href="' + album.purchase.url + '"><img src="/images/' + album.purchase.icon + '" alt="Purchase on ' + album.purchase.venue + '"></a>';
+      $(element).append($(iconLink));
+    }
+
 /*
-      let element = $('<li></li>');
-      let div = $('<div class="content"></div>');
+                   <div class="row">
+             <div class="col-sm-3 col-xs-12 albumCover">
 
-      // Create and attach link to album.
-      let link = album.cover.replace(/\.png/g, '');
+               <img src="/images/bach2004-2.png" alt="">
+              <ul class="links">
 
-      // Create and attach album cover image.
-      let image = '<a href="albums.php?' + link + '"><img src="/images/' + album.cover + '" alt="' + album.title + '"/></a>';
-      $(div).append($(image));
-      $(div).append('<br/>');
+               <li><b>Listen:</b></li>
+                <ul class="icons">
+                  <li><img src="/images/apple-teal.png"></li>
+                  <li><img src="/images/amazonsmile-teal.png"></li>
+                </ul>
+               </li>
+               <li>Purchase:</li>
+              </ul>
 
-      // Create and attach album title.
-      $(div).append(album.title);
-      $(div).append('<br/>');
 
-      // Create and attach year of release.
-      $(div).append(album.date);
-      $(div).append('<br/><br/>');
+             </div> <!-- albumImage -->
+             <div class="col-sm-9 col-xs-12 albumData">
+              <b class="title">J.S. Bach, Cello Suites, Volume 2</b>
+              Tanya Anisimova<br/><br/>
 
-      // Create and link to album information.
-      let small = '<small><a href="albums.php?' + link + '">View album information</a></small>';
-      $(div).append($(small));
-      $(element).append($(div));
 
-      $('.fill ul').append($(element));
+             <small class="deemp">Genre:</small> Classical<br/>
+             <small class="deemp">Composer:</small> Bach<br/>
+             <small class="deemp">Released:</small> 2004 <br/>
+             <small class="deemp">Label:</small> Celle-stial Records<br/><br/>
+
+              <b>Song List</b>
+              <span class="deemp">20 Songs; 1 Hour 19 Minutes</span>
+              <ul class="songlist">
+               <li><small class="deemp">1</small> &nbsp;  Suite # 2 in D minor, BWV 1008, Improvisation  <span>12:23</span></li>
+               <li><small>2</small> Prelude and Cadenza</li>
+              </ul>
+             </div> <!-- albumData -->
+
+             </div> <!-- /.row -->
       */
   }
 
@@ -88,7 +131,7 @@ let Album = (function () {
     for (let i = 0; i < albums.length; i++) {
       let album = albums[i];
 
-      let div = $('<div class="content"></div>');
+      let div = $('<div class="content"></div> <!-- /.content -->');
 
       // Create and attach link to album.
       let link = album.cover.replace(/\.png/g, '');
@@ -116,7 +159,7 @@ let Album = (function () {
       $(element).append($(div));
       $(list).append($(element));
 
-      $('.fill ul').append($(list));
+      $('.fill').append($(list));
     }
   }
 
