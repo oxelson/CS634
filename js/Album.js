@@ -50,74 +50,141 @@ let Album = (function () {
     console.log(album);
 
     let row = $('<div class="row"></div>');
-    let albumCover = $('<div class="col-sm-3 col-xs-12 albumCover"></div> <!-- /.albumImage -->');
+    let albumCover = $('<div class="col-sm-3 col-xs-12 albumCover"></div> <!-- /.albumCover -->');
 
     // Create and attach album cover image.
     let image = '<img src="/images/' + album.cover + '" alt="' + album.title + '"/>';
     $(albumCover).append($(image));
 
-
     // Create list for displaying listen & purchase links.
     let linkList = '<ul class="links"></ul>';
-
     // If the album can be listened to.
-    if (album.listen.length >= 1) {
+    if (parseInt(album.listen.length) >= 1) {
       let listen = '<li><b>Listen:</b></li>';
       let iconsList = '<ul class="icons"></ul>';
-      for (var icon = 0; icon < album.listen.length; icon++) {
-        let element = '<li></li>';
-        let iconLink = '<a href="' + album.listen.url + '"><img src="/images/' + album.listen.icon + '" alt="Listen on ' + album.listen.venue + '"></a>';
-        $(element).append($(iconLink));
+      for (var q = 0; q < album.listen.length; q++) {
+        let store = album.listen[q];
+        let listElement = '<li></li>';
+        let iconLink = '<a href="' + store.url + '"></a>';
+        let iconImage = '<img src="/images/' + store.icon + '" alt="Listen on ' + store.venue + '">';
+        $(iconLink).append($(iconImage));
+        $(listElement).append($(iconLink));
+        $(iconsList).append($(listElement));
+        console.log($(listElement));
       }
+
+      // Add listen elements to linkList.
+      $(linkList).append($(listen));
+      $(linkList).append($(iconsList));
+     // console.log($(linkList));
     }
-    $(element).append($(iconLink));
+
     // Purchase album.
     let purchase = '<li><b>Purchase:</b></li>';
     let iconsList = '<ul class="icons"></ul>';
-    for (var pIcon = 0; pIcon < album.purchase.length; pIcon++) {
+    for (var r = 0; r < album.purchase.length; r++) {
+      let store = album.purchase[r];
       let element = '<li></li>';
-      let iconLink = '<a href="' + album.purchase.url + '"><img src="/images/' + album.purchase.icon + '" alt="Purchase on ' + album.purchase.venue + '"></a>';
+      let iconLink = '<a href="' + store.url + '"><img src="/images/' + store.icon + '" alt="Purchase on ' + store.venue + '"></a>';
       $(element).append($(iconLink));
+      $(iconsList).append($(element));
     }
 
-/*
-                   <div class="row">
-             <div class="col-sm-3 col-xs-12 albumCover">
+    // Add purchase elements to linkList.
+    $(linkList).append($(purchase));
+    $(linkList).append($(iconsList));
 
-               <img src="/images/bach2004-2.png" alt="">
-              <ul class="links">
+    // Add linkList to albumCover div.
+    $(albumCover).append($(linkList));
 
-               <li><b>Listen:</b></li>
-                <ul class="icons">
-                  <li><img src="/images/apple-teal.png"></li>
-                  <li><img src="/images/amazonsmile-teal.png"></li>
-                </ul>
-               </li>
-               <li>Purchase:</li>
-              </ul>
+    // Add albumCover to row.
+    $(row).append($(albumCover));
+
+    let albumData = $('<div class="col-sm-9 col-xs-12 albumData"></div> <!-- /.albumData -->');
+
+    // Album title.
+    let title = '<b class="title">' + album.title + '</b>';
+    $(albumData).append($(title));
+
+    // Performers.
+    let performers = album.performers;
+    $(albumData).append($(performers));
+    $(albumData).append('<br/><br/>');
+
+    // Album metadata.
+    let metadata = '<small class="deemp">Genre:</small> ' + album.genre + '<br/>' +
+                   '<small class="deemp">Composer:</small> ' + album.composer + '<br/>' +
+                   '<small class="deemp">Released:</small> ' + album.date + '<br/>' +
+                   '<small class="deemp">Label:</small> ' + album.label + '<br/><br/>';
+    $(albumData).append($(metadata));
+
+    // Song section title.
+    let songSectionTitle = '<b>Song List</b>';
+    $(albumData).append($(songSectionTitle));
+
+    // Play time.
+    let playTime = '<span class="deemp">20 Songs; 1 Hour 19 Minutes</span>';
+    $(albumData).append($(playTime));
+
+    // Song list.
+    let songList = '<ul class="songlist"></ul>';
+
+    for (var s = 0; s < album.songs.length; s++) {
+      let song = album.songs[s];
+      let element = '<li></li>';
+      let songData = '<small class="deemp">' + song.track + '</small> &nbsp; <a href="songs.php?' + album.cover.replace(/\.png/, '') + '-' + song.track + '">' + song.title + '</a><span>' + song.duration + '</span>';
+      $(element).append($(songData));
+      $(songList).append($(element));
+    }
+
+    // Add songList to albumData div.
+    $(albumData).append($(songList));
+
+    // Add albumData to row.
+    $(row).append($(albumData));
+
+    // Attach row to DOM.
+    $('.fill').append($(row));
 
 
-             </div> <!-- albumImage -->
-             <div class="col-sm-9 col-xs-12 albumData">
-              <b class="title">J.S. Bach, Cello Suites, Volume 2</b>
-              Tanya Anisimova<br/><br/>
+    /*
+                       <div class="row">
+                 <div class="col-sm-3 col-xs-12 albumCover">
+
+                   <img src="/images/bach2004-2.png" alt="">
+                  <ul class="links">
+
+                   <li><b>Listen:</b></li>
+                    <ul class="icons">
+                      <li><img src="/images/apple-teal.png"></li>
+                      <li><img src="/images/amazonsmile-teal.png"></li>
+                    </ul>
+                   </li>
+                   <li>Purchase:</li>
+                  </ul>
 
 
-             <small class="deemp">Genre:</small> Classical<br/>
-             <small class="deemp">Composer:</small> Bach<br/>
-             <small class="deemp">Released:</small> 2004 <br/>
-             <small class="deemp">Label:</small> Celle-stial Records<br/><br/>
+                 </div> <!-- albumImage -->
+                 <div class="col-sm-9 col-xs-12 albumData">
+                  <b class="title">J.S. Bach, Cello Suites, Volume 2</b>
+                  Tanya Anisimova<br/><br/>
 
-              <b>Song List</b>
-              <span class="deemp">20 Songs; 1 Hour 19 Minutes</span>
-              <ul class="songlist">
-               <li><small class="deemp">1</small> &nbsp;  Suite # 2 in D minor, BWV 1008, Improvisation  <span>12:23</span></li>
-               <li><small>2</small> Prelude and Cadenza</li>
-              </ul>
-             </div> <!-- albumData -->
 
-             </div> <!-- /.row -->
-      */
+                 <small class="deemp">Genre:</small> Classical<br/>
+                 <small class="deemp">Composer:</small> Bach<br/>
+                 <small class="deemp">Released:</small> 2004 <br/>
+                 <small class="deemp">Label:</small> Celle-stial Records<br/><br/>
+
+                  <b>Song List</b>
+                  <span class="deemp">20 Songs; 1 Hour 19 Minutes</span>
+                  <ul class="songlist">
+                   <li><small class="deemp">1</small> &nbsp;  Suite # 2 in D minor, BWV 1008, Improvisation  <span>12:23</span></li>
+                   <li><small>2</small> Prelude and Cadenza</li>
+                  </ul>
+                 </div> <!-- albumData -->
+
+                 </div> <!-- /.row -->
+          */
   }
 
   /**
