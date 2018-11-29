@@ -166,37 +166,79 @@ section.homepage ul li.last::after {
   display: block;
 }
 
-.subpage .fill ul li .content img,
-.subpage .fill .albumImage img {
+.subpage .fill ul li .content img {
   border: 1px solid #000000;
 }
 
 /* album */
-.subpage .fill .albumImage{
+.subpage .fill .row {
+  padding: 0 2% !important;
+}
+
+.subpage .fill .albumCover,
+.subpage .fill .albumData {
+  text-align: left;
   border: 1px solid #FF0000;
-  width: 30%;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.subpage .fill .albumCover img {
+  float: left;
+  border: 1px solid #000000;
+  width: 100%;
 }
 
 .subpage .fill .albumData {
-  border: 1px solid #FF0000;
-  width: 70%;
+  padding-left: 5px !important;
 }
 
-
-.subpage .fill .albumData b {
+.subpage .fill b {
   display: block;
 }
 
-.subpage .fill .albumData ul.links {
-  border: 1px solid #000000;
-  display: flex;
+.subpage .fill ul.links {
   justify-content: flex-start;
   margin: 10px 0;
   padding: 0;
 }
 
-.subpage .fill .albumData ul.links li {
-  border: 1px solid #000000;
+.subpage .fill ul.links li {
   margin: 0;
   padding: 0;
+  display: block !important;
+  width: 100% !important;
+}
+
+.subpage .fill ul.links .icons  {
+  display: flex;
+  padding-left: 30px;
+}
+
+.subpage .fill ul.links .icons li {
+  display: inline !important;
+  width: 30px !important;
+  margin-right: 10px;
+}
+
+.subpage .fill ul.links .icons img {
+  width: 30px !important;
+  border: none !important;
+}
+
+.subpage .fill .albumData ul.songlist {
+  justify-content: flex-start;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.subpage .fill .albumData ul.songlist li {
+  display: block !important;
+  width: 100% !important;
+  border-bottom: 1px solid #BABABA;
+  margin: 0;
+  padding: 6px 0 0 0;
+}
+
+.subpage .fill .albumData ul.songlist li span {
+  float: right;
 }

@@ -134,7 +134,6 @@
   }
 }
 
-
 @media only screen and (min-width: 880px) and (max-width: 894px) {
   /* Decrease spacing between nav elements by one pixel */
   header nav ul li {
@@ -153,5 +152,12 @@
   /* Decrease number of elements in a row */
   .subpage .fill ul li {
     width: 45% !important;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1399px) {
+  /* Decrease number of elements in a row */
+  .subpage .fill .col-sm-9.albumData {
+    border: 1px solid #00FF00;
   }
 }

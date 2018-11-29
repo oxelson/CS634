@@ -51,27 +51,6 @@
          <!-- right side -->
          <section class="col-sm-8 col-xs-12">
            <div class="fill">
-             <div class="albumImage">
-               <img src="/images/bach2004-2.png" alt="">
-               <br/>
-               <small class="deemp">Genre:</small> Classical<br/>
-               <small class="deemp">Released:</small> 2004 <br/>
-               <small class="deemp">Label:</small> Celle-stial Records
-             </div> <!-- albumImage -->
-             <div class="albumData">
-              <b class="title">J.S. Bach, Cello Suites, Volume 2</b>
-              Tanya Anisimova
-              <ul class="links">
-               <li>Listen:</li>
-               <li>Purchase:</li>
-              </ul>
-              <b>Song List</b>
-              20 Songs; 1 Hour 19 Minutes
-              <ul class="songlist">
-               <li>Suite # 2 in D minor, BWV 1008, Improvisation</li>
-               <li>Prelude and Cadenza</li>
-              </ul>
-             </div> <!-- albumData -->
            </div>
          </section> 
        </div> <!-- /.row -->
