@@ -5,7 +5,7 @@
       "performers": "Tanya Anisimova",
       "composer": "Johann Sebastian Bach",
       "date": "2004",
-      "cover": "bach2004-1.png",
+      "cover": "bach2004-2.png",
       "genre": "Classical",
       "label": "Celle-stial Records",
       "time": "1 Hour 19 Minutes",
@@ -33,6 +33,7 @@
           "track": 1,
           "title": "Suite # 2 in D minor, BWV 1008, Improvisation",
           "duration": "1:22",
+          "performers": "Tanya Anisimova",
           "purchase": [
             {
               "store": "iTunes",
@@ -57,6 +58,7 @@
           "track": 2,
           "title": "Prelude and Cadenza",
           "duration": "5:28",
+          "performers": "Tanya Anisimova",
           "purchase": [
             {
               "store": "iTunes",
@@ -81,6 +83,7 @@
           "track": 3,
           "title": "Allemande",
           "duration": "3:57",
+          "performers": "Tanya Anisimova",
           "purchase": [
             {
               "store": "iTunes",
@@ -105,6 +108,7 @@
           "track": 4,
           "title": "Courante",
           "duration": "2:04",
+          "performers": "Tanya Anisimova",
           "purchase": [
             {
               "store": "iTunes",
@@ -129,6 +133,7 @@
           "track": 5,
           "title": "Sarabande",
           "duration": "5:02",
+          "performers": "Tanya Anisimova",
           "purchase": [
             {
               "store": "iTunes",
@@ -153,6 +158,7 @@
           "track": 6,
           "title": "Improvisation",
           "duration": "1:48",
+          "performers": "Tanya Anisimova",
           "purchase": [
             {
               "store": "iTunes",
@@ -177,6 +183,7 @@
           "track": 7,
           "title": "Menuet I &amp; II",
           "duration": "3:23",
+          "performers": "Tanya Anisimova",
           "purchase": [
             {
               "store": "iTunes",
@@ -201,6 +208,7 @@
           "track": 8,
           "title": "Gigue",
           "duration": "2:42",
+          "performers": "Tanya Anisimova",
           "purchase": [
             {
               "store": "iTunes",
@@ -225,6 +233,7 @@
           "track": 9,
           "title": "Suite # 4 in G ( E flat ) Major, BWV 1010, Prelude",
           "duration": "4:50",
+          "performers": "Tanya Anisimova",
           "purchase": [
             {
               "store": "iTunes",
@@ -249,6 +258,7 @@
           "track": 10,
           "title": "Allemande",
           "duration": "4:28",
+          "performers": "Tanya Anisimova",
           "purchase": [
             {
               "store": "iTunes",
@@ -273,6 +283,7 @@
           "track": 11,
           "title": "Courante",
           "duration": "3:40",
+          "performers": "Tanya Anisimova",
           "purchase": [
             {
               "store": "iTunes",
@@ -297,6 +308,7 @@
           "track": 12,
           "title": "Sarabande",
           "duration": "5:15",
+          "performers": "Tanya Anisimova",
           "purchase": [
             {
               "store": "iTunes",
@@ -321,6 +333,7 @@
           "track": 13,
           "title": "Bourree I &amp; II",
           "duration": "4:09",
+          "performers": "Tanya Anisimova",
           "purchase": [
             {
               "store": "iTunes",
@@ -345,6 +358,7 @@
           "track": 14,
           "title": "Gigue",
           "duration": "2:59",
+          "performers": "Tanya Anisimova",
           "purchase": [
             {
               "store": "iTunes",
@@ -369,6 +383,7 @@
           "track": 15,
           "title": "Suite # 6 in C ( D ) Major, Prelude",
           "duration": "5:01",
+          "performers": "Tanya Anisimova",
           "purchase": [
             {
               "store": "iTunes",
@@ -393,6 +408,7 @@
           "track": 16,
           "title": "Allemande",
           "duration": "6:18",
+          "performers": "Tanya Anisimova",
           "purchase": [
             {
               "store": "iTunes",
@@ -417,6 +433,7 @@
           "track": 17,
           "title": "Courante",
           "duration": "3:44",
+          "performers": "Tanya Anisimova",
           "purchase": [
             {
               "store": "iTunes",
@@ -441,6 +458,7 @@
           "track": 18,
           "title": "Sarabande",
           "duration": "5:05",
+          "performers": "Tanya Anisimova",
           "purchase": [
             {
               "store": "iTunes",
@@ -465,6 +483,7 @@
           "track": 19,
           "title": "Gavotte I &amp; II",
           "duration": "4:09",
+          "performers": "Tanya Anisimova",
           "purchase": [
             {
               "store": "iTunes",
@@ -489,6 +508,7 @@
           "track": 20,
           "title": "Gigue",
           "duration": "4:17",
+          "performers": "Tanya Anisimova",
           "purchase": [
             {
               "store": "iTunes",
