@@ -41,7 +41,16 @@
          <!-- right side -->
          <section class="col-sm-8 col-xs-12">
            <div class="fill">
-           </div>
+             <div class="row">
+               <h3>Remove Your Account</h3>
+               <p>Are you certain you wish to remove your account? (This process cannot be undone.)</p>
+               <form>
+                 <div class="col">
+                   <button type="submit" class="btn btn-danger">Remove Account</button>
+                 </div>
+               </form>
+             <div> <!--/.row -->
+           </div> <!-- /.fill -->
          </section>
        </div> <!-- /.row -->
 

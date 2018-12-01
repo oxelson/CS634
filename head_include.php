@@ -5,6 +5,7 @@ echo "
       <meta name='viewport' content='width=device-width, initial-scale=1' />
       <meta http-equiv='X-UA-Compatible' content='IE=edge' />
       <!-- JS -->
+      <script src='https://www.google.com/recaptcha/api.js' async defer></script>
       <script src='https://code.jquery.com/jquery-1.11.3.js'></script>
       <script src='/js/Storage.js'></script>
       <script src='/js/ViewPort.js'></script>

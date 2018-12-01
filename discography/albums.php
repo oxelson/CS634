@@ -51,7 +51,8 @@
          <!-- right side -->
          <section class="col-sm-8 col-xs-12">
            <div class="fill">
-           </div>
+             <h3>Albums by Tanya Anisimova</h3>
+           </div> <!--/.fill -->
          </section> 
        </div> <!-- /.row -->
 

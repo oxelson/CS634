@@ -37,7 +37,15 @@
          <!-- right side -->
          <section class="col-sm-8 col-xs-12">
            <div class="fill">
-           </div>
+             <div class="row">
+               <div class="col-sm-1 col-xs-1">
+               </div>
+               <div class="col-sm-11 col-xs-122">
+                <b class="title">Arts on the Green’s Season Premiere Fête Features Virtuoso Russian Cellist</b><br>
+                Arts on the Green’s Season Premiere Fête Features Virtuoso Russian Cellist
+               </div>
+             <div> <!--/.row -->
+           </div> <!-- /.fill -->
          </section>
        </div> <!-- /.row -->
 

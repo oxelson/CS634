@@ -41,9 +41,51 @@
          <!-- right side -->
          <section class="col-sm-8 col-xs-12">
            <div class="fill">
-           </div>
+             <div class="row">
+               <h3>Update your Account</h3>
+               <form>
+                 <div class="col-6">
+                   <div class="form-group">
+                     <input type="text" class="form-control col-form-label-sm" id="name" placeholder="Full Name">
+                   </div>
+                   <div class="form-group">
+                     <input type="text" class="form-control col-form-label-sm" id="address1" placeholder="Address">
+                   </div>
+                   <div class="form-group">
+                     <input type="text" class="form-control col-form-label-sm" id="address2" placeholder="Address (Optional)">
+                   </div>
+                   <div class="form-group">
+                     <input type="text" class="form-control col-form-label-sm" id="city" placeholder="City">
+                   </div>
+                   <div class="form-group">
+                     <input type="text" class="form-control col-form-label-sm" id="state" placeholder="Province/State">
+                   </div>
+                   <div class="form-group">
+                     <input type="text" class="form-control col-form-label-sm" id="postalCode" placeholder="Postal Code">
+                   </div>
+                   <div class="form-group">
+                     <input type="text" class="form-control col-form-label-sm" id="country" placeholder="Country">
+                   </div>
+                 </div>
+                 <div class="col-6">
+                   <div class="form-group">
+                     <input type="email" class="form-control col-form-label-sm" id="email" placeholder="Email Address">
+                   </div>
+                   <div class="form-group">
+                     <input type="password" class="form-control col-form-label-sm" id="password" placeholder="Password">
+                   </div>
+                   <div class="form-group">
+                     <input type="password" class="form-control col-form-label-sm" id="confirmpassword" placeholder="Confirm Password">
+                   </div>
+                   <button type="submit" class="btn btn-primary">Login</button>
+                   <button type="submit" class="btn btn-secondary">Reset</button>
+                 </div>
+               </form>
+             <div> <!--/.row -->
+           </div> <!-- /.fill -->
          </section>
        </div> <!-- /.row -->
+
 
       <?php include '../footer.php';?>
     </body>

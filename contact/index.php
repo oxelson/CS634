@@ -39,7 +39,33 @@
          <!-- right side -->
          <section class="col-sm-8 col-xs-12">
            <div class="fill">
-           </div>
+             <div class="row">
+               <h3>Send a Message to Tanya</h3>
+               <p>Use the following form to send a private message to Tanya Anisimova.</p>
+               <form>
+                 <div class="col-6">
+                   <div class="form-group">
+                     <input type="text" class="form-control col-form-label-sm" id="name" placeholder="Full Name">
+                   </div>
+                   <div class="form-group">
+                     <input type="email" class="form-control col-form-label-sm" id="email" placeholder="Email Address">
+                   </div>
+                   <div class="form-group">
+                     <input type="text" class="form-control col-form-label-sm" id="subject" placeholder="Subject">
+                   </div>
+                   <!-- recaptcha -->
+                   <div class="g-recaptcha" data-sitekey="6LePN34UAAAAAA4lYnH6jZ1mng6j0Q9p0FlwL7lI"></div>
+                   <p></p>
+                   <button type="submit" class="btn btn-primary">Send Message</button>
+                 </div>
+                 <div class="col-6">
+                   <div class="form-group">
+                     <textarea class="form-control rounded-0 col-form-label-sm" id="message" placeholder="Message" rows="12"></textarea>
+                   </div>
+                 </div>
+               </form>
+             <div> <!--/.row -->
+           </div> <!-- /.fill -->
          </section>
        </div> <!-- /.row -->
 

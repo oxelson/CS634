@@ -1,0 +1,308 @@
+{
+  "performances" : [
+    {
+      "title": "Wensleydale Concert Series",
+      "performers": "Tanya Anisimova",
+      "composers": "Tanya Anisimova, Franz Peter Schubert, and Johann Sebastian Bach",
+      "date": "12 May 2018",
+      "venue": "St. Andrew's Church, Aysgarth UK",
+      "songs": [
+        {
+          "title": "Two Improvisations",
+          "performers": "Tanya Anisimova",
+          "composer": "Tanya Anisimova",
+          "url": "https://www.youtube.com/watch?v=ffFfesbpNxE",
+          "Description": "Two improvisations based on ideas from the audience which are shown in the video before each improvisation.",
+          "Duration": "7:11"
+        },
+        {
+          "title": "Ave Maria",
+          "performers": "Tanya Anisimova",
+          "composer": "Franz Peter Schubert",
+          "url": "https://www.youtube.com/watch?v=T0QfxMvtZ6s",
+          "Description": "Schubert - Ave Maria (arr. Anisimova for solo cello).",
+          "Duration": "2:53"
+        },
+        {
+          "title": "Sufi Suite",
+          "performers": "Tanya Anisimova",
+          "composer": "Tanya Anisimova",
+          "url": "https://www.youtube.com/watch?v=C_vVrzO3zPI",
+          "Description": "Sufi Suite for scordatura cello and voice.",
+          "Duration": "16:52"
+        },
+        {
+          "title": "Cello Suite in C Minor",
+          "performers": "Tanya Anisimova",
+          "composer": "Johann Sebastian Bach",
+          "url": "https://www.youtube.com/watch?v=aM8DDz4Usa4",
+          "Description": "Bach Cello Suite in C Minor, scordatura tuning.",
+          "Duration": "16:52"
+        }
+      ],
+      "watch": [
+        {
+          "venue": "YouTube",
+          "icon": "youtube-teal.png",
+          "url": "https://www.youtube.com/playlist?list=PLZARTG6tVqQhqcJts0PsrPIbvATskAsju"
+        }
+      ]
+    },
+    {
+      "title": "Wensleydale Concert Series",
+      "performers": "Tanya Anisimova",
+      "composers": "Tanya Anisimova, Zoltán Kodály, and Johann Sebastian Bach",
+      "date": "19 May 2018",
+      "venue": "Ushaw College Chapel, Durham UK",
+      "songs": [
+        {
+          "title": "Sonata For Solo Cello Opus 8",
+          "performers": "Tanya Anisimova",
+          "composer": "Zoltán Kodály",
+          "url": "https://www.youtube.com/watch?v=gUbP3vZfQhs&t=172s",
+          "Description": "Kodaly - Sonata for solo cello Op. 8.  1 ... Allegro maestoso ma appassionato 2 ... Adagio (con grand' espressione) 3 ... Allegro molto vivace ",
+          "Duration": "28:33"
+        },
+        {
+          "title": "Sarabande",
+          "performers": "Tanya Anisimova",
+          "composer": "Johann Sebastian Bach",
+          "url": "https://www.youtube.com/watch?v=AvSi9073H3Y",
+          "Description": "Cellist Tanya Anisimova plays a Bach Sarabande after two hours of intense music.",
+          "Duration": "3:23"
+        }
+      ],
+      "watch": [
+        {
+          "venue": "YouTube",
+          "icon": "youtube-teal.png",
+          "url": "https://www.youtube.com/playlist?list=PLZARTG6tVqQhqcJts0PsrPIbvATskAsju"
+        }
+      ]
+    },
+    {
+      "title": "Wensleydale Concert Series",
+      "performers": "Tanya Anisimova and Daniel Grimwood",
+      "composers": "Tanya Anisimova, Frédéric François Chopin, Sergei Vasilyevich Rachmaninoff, and Jakob Ludwig Felix Mendelssohn",
+      "date": "26 May 2018",
+      "venue": "St. James Piccadilly, London UK",
+      "songs": [
+        {
+          "title": "Sonata For Piano And Cello",
+          "performers": "Tanya Anisimova and Daniel Grimwood",
+          "composer": "Frédéric François Chopin",
+          "url": "https://www.youtube.com/watch?v=4v8CE6c2OQ4",
+          "Description": "Chopin - Sonata for piano and cello.  3 ... Largo.  Daniel Grimwood, piano.  Tanya Anisimova, cello.",
+          "Duration": "4:09"
+        },
+        {
+          "title": "Sonata For Piano And Cello",
+          "performers": "Tanya Anisimova and Daniel Grimwood",
+          "composer": "Sergei Vasilyevich Rachmaninoff",
+          "url": "https://www.youtube.com/watch?v=6yBg-HKOX-0&t=33s",
+          "Description": "Rachmaninoff - Sonata for piano and cello.  1 ... Lento. Allegro moderato.  2 ... Allegro scherzando. 3 ... Andante. 4 ... Allegro mosso. Daniel Grimwood, piano. Tanya Anisimova, cello.",
+          "Duration": "34:54"
+        },
+        {
+          "title": "Sonata In D (3rd / 4th Movement)",
+          "performers": "Tanya Anisimova and Daniel Grimwood",
+          "composer": "Jakob Ludwig Felix Mendelssohn",
+          "url": "https://www.youtube.com/watch?v=N_NBA__GsKk",
+          "Description": "Mendelssohn Sonata for piano and cello in D Major.  3 ... Adagio 00:09.  4 ... Molto Allegro e vivace  05:25. Daniel Grimwood, piano. Tanya Anisimova, cello.",
+          "Duration": "12:23"
+        },
+        {
+          "title": "Farela For Cello And Piano",
+          "performers": "Tanya Anisimova and Daniel Grimwood",
+          "composer": "Tanya Anisimova",
+          "url": "https://www.youtube.com/watch?v=qu6CmDZZiFM",
+          "Description": "Farela for cello and piano. Composed by Tanya Anisimova.  Daniel Grimwood, piano. Tanya Anisimova, cello.",
+          "Duration": "14:23"
+        }
+      ],
+      "watch": [
+        {
+          "venue": "YouTube",
+          "icon": "youtube-teal.png",
+          "url": "https://www.youtube.com/watch?v=N_NBA__GsKk&list=PLZARTG6tVqQjBgW7UU0VFbZkvL3d1XawS"
+        }
+      ]
+    },
+    {
+      "title": "Requiem for the Innocent",
+      "performers": "Tanya Anisimova",
+      "composers": "Tanya Anisimova",
+      "date": "11 Sep 2017",
+      "venue": "Blue House Studio, Silver Spring, Maryland USA",
+      "songs": [
+        {
+          "title": "Requiem for the Innocent For Solo Cello",
+          "performers": "Tanya Anisimova",
+          "composer": "Tanya Anisimova",
+          "url": "https://www.youtube.com/watch?v=4OPcm51HmDM",
+          "Description": "Tanya Anisimova - Requiem for the Innocent for Solo Cello. Recorded at Blue House Studio on September 11, 2017. This piece came to me shortly after the horrible events in New York City, in September of 2001. This is a requiem for the innocent, who died in the attacks. The piece was first heard in public at the Washington Hebrew Congregation in D.C. as a part of my recital in early October, 2001. This video was recorded on the 11th of September, 2017. Thanks for listening, Tanya",
+          "Duration": "5:45"
+        }
+      ],
+      "watch": [
+        {
+          "venue": "YouTube",
+          "icon": "youtube-teal.png",
+          "url": "https://www.youtube.com/watch?v=4OPcm51HmDM"
+        }
+      ]
+    },
+    {
+      "title": "Homage To Janos Starker",
+      "performers": "Tanya Anisimova",
+      "composers": "Tanya Anisimova",
+      "date": "2017",
+      "venue": "Blue House Studio, Silver Spring, Maryland USA",
+      "songs": [
+        {
+          "title": "Homage To Janos Starker For Solo Cello",
+          "performers": "Tanya Anisimova",
+          "composer": "Tanya Anisimova",
+          "url": "https://www.youtube.com/watch?v=F1mG_XdxoUo",
+          "Description": "I have never been a student of Starker's. While studying at Yale, I met his student Ole Akahoshi. Ole's pure and filigree playing won me over. A few years later, after I sent the CD with my transcriptions of Bach's Violin Sonatas and Partitas to Starker, I was amazed by this master's reaction to the recording. Most of all, by his attitude towards music, which was completely free from any time period dogma. When I learned of Janos Starker's passing, this piece literally composed itself.",
+          "Duration": "6:58"
+        }
+      ],
+      "watch": [
+        {
+          "venue": "YouTube",
+          "icon": "youtube-teal.png",
+          "url": "https://www.youtube.com/watch?v=F1mG_XdxoUo"
+        }
+      ]
+    },
+    {
+      "title": "Leyenda",
+      "performers": "Tanya Anisimova",
+      "composers": "Isaac Albéniz",
+      "date": "2017",
+      "venue": "Blue House Studio, Silver Spring, Maryland USA",
+      "songs": [
+        {
+          "title": "Leyenda",
+          "performers": "Tanya Anisimova",
+          "composer": "Isaac Albéniz",
+          "url": "https://www.youtube.com/watch?v=u_6vvtfAEMk",
+          "Description": "Isaac Albéniz, Leyenda (arr. Tanya Anisimova) - Tanya Anisimova, cello, and vocals.",
+          "Duration": "8:35"
+        }
+      ],
+      "watch": [
+        {
+          "venue": "YouTube",
+          "icon": "youtube-teal.png",
+          "url": "https://www.youtube.com/watch?v=u_6vvtfAEMk"
+        }
+      ]
+    },
+    {
+      "title": "Sundays Live At The Studio",
+      "performers": "Tanya Anisimova and Pi-Hsun Shih",
+      "composers": "Tanya Anisimova and Masatoshi Mitsumoto",
+      "date": "1 May 2016",
+      "venue": "Blue House Studio, Silver Spring, Maryland USA",
+      "songs": [
+        {
+          "title": "Pierre and Luce For Cello and Piano",
+          "performers": "Tanya Anisimova and Pi-Hsun Shih",
+          "composer": "Masatoshi Mitsumoto",
+          "url": "https://www.youtube.com/watch?v=o164WJb3Of0",
+          "Description": "I am not exactly sure how the story of Pierre et Luce came back to my mind when I was thinking of writing a new piece for cello and piano; perhaps because of today's ever ending conflicts between nations and its innocent victims, particularly the young people. Romain Rolland was a pacifist and a committed anti-war activist. His books were widely read (in translation) in Japan's post WW II era. There was even a Japanese movie adaptation of Pierre et Luce - now one of the best Japanese classic films of all time, titled 'Until The Day We Meet Again'. So, I have known the story since 1950's, my High School years. With a good libretto I believe it's possible to make it into an opera. Since it is not the case here, the music you hear is my impressions of the story. I did not try to depict or narrate the story but to convey their feelings. However, in some sections you could imagine the cello was the voice of Pierre and Luce is responding on piano. But it's not meant to be the role of either instrument. The work has five short movements. The first, 'Dans le Metro' is when they meet, or rather noticed each other, on the subway train. The second, 'The Young Lovers' is self explanatory. The third, 'Tête-à-tête' is more of the dialogue between them, talking about the hope, anxiety, and above all expressing their love to each other. The short forth movement 'Pause' is a moment of reflection which leads into the last movement without pause. The fifth movement,'Finale' could be named 'The Saint-Gervais Church' because that where they were last together praying when the German long-range siege gun (Paris Gun) shelled the church and the massive pillars fell on them instantaneously. This incident actually happened on March 29, 1918 killing 91 people and 68 were wounded, which inspired Rolland to write the story. Just about one hundred years later, war still goes on. - Masatoshi Mitsumoto",
+          "Duration": "16:20"
+        },
+        {
+          "title": "Fa-Re-La",
+          "performers": "Tanya Anisimova and Pi-Hsun Shih",
+          "composer": "Tanya Anisimova",
+          "url": "https://www.youtube.com/watch?v=K1bp_rXuClY",
+          "Description": "Composed during summer of 2015, this cello and piano duet was conceived as a short signature piece for myself and my duo partner Pi-Hsun Shih. The idea of the three musical pitches ( f-d-a ) holding the work together appealed to me. I thought of creating a minimalistic toccata which we would then be used as an encore during our performances, sort of a group's signature piece. Not unlike the nosy marionette Pinocchio, this composition seemed to have the mind of its own right from the very start. It began to self-create and had eventually turned into a rather substantial work which combined various musical languages. I am constantly inspired by the Sufi masters. The rhythmical and harmonic structure in this work are informed by Sufism, whereas the long melodic lines of the middle section bear Russian influence. I am very grateful to Pi-Hsun Shih for her valuable suggestions during my working on the Fa-Re-La. - Tanya Anisimova",
+          "Duration": "13:37"
+        }
+      ],
+      "watch": [
+        {
+          "venue": "YouTube",
+          "icon": "youtube-teal.png",
+          "url": "https://www.youtube.com/user/TheDragoncello/videos"
+        }
+      ]
+    },
+    {
+      "title": "Albinoni - Giazotto - Adagio",
+      "performers": "Tanya Anisimova",
+      "composers": "Tomaso Giovanni Albinoni and Remo Giazotto",
+      "date": "20 Dec 2015",
+      "venue": "Alden Theatre, McLean, Virgina USA",
+      "songs": [
+        {
+          "title": "Adagio",
+          "performers": "Tanya Anisimova and Pi-Hsun Shih",
+          "composer": "Tomaso Giovanni Albinoni and Remo Giazotto",
+          "url": "https://www.youtube.com/watch?v=uJICZpxfUX4",
+          "Description": "",
+          "Duration": "3:40"
+        }
+      ],
+      "watch": [
+        {
+          "venue": "YouTube",
+          "icon": "youtube-teal.png",
+          "url": "https://www.youtube.com/watch?v=uJICZpxfUX4"
+        }
+      ]
+    },
+    {
+      "title": "Promisek Solon Concert",
+      "performers": "Tanya Anisimova and Pi-Hsun Shih",
+      "composers": "Tanya Anisimova and Ludwig van Beethoven",
+      "date": "29 Apr 2018",
+      "venue": "Promisek At Three Rivers Farm, Bridgewater, Connecticut USA",
+      "songs": [
+        {
+          "title": "Excerpts from Sonata No. 3 in A Major, Opus 69 and Fa-Re-La for Cello and Piano",
+          "performers": "Tanya Anisimova and Pi-Hsun Shih",
+          "composer": "Tanya Anisimova and Ludwig van Beethoven",
+          "url": "https://www.youtube.com/watch?v=UwdPtIwivnA",
+          "Description": "Tanya Anisimova, cello and Pi-Hsun Shih, piano. Excerpts from Sonata No. 3 in A Major, Op. 69 by Ludwig van Beethoven and Fa-Re-La for Cello and piano (2015) by Tanya Anisimova.",
+          "Duration": "14:29"
+        }
+      ],
+      "watch": [
+        {
+          "venue": "YouTube",
+          "icon": "youtube-teal.png",
+          "url": "https://www.youtube.com/watch?v=UwdPtIwivnA"
+        }
+      ]
+    },
+    {
+      "title": "Totally Tchaikovsky",
+      "performers": "Tanya Anisimova and the Symphonicity-Symphony Orchestra",
+      "composers": "Tanya Anisimova and Pyotr Ilyich Tchaikovsky",
+      "date": "19 Oct 2014",
+      "venue": "Sandler Center for the Performing Arts, Virginia Beach, Virgina USA",
+      "songs": [
+        {
+          "title": "Live improvisation in a Russian Style.",
+          "performers": "Tanya Anisimova and the Symphonicity-Symphony Orchestra",
+          "composer": "Pyotr Ilyich Tchaikovsky",
+          "url": "https://www.youtube.com/watch?v=rJckWiArhso",
+          "Description": "A medley of Russian melodies, including Tchaikovsky' Fifth Symphony. Improvised on a spot by Tanya Anisimova as a part of 'Totally Tchaikovsky' program with the Symphonicity Orchestra.",
+          "Duration": "14:29"
+        }
+      ],
+      "watch": [
+        {
+          "venue": "YouTube",
+          "icon": "youtube-teal.png",
+          "url": "https://www.youtube.com/watch?v=rJckWiArhso"
+        }
+      ]
+    }
+  ]
+}

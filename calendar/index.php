@@ -15,11 +15,11 @@
 
        <div class="row subpage">
           <!-- page title -->
-         <div class="col-sm-7 col-xs-12 left">
+         <div class="col-sm-5 col-xs-12 left">
           <h1>Calendar of Events</h1>
          </div>
 
-         <nav class="col-sm-5 col-xs-12 right">
+         <nav class="col-sm-7 col-xs-12 right">
           <ul>
           </ul>
          </nav>

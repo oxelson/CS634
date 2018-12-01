@@ -41,7 +41,22 @@
          <!-- right side -->
          <section class="col-sm-8 col-xs-12">
            <div class="fill">
-           </div>
+             <div class="row">
+               <h3>Login</h3>
+               <form class="noflex">
+                 <div class="col">
+                  <div class="form-group">
+                    <input type="email" class="form-control col-form-label-sm" id="email" placeholder="Email Address">
+                  </div>
+                  <div class="form-group">
+                     <input type="password" class="form-control col-form-label-sm" id="password" placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+                </div>
+              </form>
+             <div> <!--/.row -->
+           </div> <!-- /.fill -->
          </section>
        </div> <!-- /.row -->
 

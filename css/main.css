@@ -7,6 +7,7 @@
 @import url("layout.css") all;
 @import url("header.css") all;
 @import url("footer.css") all;
+@import url("form.css") all;
 
 body {
   padding-bottom: 20px;
@@ -37,8 +38,18 @@ h1 {
   font-size: 5vw;
 }
 
+.center {
+  text-align: center;
+  display:table;
+  width:100%;
+}
+
 .deemp {
   color: #5F5F5F;
+}
+
+.dec {
+  border: 1px solid #5F5F5F;
 }
 
 .title {
@@ -93,6 +104,12 @@ section.homepage ul li.last::after {
   color: #5F5F5F;
   padding-bottom: 2px;
 }
+
+.subpage h3 {
+  display:block;
+  width: 100%;
+}
+
 
 /* Sub-page navigation */
 .subpage nav a,
@@ -220,6 +237,13 @@ section.homepage ul li.last::after {
 
 .subpage .fill .songDisplay ul.links li {
   margin: 0 20px 0 0;
+}
+
+.subpage .fill .masterSongList,
+.subpage .fill .albumCover,
+.subpage .fill .songData,
+.subpage .fill .albumData {
+  margin-top: 20px !important;
 }
 
 .subpage .fill .masterSongList img {

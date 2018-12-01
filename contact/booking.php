@@ -15,11 +15,11 @@
 
        <div class="row subpage">
           <!-- page title -->
-         <div class="col-sm-4 col-xs-12 left">
+         <div class="col-sm-5 col-xs-12 left">
           <h1>Contact Tanya</h1>
          </div>
 
-         <nav class="col-sm-8 col-xs-12 right">
+         <nav class="col-sm-7 col-xs-12 right">
           <ul>
             <li><a href="index.php">Send Message</a></li>
             <li class="active"><a href="booking.php">Booking Request</a></li>
@@ -27,8 +27,6 @@
          </nav>
 
        </div> <!-- /.row -->
-
-
 
        <div class="row subpage">
          <!-- left side -->
@@ -39,7 +37,36 @@
          <!-- right side -->
          <section class="col-sm-8 col-xs-12">
            <div class="fill">
-           </div>
+             <div class="row">
+               <h3>Book Tanya for a Performance</h3>
+               <p>Use the following form to send a booking request to Tanya Anisimova.</p>
+               <form>
+                 <div class="col-6">
+                   <div class="form-group">
+                     <input type="text" class="form-control col-form-label-sm" id="name" placeholder="Full Name">
+                   </div>
+                   <div class="form-group">
+                     <input type="email" class="form-control col-form-label-sm" id="email" placeholder="Email Address">
+                   </div>
+                   <div class="form-group">
+                     <input type="text" class="form-control col-form-label-sm" id="date" placeholder="Date of Performance">
+                   </div>
+                   <div class="form-group">
+                     <input type="text" class="form-control col-form-label-sm" id="venue" placeholder="Venue">
+                   </div>
+                   <!-- recaptcha -->
+                   <div class="g-recaptcha" data-sitekey="6LePN34UAAAAAA4lYnH6jZ1mng6j0Q9p0FlwL7lI"></div>
+                   <p></p>
+                   <button type="submit" class="btn btn-primary">Send Message</button>
+                 </div>
+                 <div class="col-6">
+                   <div class="form-group">
+                      <textarea class="form-control rounded-0 col-form-label-sm" id="information" placeholder="Performance Information" rows="16"></textarea>
+                   </div>
+                 </div>
+               </form>
+             <div> <!--/.row -->
+           </div> <!-- /.fill -->
          </section>
        </div> <!-- /.row -->
 
