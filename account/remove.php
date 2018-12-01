@@ -1,40 +1,30 @@
-<!-- DISCOGRAPHY: ALBUMS -->
+<!-- ACCOUNT: UPDATE -->
 <!DOCTYPE HTML>
   <html>
     <head>
-      <title>Tanya Anisimova : Discography - Albums</title>
-      <meta name="description" content="Tanya Anisimova's Discography" />
+      <title>Tanya Anisimova : Account - Remove</title>
+      <meta name="description" content="Website Account" />
       <?php include '../head_include.php';?>
       <script>
         jQuery(document).ready(function(){
-          // If a specific album is requested, show its data;
-          // Otherwise get all of the albums to display.
-          let album = window.location.search;
-          if (album === "" || album === undefined || album === null) {
-            // Load all the albums.
-            Discography.displayAlbums();
-          } else {
-            // Load the requested album.
-            Discography.displayAlbum(album.replace(/\?/, ''));
-          }
         });
       </script>
     </head>
     <body>
      <?php include '../header.php';?>
 
-
        <div class="row subpage">
           <!-- page title -->
          <div class="col-sm-4 col-xs-12 left">
-          <h1>Discography</h1>
+          <h1>Site Account</h1>
          </div>
 
          <nav class="col-sm-8 col-xs-12 right">
           <ul>
-            <li class="active"><a href="albums.php">Albums</a></li>
-            <li><a href="songs.php">Songs</a></li>
-            <li><a href="performances.php">Performances</a></li>
+            <li><a href="login.php">Login</a></li>
+            <li><a href="create.php">Create Account</a></li>
+            <li><a href="update.php">Update Account</a></li>
+            <li class="active"><a href="remove.php">Remove Account</a></li>
           </ul>
          </nav>
 
@@ -52,7 +42,7 @@
          <section class="col-sm-8 col-xs-12">
            <div class="fill">
            </div>
-         </section> 
+         </section>
        </div> <!-- /.row -->
 
       <?php include '../footer.php';?>

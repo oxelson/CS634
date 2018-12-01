@@ -16,7 +16,7 @@ echo "
              </ul>
              <div class='auth'>
                <div class='menu'><img src='/images/menu.png' alt='Menu'/></div>
-               <a href=/login' class='login'>LOGIN</a>
+               <a href='/account' class='login'>LOGIN</a>
              </div>
            </nav>
              <!-- right end of music bar -->

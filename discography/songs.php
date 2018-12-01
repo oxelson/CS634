@@ -1,4 +1,4 @@
-<!-- DISCOGRAPHY -->
+<!-- DISCOGRAPHY: SONGS -->
 <!DOCTYPE HTML>
   <html>
     <head>
