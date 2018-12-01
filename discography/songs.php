@@ -2,20 +2,20 @@
 <!DOCTYPE HTML>
   <html>
     <head>
-      <title>Tanya Anisimova : Discography - Albums</title>
+      <title>Tanya Anisimova : Discography - Songs</title>
       <meta name="description" content="Tanya Anisimova's Discography" />
       <?php include '../head_include.php';?>
       <script>
         jQuery(document).ready(function(){
-          // If a specific album is requested, show its data;
-          // Otherwise get all of the albums to display.
-          let album = window.location.search;
-          if (album === "" || album === undefined || album === null) {
-            // Load all the albums.
-            Discography.displayAlbums();
+          // If a specific song is requested, show its data;
+          // Otherwise get all of the songs to display.
+          let song = window.location.search;
+          if (song === "" || song === undefined || song === null) {
+            // Load all the songs.
+            Discography.displaySongs();
           } else {
-            // Load the requested album.
-            Discography.displayAlbum(album.replace(/\?/, ''));
+            // Load the requested song.
+            Discography.displaySong(song.replace(/\?/, ''));
           }
         });
       </script>
@@ -32,8 +32,8 @@
 
          <nav class="col-sm-8 col-xs-12 right">
           <ul>
-            <li class="active"><a href="albums.php">Albums</a></li>
-            <li><a href="songs.php">Songs</a></li>
+            <li><a href="albums.php">Albums</a></li>
+            <li class="active"><a href="songs.php">Songs</a></li>
             <li><a href="performances.php">Performances</a></li>
           </ul>
          </nav>

@@ -45,6 +45,10 @@ h1 {
   font-size: 12pt;
 }
 
+.noblock {
+  display: inline !important;
+}
+
 /* left-side image */
 aside img {
   width: 100%;
@@ -75,11 +79,11 @@ section.homepage ul li {
   float: left;
 }
 
-section.homepage ul li::after { 
-   content: "\0000a0 \0000a0 \0000a0 \0000a0 \0000a0 \0000a0 \2022";
+section.homepage ul li::after {
+  content: "\0000a0 \0000a0 \0000a0 \0000a0 \0000a0 \0000a0 \2022";
 }
 
-section.homepage ul li.last::after { 
+section.homepage ul li.last::after {
   content: none;
 }
 
@@ -172,13 +176,13 @@ section.homepage ul li.last::after {
 
 /* album */
 .subpage .fill .row {
-  padding: 0 2% !important;
+  padding: 0 5% !important;
 }
 
 .subpage .fill .albumCover,
-.subpage .fill .albumData {
+.subpage .fill .albumData,
+.subpage .fill .songData {
   text-align: left;
-  border: 1px solid #FF0000;
   padding: 0 !important;
   margin: 0 !important;
 }
@@ -188,8 +192,9 @@ section.homepage ul li.last::after {
   width: 100%;
 }
 
-.subpage .fill .albumData {
-  padding-left: 5px !important;
+.subpage .fill .albumData,
+.subpage .fill .songData {
+  padding-left: 10px !important;
 }
 
 .subpage .fill b {
@@ -203,32 +208,34 @@ section.homepage ul li.last::after {
 }
 
 .subpage .fill ul.links li {
-  margin: 0;
-  padding: 0;
-  display: block !important;
+  margin: 5px 0;
+  padding: 2px;
   width: 100% !important;
+  border: 1px solid #BABABA
 }
 
-.subpage .fill ul.links .icons  {
-  display: flex;
-  padding-left: 30px;
+.subpage .fill .songDisplay ul.links {
+  display: flex !important;
 }
 
-.subpage .fill ul.links .icons li {
-  display: inline !important;
-  width: 30px !important;
-  margin-right: 10px;
+.subpage .fill .songDisplay ul.links li {
+  margin: 0 20px 0 0;
 }
 
-.subpage .fill ul.links .icons img {
-  width: 30px !important;
-  border: none !important;
+.subpage .fill .masterSongList img {
+  width: 50px !important;
+  border: 1px solid #000000;
+  margin-right: 20px;
 }
 
-.subpage .fill .albumData ul.songlist {
+.subpage .fill ul.songlist {
   justify-content: flex-start;
   margin: 10px 0;
   padding: 0;
+}
+
+.subpage .fill .masterSongList ul.songlist {
+  margin: 20px 0 40px 0 !important;
 }
 
 .subpage .fill .albumData ul.songlist li {
@@ -239,6 +246,17 @@ section.homepage ul li.last::after {
   padding: 6px 0 0 0;
 }
 
-.subpage .fill .albumData ul.songlist li span {
+/* for some reason we need to declare this separate from the one above */
+.subpage .fill .masterSongList ul.songlist li {
+  display: block !important;
+  width: 100% !important;
+  border-bottom: 1px solid #BABABA;
+  margin: 0;
+  padding: 6px 0 0 0;
+}
+
+.subpage .fill  ul.songlist li span,
+.subpage .fill .masterSongList ul.songlist li span {
   float: right;
 }
+

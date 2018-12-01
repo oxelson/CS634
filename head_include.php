@@ -8,7 +8,7 @@ echo "
       <script src='https://code.jquery.com/jquery-1.11.3.js'></script>
       <script src='/js/Storage.js'></script>
       <script src='/js/ViewPort.js'></script>
-      <script src='/js/Album.js'></script>
+      <script src='/js/Discography.js'></script>
       <script src='/js/init.js'></script>
 
       <!-- CSS -->

@@ -6,7 +6,7 @@
 jQuery(document).ready(function(){
 
   // Verify we have album data in storage.
-  Album.verifyData();
+  Discography.verifyData();
 
   // Populate the dropdown menu with the links in the nav bar.
   $.each($('nav a'), function( index, value ) {
