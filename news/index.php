@@ -7,6 +7,16 @@
       <?php include '../head_include.php';?>
       <script>
         jQuery(document).ready(function(){
+          // If a specific news item is requested, show its data;
+          // Otherwise get all of the news items to display.
+          let item = window.location.search;
+          if (item === "" || item === undefined || item === null) {
+            // Load all the news items.
+            News.displayNewsItems();
+          } else {
+            // Load the requested news item.
+            News.displayNewsItem(item.replace(/\?/, ''));
+          }
         });
       </script>
     </head>
@@ -20,7 +30,15 @@
          </div>
 
          <nav class="col-sm-5 col-xs-12 right">
-          <ul>
+          <ul class="socialmedia">
+            <li>
+            <small>Follow Tanya: </small> &nbsp;
+            <a href='https://open.spotify.com/artist/5XmzcguryovRXLUzEkBACB'><img src='/images/spotify-white.png' alt='Listen to Tanya's music on Spotify'/>
+			<a href='https://vimeo.com/search?q=tanya-anisimova'><img src='/images/vimeo-white.png' alt='Watch Tanya's performances on Vimeo'/></a>
+            <a href='https://www.facebook.com/TANYAANISIMOVAA'><img src='/images/facebook-white.png' alt='Follow Tanya on Facebook'/></a>
+            <a href='https://www.youtube.com/channel/UCXa0NSwoFPPOeWIkVbaTeCQ'><img src='/images/youtube-white.png' alt='Watch Tanya's performances on YouTube'/></a>
+            </li>
+
           </ul>
          </nav>
 
@@ -37,14 +55,7 @@
          <!-- right side -->
          <section class="col-sm-8 col-xs-12">
            <div class="fill">
-             <div class="row">
-               <div class="col-sm-1 col-xs-1">
-               </div>
-               <div class="col-sm-11 col-xs-122">
-                <b class="title">Arts on the Green’s Season Premiere Fête Features Virtuoso Russian Cellist</b><br>
-                Arts on the Green’s Season Premiere Fête Features Virtuoso Russian Cellist
-               </div>
-             <div> <!--/.row -->
+             <h3>Latest Updates</h3>
            </div> <!-- /.fill -->
          </section>
        </div> <!-- /.row -->

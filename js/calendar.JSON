@@ -1,9 +1,70 @@
 {
   "calendar": [
+
     {
-      
+      "title": "Concert with Anisimova/Palmer Duo",
+      "date": "21 Oct 2018",
+      "time": "6:00pm - 9:00pm",
+      "venue": "Gibson Center For The Arts, Chester, Maryland USA",
+      "description": "<p>As part of its 2018-2019 Premier Artists lineup, the Washington College Concert Series presents Tanya Anisimova, cello and Matt Palmer, guitar. Special opening performance by The Eastern Shore Guitar Festival Orchestra!</p>",
+      "url": "https://www.eventbrite.com/e/concert-with-anisimovapalmer-duo-tickets-49072932462#",
+      "image": "anisimova-palmer.png",
+      "ticket": "$20.00"
+    },
+    {
+      "title": "Arts on the Green - The Magician with Tanya Anisimova",
+      "date": "14 Sep 2018",
+      "time": "7:00pm - 10:00pm",
+      "venue": "Arts Barn, Gaithersburg, Maryland USA",
+      "description": "<p>Arts on the Green welcomes internationally-known musician and Kentlands resident, Tanya Anisimova to the stage for a dazzling evening of music to launch the new performing arts season. Tanya reveals the magic of the cello with her solo program. Be moved and amazed by music from the Renaissance to the Contemporary, including well-known favorites, original compositions and Kodaly's celebrated sonata Opus 8. Participate in the performance as Tanya improvises on spontaneous themes from the audience.</p><p>This special evening begins with a sunset wine tasting provided by The Wine Harvest in the new Kentlands Mansion Garden at 7 p.m.; walk the few steps over to the Arts Barn’s historic theater for the dynamic concert at 8 p.m.; and top off the evening with the artist meet and greet and chocolate tasting by local chocolatier, SPAGnVOLA downstairs in the Arts Barn Gallery.</p>",
+      "url": "http://artsonthegreen.ticketfly.com/event/1740561-cello-magician-tanya-gaithersburg/",
+      "image": "arts_on_the_green.png",
+      "ticket": "$20.00 - $35.00"
+    },
 
+    {
+      "title": "Wensleydale Concert Series",
+      "date": "26 May 2018",
+      "time": "7:30pm",
+      "venue": "St. James Piccadilly, London UK",
+      "description": "<p>Recital with pianist Daniel Grimwood.</p><p>Felix Mendelssohn - D Major Sonata for cello and piano<br/>Tanya Anisimova – Farela<br/>Sergei Rachmaninoff - Sonata for piano & cello</p>",
+      "url": "https://www.ticketsource.co.uk/date/463805",
+      "image": "st_james.png",
+      "ticket": "£25.00"
+    },
+
+
+    {
+      "title": "Wensleydale Concert Series",
+      "date": "19 May 2018",
+      "time": "7:30pm",
+      "venue": "Ushaw College Chapel, Durham UK",
+      "description": "<p>Solo recital by Tanya Anisimova.</p><p>JS Bach - Suite in C Minor<br/>Tanya Anisimova - Sufi Suite<br/>Zoltán Kodály - Sonata Op. 8<br/>Marin Marais - La Folia<br/>JS Bach - Chaconne (from Violin Partita No.2 in D minor)</p>",
+      "url": "http://www.ushaw.org/",
+      "image": "ushaw.png",
+      "ticket": "£12.50"
+    },
+
+    {
+      "title": "Wensleydale Concert Series",
+      "date": "12 May 2018",
+      "time": "7:30pm",
+      "venue": "St. Andrew's Church, Aysgarth UK",
+      "description": "<p>Solo recital by Tanya Anisimova.</p><p>JS Bach - Suite in C Minor<br/>Tanya Anisimova - Sufi Suite<br/>Zoltán Kodály - Sonata Op. 8<br/>Marin Marais - La Folia<br/>JS Bach - Chaconne (from Violin Partita No.2 in D minor)</p>",
+      "url": "http://www.wensleydaleconcertseries.co.uk/concerts/53-tanya-anisimova-2018-05-12",
+      "image": "st_andrews.png",
+      "ticket": "£12.50"
+    },
+
+    {
+      "title": "Promisek Salon Concert - FaReLa Duo",
+      "date": "29 April 2018",
+      "time": "3:00pm",
+      "venue": "Promisek At Three Rivers Farm, Bridgewater, Connecticut USA",
+      "description": "<p>Tanya Anisimova, cello and Pi-Hsun Shih, piano. Excerpts from Sonata No. 3 in A Major, Op. 69 by Ludwig van Beethoven and Fa-Re-La for Cello and piano (2015) by Tanya Anisimova.</p>",
+      "url": "http://www.promisek.org/Programs.aspx",
+      "image": "promisek.png",
+      "ticket": "$25.00"
     }
-
   ]
 }

@@ -12,7 +12,6 @@ echo "
                <li><a href='/discography'>DISCOGRAPHY</a></li>
                <li><a href='/about'>ABOUT</a></li>
                <li><a href='/contact'>CONTACT</a></li>
-               <li><a href=''>SEARCH</a></li>
              </ul>
              <div class='auth'>
                <div class='menu'><img src='/images/menu.png' alt='Menu'/></div>

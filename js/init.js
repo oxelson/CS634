@@ -7,9 +7,11 @@ jQuery(document).ready(function(){
 
   // Verify we have album data in storage.
   Discography.verifyData();
+  // Verify we have news data in storage.
+  News.verifyData();
 
   // Populate the dropdown menu with the links in the nav bar.
-  $.each($('nav a'), function( index, value ) {
+  $.each($('header nav a'), function( index, value ) {
     if (!$(this).hasClass('menu')) {
       let link = $(this).clone();
       let element = $('<li></li>');

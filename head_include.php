@@ -10,6 +10,7 @@ echo "
       <script src='/js/Storage.js'></script>
       <script src='/js/ViewPort.js'></script>
       <script src='/js/Discography.js'></script>
+      <script src='/js/News.js'></script>
       <script src='/js/init.js'></script>
 
       <!-- CSS -->

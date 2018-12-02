@@ -18,7 +18,7 @@ let Discography = (function () {
   }
 
   /**
-   * Loads Album JSON Album via AJAX request and returns string version of JSON object.
+   * Loads Album JSON via AJAX request and returns string version of JSON object.
    */
   function getAlbumData() {
     $.ajax({
@@ -40,6 +40,10 @@ let Discography = (function () {
      * @param albumOfInterest  The album to display.
      */
   function displayAlbum(albumOfInterest) {
+
+    // Just in case the data isn't in local storage yet.
+    verifyData();
+
     // Get albums from local storage.
     let albums = JSON.parse(Storage.getData("albums"));
     let album;
@@ -143,6 +147,10 @@ let Discography = (function () {
    * @param songOfInterest  The song to display.
    */
   function displaySong(songOfInterest) {
+
+    // Just in case the data isn't in local storage yet.
+    verifyData();
+
     // Get the track number from the songOfInterest.
     let separator = songOfInterest.lastIndexOf('-');
     let trackNumber = songOfInterest.slice((separator + 1), songOfInterest.length);
@@ -249,6 +257,11 @@ let Discography = (function () {
    * formats each album for display and attaches to the DOM.
    */
   function displayAlbums() {
+
+    // Just in case the data isn't in local storage yet.
+    verifyData();
+
+
     // Get albums from local storage.
     let albums = JSON.parse(Storage.getData("albums"));
     // Parse album data and create tag elements to attach to DOM.
@@ -292,6 +305,11 @@ let Discography = (function () {
    * formats the song list for display and attaches to the DOM.
    */
   function displaySongs() {
+
+    // Just in case the data isn't in local storage yet.
+    verifyData();
+
+
     // Get albums from local storage.
     let albums = JSON.parse(Storage.getData("albums"));
 
@@ -325,7 +343,7 @@ let Discography = (function () {
   }
 
 
-    // Expose these functions.
+  // Expose these functions.
   return {
     verifyData: verifyData,
     displayAlbum: displayAlbum,

@@ -60,9 +60,17 @@ h1 {
   display: inline !important;
 }
 
+a.continue::after {
+  content: "\0000a0 \003E";
+}
+
 /* left-side image */
 aside img {
   width: 100%;
+}
+
+small {
+  font-size: 90%;
 }
 
 /* right-side cotnent */
@@ -106,8 +114,18 @@ section.homepage ul li.last::after {
 }
 
 .subpage h3 {
+  font-family: 'Quintessential', 'Kaushan Script', cursive;
   display:block;
   width: 100%;
+  border-bottom: 1px solid #5F5F5F;
+}
+
+.subpage h5 {
+  display:block;
+  width: 100%;
+  color: #5F5F5F;
+  margin-top: 30px;
+  text-transform: uppercase;
 }
 
 
@@ -203,7 +221,8 @@ section.homepage ul li.last::after {
   padding: 0 !important;
   margin: 0 !important;
 }
-.subpage .fill .albumCover img {
+.subpage .fill .albumCover img,
+.subpage .fill .newsImage img {
   float: left;
   border: 1px solid #000000;
   width: 100%;
@@ -242,7 +261,8 @@ section.homepage ul li.last::after {
 .subpage .fill .masterSongList,
 .subpage .fill .albumCover,
 .subpage .fill .songData,
-.subpage .fill .albumData {
+.subpage .fill .albumData,
+.subpage .fill .news {
   margin-top: 20px !important;
 }
 
@@ -282,5 +302,25 @@ section.homepage ul li.last::after {
 .subpage .fill  ul.songlist li span,
 .subpage .fill .masterSongList ul.songlist li span {
   float: right;
+}
+
+/* News */
+
+.subpage .fill .news span.date {
+  color: #5F5F5F;
+  border-bottom: 1px solid #BABABA;
+  width: 100%;
+  display: block;
+}
+
+.subpage nav ul.socialmedia li {
+  text-align:right;
+  margin: 0 !important;
+  border: none !important;
+  width: 100%;
+}
+
+.subpage nav ul.socialmedia li img {
+  width: 25px;
 }
 
