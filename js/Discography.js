@@ -173,6 +173,8 @@ let Discography = (function () {
     // Just in case the data isn't in local storage yet.
     verifyData();
 
+    // Album list.
+    let list = $('<ul></ul>');
 
     // Get albums from local storage.
     let albums = JSON.parse(Storage.getData("albums"));
@@ -192,24 +194,24 @@ let Discography = (function () {
 
       // Create and attach album title.
       $(div).append(album.title);
-      $(div).append('<br/>');
+      $(div).append(' (');
 
       // Create and attach year of release.
       $(div).append(album.date);
-      $(div).append('<br/><br/>');
+      $(div).append(')');
 
       // Create and link to album information.
-      let small = '<small><a href="albums.php?' + link + '">View album information</a></small>';
+      let small = '<a href="albums.php?' + link + '" class="continue">View album information</a>';
       $(div).append($(small));
 
-      // Attache to DOM as unordered list.
-      let list = $('<ul></ul>');
+      // Attach to list elements.
       let element = $('<li></li>');
       $(element).append($(div));
       $(list).append($(element));
-
-      $('.fill').append($(list));
     }
+
+    // Attach to DOM as unordered list.
+    $('.fill').append($(list));
   }
 
   /**
@@ -333,16 +335,16 @@ let Discography = (function () {
     // Get albums from local storage.
     let albums = JSON.parse(Storage.getData("albums"));
 
-    // Where we'll attach to the DOM.
-    let row = $('<div class="row masterSongList"></div>');
-
-
-    // Song list.
-    let songList = $('<ul class="songlist"></ul>');
-
     // Parse album data to get the songs.
     for (let i = 0; i < albums.length; i++) {
       let album = albums[i];
+
+      // Where we'll attach to the DOM.
+      let row = $('<div class="row masterSongList"></div>');
+
+      // Song list.
+      let songList = $('<ul class="songlist"></ul>');
+
       // Create and attach link to album.
       let link = album.cover.replace(/\.png/g, '');
       let albumCover = $('<a href="albums.php?' + link + '"><img src="/images/' + album.cover + '" alt="' + album.title + '"/></a><div>  <b class="noblock">' + album.title + '</b><br/>' + album.date + '&nbsp; &bull; &nbsp;' + album.label + '</div>');
@@ -354,12 +356,12 @@ let Discography = (function () {
         let songData = $('<small class="deemp">' + song.track + '</small> &nbsp; <a href="songs.php?' + album.cover.replace(/\.png/, '') + '-' + song.track + '">' + song.title + '</a><span>' + song.duration + '</span>');
         $(element).append($(songData));
         $(songList).append($(element));
+        $(row).append($(songList));
+
+        // Attach songList to DOM.
+        $('.fill').append($(row));
       }
     }
-    $(row).append($(songList));
-
-    // Attach songList to DOM.
-    $('.fill').append($(row));
   }
 
   /**

@@ -1,6 +1,1546 @@
 {
   "albums": [
     {
+      "title": "Past Made Present: Music of Jessica Krash",
+      "performers": "Emily Noel, Jessica Krash, Tanyna Anisimova, Laura Kaufman, Ian Swensen, Robert Dilutis, Tanya Thomas Colohan, and Members of the Washington Master Chorale, Ian Swensen, Robert Dilutis, Tanya Anisimova, Thomas Colohan",
+      "composer": "Jessica Krash",
+      "date": "2018",
+      "cover": "krash2018.png",
+      "genre": "Classical",
+      "label": "Celle-stial Records",
+      "time": "1 Hour 13 Minutes",
+      "purchase": [
+        {
+          "store": "iTunes",
+          "icon": "apple-teal.png",
+          "url": "https://itunes.apple.com/us/album/past-made-present-music-of-jessica-krash/1350582817"
+        },
+        {
+          "store": "Amazon Smile",
+          "icon": "amazonsmile-teal.png",
+          "url": "https://www.amazon.com/Past-Made-Present-Music-Jessica/dp/B079N1S9HQ"
+        }
+      ],
+      "listen": [
+        {
+          "venue": "Spotify",
+          "icon": "spotify-teal.png",
+          "url": "https://open.spotify.com/album/0VW2AEQzcpmOwPe5P4A4RV"
+        }
+      ],
+      "songs": [
+        {
+          "track": 1,
+          "title": "Young Vilna",
+          "duration": "10:00",
+          "performers": "Members of the Washington Master Chorale, Ian Swensen, Robert Dilutis, Tanya Anisimova, Thomas Colohan",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/past-made-present-music-of-jessica-krash/1350582817"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/0VW2AEQzcpmOwPe5P4A4RV"
+            }
+          ]
+        },
+        {
+          "track": 2,
+          "title": "Sulpicia's Songs: I. At last it's come",
+          "duration": "3:35",
+          "performers": "Jessica Krash and Emily Noel",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/past-made-present-music-of-jessica-krash/1350582817"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/0VW2AEQzcpmOwPe5P4A4RV"
+            }
+          ]
+        },
+        {
+          "track": 3,
+          "title": "Sulpicia's Songs: II. The hated birthday approaches",
+          "duration": "2:08",
+          "performers": "Jessica Krash and Emily Noel",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/past-made-present-music-of-jessica-krash/1350582817"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/0VW2AEQzcpmOwPe5P4A4RV"
+            }
+          ]
+        },
+        {
+          "track": 4,
+          "title": "Sulpicia's Songs: III. Did you hear?",
+          "duration": "1:26",
+          "performers": "Jessica Krash and Emily Noel",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/past-made-present-music-of-jessica-krash/1350582817"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/0VW2AEQzcpmOwPe5P4A4RV"
+            }
+          ]
+        },
+        {
+          "track": 5,
+          "title": "Sulpicia's Songs: IV. I'm grateful",
+          "duration": "1:57",
+          "performers": "Jessica Krash and Emily Noel",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/past-made-present-music-of-jessica-krash/1350582817"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/0VW2AEQzcpmOwPe5P4A4RV"
+            }
+          ]
+        },
+        {
+          "track": 6,
+          "title": "Sulpicia's Songs: V. Fever",
+          "duration": "2:16",
+          "performers": "Jessica Krash and Emily Noel",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/past-made-present-music-of-jessica-krash/1350582817"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/0VW2AEQzcpmOwPe5P4A4RV"
+            }
+          ]
+        },{
+          "track": 7,
+          "title": "Sulpicia's Songs: VI. No longer care for me",
+          "duration": "2:30",
+          "performers": "Jessica Krash and Emily Noel",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/past-made-present-music-of-jessica-krash/1350582817"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/0VW2AEQzcpmOwPe5P4A4RV"
+            }
+          ]
+        },{
+          "track": 8,
+          "title": "Sulpicia's Songs: VII. Let it be known!",
+          "duration": "3:44",
+          "performers": "Jessica Krash and Emily Noel",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/past-made-present-music-of-jessica-krash/1350582817"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/0VW2AEQzcpmOwPe5P4A4RV"
+            }
+          ]
+        },{
+          "track": 9,
+          "title": "Turns of Phrase",
+          "duration": "12:06",
+          "performers": "Jessica Krash and Laura Kaufman",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/past-made-present-music-of-jessica-krash/1350582817"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/0VW2AEQzcpmOwPe5P4A4RV"
+            }
+          ]
+        },{
+          "track": 10,
+          "title": "The Cantigas de amigo of Martin Codax: I. Ondas do mar de vigo",
+          "duration": "7:30",
+          "performers": "Jessica Krash and Emily Noel",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/past-made-present-music-of-jessica-krash/1350582817"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/0VW2AEQzcpmOwPe5P4A4RV"
+            }
+          ]
+        },
+        {
+          "track": 11,
+          "title": "The Cangtigas de amigo of Martin Codax: II. Mandad ei'comigo",
+          "duration": "2:21",
+          "performers": "Jessica Krash and Emily Noel",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/past-made-present-music-of-jessica-krash/1350582817"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/0VW2AEQzcpmOwPe5P4A4RV"
+            }
+          ]
+        },{
+          "track": 12,
+          "title": "The Cangtigas de amigo of Martin Codax: III. Mia Irmana Fremosa",
+          "duration": "2:11",
+          "performers": "Emily Noel",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/past-made-present-music-of-jessica-krash/1350582817"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/0VW2AEQzcpmOwPe5P4A4RV"
+            }
+          ]
+        },{
+          "track": 13,
+          "title": "The Cangtigas de amigo of Martin Codax: IV. Al Deus, se sab'ora meu",
+          "duration": "5:50",
+          "performers": "Jessica Krash and Emily Noel",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/past-made-present-music-of-jessica-krash/1350582817"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/0VW2AEQzcpmOwPe5P4A4RV"
+            }
+          ]
+        },{
+          "track": 14,
+          "title": "The Cangtigas de amigo of Martin Codax: V. Quantas Sabedes Amera Amigo",
+          "duration": "1:45",
+          "performers": "Jessica Krash and Emily Noel",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/past-made-present-music-of-jessica-krash/1350582817"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/0VW2AEQzcpmOwPe5P4A4RV"
+            }
+          ]
+        },{
+          "track": 15,
+          "title": "The Cangtigas de amigo of Martin Codax: VI. Eno sagrado en Vigo",
+          "duration": "2:51",
+          "performers": "Jessica Krash and Emily Noel",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/past-made-present-music-of-jessica-krash/1350582817"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/0VW2AEQzcpmOwPe5P4A4RV"
+            }
+          ]
+        },{
+          "track": 16,
+          "title": "The Cangtigas de amigo of Martin Codax: VII. Ai ondas que eu vin veere",
+          "duration": "3:31",
+          "performers": "Jessica Krash and Emily Noel",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/past-made-present-music-of-jessica-krash/1350582817"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/0VW2AEQzcpmOwPe5P4A4RV"
+            }
+          ]
+        },{
+          "track": 17,
+          "title": "Delphi - What the Oracle Said",
+          "duration": "7:42",
+          "performers": "Tanya Anisimova",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/past-made-present-music-of-jessica-krash/1350582817"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/0VW2AEQzcpmOwPe5P4A4RV"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Schubert - Shostakovich - Anisimova<br/>",
+      "performers": "Tanya Anisimova and Pi - Hsun Shih",
+      "composer": "Franz Schubert, Dmitri Shostakovich, and Tanya Anisimova",
+      "date": "2014",
+      "cover": "ssa.png",
+      "genre": "Classical",
+      "label": "Celle-stial Records",
+      "time": "1 Hour 2 Minutes",
+      "purchase": [
+        {
+          "store": "iTunes",
+          "icon": "apple-teal.png",
+          "url": "https://itunes.apple.com/us/album/schubert-shostakovich-anisimova/983461643"
+        },
+        {
+          "store": "Amazon Smile",
+          "icon": "amazonsmile-teal.png",
+          "url": "https://www.amazon.com/Schubert-Shostakovich-Anisimova-Tanya/dp/B00V1WH7CU"
+        }
+      ],
+      "listen": [
+        {
+          "venue": "Spotify",
+          "icon": "spotify-teal.png",
+          "url": "https://open.spotify.com/album/2rNoKSrhdcSQW9CJ4rpg2g"
+        }
+      ],
+      "songs": [
+        {
+          "track": 1,
+          "title": "Sonata for Cello and Piano, D. 821 'Arpeggione': I. Allegro moderator",
+          "duration": "11:39",
+          "performers": "Tanya Anisimova & Pi - Hsun Shih",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/schubert-shostakovich-anisimova/983461643"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Schubert-Shostakovich-Anisimova-Tanya/dp/B00V1WH7CU"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/2rNoKSrhdcSQW9CJ4rpg2g"
+            }
+          ]
+        },
+        {
+          "track": 2,
+          "title": "Sonata for Cello and Piano, D. 821 'Arpeggione': II. Adagio",
+          "duration": "3:58",
+          "performers": "Tanya Anisimova & Pi - Hsun Shih",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/schubert-shostakovich-anisimova/983461643"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Schubert-Shostakovich-Anisimova-Tanya/dp/B00V1WH7CU"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/2rNoKSrhdcSQW9CJ4rpg2g"
+            }
+          ]
+        },
+        {
+          "track": 3,
+          "title": "Sonata for Cello and Piano, D. 821 'Arpeggione': III. Allegretto",
+          "duration": "8:19",
+          "performers": "Tanya Anisimova & Pi - Hsun Shih",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/schubert-shostakovich-anisimova/983461643"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Schubert-Shostakovich-Anisimova-Tanya/dp/B00V1WH7CU"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/2rNoKSrhdcSQW9CJ4rpg2g"
+            }
+          ]
+        },
+        {
+          "track": 4,
+          "title": "Icelandic Ballad for Cello and Piano",
+          "duration": "12:36",
+          "performers": "Tanya Anisimova & Pi - Hsun Shih",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/schubert-shostakovich-anisimova/983461643"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Schubert-Shostakovich-Anisimova-Tanya/dp/B00V1WH7CU"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/2rNoKSrhdcSQW9CJ4rpg2g"
+            }
+          ]
+        },
+        {
+          "track": 5,
+          "title": "Sonata for Cello and Piano, Op. 40: I. Allegro non troppo",
+          "duration": "11:12",
+          "performers": "Tanya Anisimova & Pi - Hsun Shih",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/schubert-shostakovich-anisimova/983461643"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Schubert-Shostakovich-Anisimova-Tanya/dp/B00V1WH7CU"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/2rNoKSrhdcSQW9CJ4rpg2g"
+            }
+          ]
+        },
+        {
+          "track": 6,
+          "title": "Sonata for Cello and Piano, Op. 40: II Allegro",
+          "duration": "2:57",
+          "performers": "Tanya Anisimova & Pi - Hsun Shih",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/schubert-shostakovich-anisimova/983461643"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Schubert-Shostakovich-Anisimova-Tanya/dp/B00V1WH7CU"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/2rNoKSrhdcSQW9CJ4rpg2g"
+            }
+          ]
+        },{
+          "track": 7,
+          "title": "Sonata for Cello and Piano, Op. 40: III. Largo",
+          "duration": "8:24",
+          "performers": "Tanya Anisimova & Pi - Hsun Shih",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/schubert-shostakovich-anisimova/983461643"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Schubert-Shostakovich-Anisimova-Tanya/dp/B00V1WH7CU"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/2rNoKSrhdcSQW9CJ4rpg2g"
+            }
+          ]
+        },{
+          "track": 8,
+          "title": "Sonata for Cello and Piano, Op. 40: IV. Allegro",
+          "duration": "3:47",
+          "performers": "Tanya Anisimova & Pi - Hsun Shih",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/schubert-shostakovich-anisimova/983461643"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Schubert-Shostakovich-Anisimova-Tanya/dp/B00V1WH7CU"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/2rNoKSrhdcSQW9CJ4rpg2g"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "What I Wanted to Tell You<br/>",
+      "performers": "Tanya Anisimova, Jessica Krash, Ian Swensen, Elisabeth Adkins, Paul Cigan",
+      "composer": "Jessica Krash",
+      "date": "2013",
+      "cover": "krash2013.png",
+      "genre": "Classical",
+      "label": "Celle-stial Records",
+      "time": "1 Hour 11 Minutes",
+      "purchase": [
+        {
+          "store": "iTunes",
+          "icon": "apple-teal.png",
+          "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+        },
+        {
+          "store": "Amazon Smile",
+          "icon": "amazonsmile-teal.png",
+          "url": "https://www.amazon.com/Jessica-Krash-What-Wanted-Tell/dp/B00DB51O7O/ref=sr_1_3?s=music&ie=UTF8&qid=1543453823&sr=1-3&keywords=tanya+anisimova"
+        }
+      ],
+      "listen": [
+        {
+          "venue": "Spotify",
+          "icon": "spotify-teal.png",
+          "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+        }
+      ],
+      "songs": [
+        {
+          "track": 1,
+          "title": "Second Hand: Used Philosophy",
+          "duration": "1:18",
+          "performers": "Jessica Krash",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },
+        {
+          "track": 2,
+          "title": "Second Hand: Used Poetry",
+          "duration": "1:35",
+          "performers": "Jessica Krash",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },
+        {
+          "track": 3,
+          "title": "Second Hand: Used Opera",
+          "duration": "1:38",
+          "performers": "Jessica Krash",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },
+        {
+          "track": 4,
+          "title": "Cheyenne Rabbi 1940s",
+          "duration": "12:28",
+          "performers": "Jessica Krash & Ian Swensen",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },
+        {
+          "track": 5,
+          "title": "Be seeing you: Amedeo Modigliani, Madame Amedeee",
+          "duration": "2:04",
+          "performers": "Jessica Krash & The Sunrise Quarter",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },
+        {
+          "track": 6,
+          "title": "Be seeing you: Jane Fortescue Seymour, Self portrait at 17",
+          "duration": "1:38",
+          "performers": "Jessica Krash & The Sunrise Quarter",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },{
+          "track": 7,
+          "title": "Be seeing you: Giotto di Bondone, Madonna and Child",
+          "duration": "3:03",
+          "performers": "Jessica Krash & The Sunrise Quarter",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },{
+          "track": 8,
+          "title": "Be seeing you: Miriam Schapiro, Goncharova",
+          "duration": "1:39",
+          "performers": "Jessica Krash & The Sunrise Quarter",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },{
+          "track": 9,
+          "title": "Be seeing you: Lotte Laserstein, Morning Toilette",
+          "duration": "1:32",
+          "performers": "Jessica Krash & The Sunrise Quarter",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },{
+          "track": 10,
+          "title": "Be seeing you: Dorris Lee, Cherries in the Sun",
+          "duration": "1:34",
+          "performers": "Jessica Krash & The Sunrise Quarter",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },
+        {
+          "track": 11,
+          "title": "Be seeing you: Henri Matisse, Lorette with Turban, Yellow Jacket",
+          "duration": "0:38",
+          "performers": "Jessica Krash & The Sunrise Quarter",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },{
+          "track": 12,
+          "title": "Be seeing you: Leonardo da Vinci, Gihevrade Benci",
+          "duration": "0:41",
+          "performers": "Jessica Krash & The Sunrise Quarter",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },{
+          "track": 13,
+          "title": "Be seeing you: Alex Katz, The Green Cap",
+          "duration": "0:40",
+          "performers": "Jessica Krash & The Sunrise Quarter",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },{
+          "track": 14,
+          "title": "Be seeing you: Max Ernst, the woman from Capricorn",
+          "duration": "1:01",
+          "performers": "Jessica Krash & The Sunrise Quarter",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },{
+          "track": 15,
+          "title": "Be seeing you: Frida Kahlo, Self-Portrait Dedicatd to Leon Trotsky",
+          "duration": "1:34",
+          "performers": "Jessica Krash & The Sunrise Quarter",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },{
+          "track": 16,
+          "title": "Be seeing you: Helen Turner, On My Porch",
+          "duration": "1:04",
+          "performers": "Jessica Krash & The Sunrise Quarter",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },{
+          "track": 17,
+          "title": "Be seeing you: Suzanne Valadon, The Abandoned Doll",
+          "duration": "1:41",
+          "performers": "Jessica Krash & The Sunrise Quarter",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },
+        {
+          "track": 18,
+          "title": "Be seeing you: Jean-Honore Gragonard, The Swing",
+          "duration": "1:11",
+          "performers": "Jessica Krash & The Sunrise Quarter",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },{
+          "track": 19,
+          "title": "Be seeing you: Coda",
+          "duration": "0:55",
+          "performers": "Jessica Krash & The Sunrise Quarter",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },{
+          "track": 20,
+          "title": "Really, truly",
+          "duration": "4:08",
+          "performers": "Jessica Krash & Elisabeth Adkins",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },{
+          "track": 21,
+          "title": "Dangerous Curves",
+          "duration": "7:51",
+          "performers": "Jessica Krash",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },
+        {
+          "track": 22,
+          "title": "What I Wanted to Tell You",
+          "duration": "8:09",
+          "performers": "Jessica Krash & Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },{
+          "track": 23,
+          "title": "Five Bagatelles: No.1",
+          "duration": "2:00",
+          "performers": "by Various artists",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },{
+          "track": 24,
+          "title": "Five Bagatelles: No.2",
+          "duration": "3:17:00",
+          "performers": "by Various artists",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },{
+          "track": 25,
+          "title": "Five Bagatelles: No.3",
+          "duration": "3:08",
+          "performers": "by Various artists",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },{
+          "track": 26,
+          "title": "Five Bagatelles: No.4",
+          "duration": "2:58",
+          "performers": "by Various artists",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        },{
+          "track": 27,
+          "title": "Five Bagatelles: No.5",
+          "duration": "2:27",
+          "performers": "by Various artists",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/what-i-wanted-to-tell-you/673118394"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/3AiL9ZSEHYYMenYlrjLIpu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Carillon Sky<br/>",
+      "performers": "Carrie Koffman, Tanya Anisimova, Roshanne Etezady, Alan Kay, Glen Adsit, Cindy McTee, Kathryn Swanson-Ellis, Shulamit Ran, Benjamin Toth, Lera Auerbach, Marilyn Shrude, and Margreet Francis",
+      "composer": "Carrie Koffman",
+      "date": "2011",
+      "cover": "carillonSky.png",
+      "genre": "Classical: Contemporary",
+      "label": "Celle-stial Records",
+      "time": "1 Hour 2 Minutes",
+      "purchase": [
+        {
+          "store": "iTunes",
+          "icon": "apple-teal.png",
+          "url": "https://itunes.apple.com/us/album/carillon-sky/494225557"
+        }
+      ],
+      "listen": [
+      ],
+      "songs": [
+        {
+          "track": 1,
+          "title": "Sonata in G minor, Adagio",
+          "duration": "4:55",
+          "performers": "Tanya Anisimova",
+          "purchase": [],
+          "listen": []
+        },
+        {
+          "track": 2,
+          "title": "Fuga (Allegro)",
+          "duration": "6:40",
+          "performers": "Tanya Anisimova",
+          "purchase": [],
+          "listen": []
+        },
+        {
+          "track": 3,
+          "title": "Siciliana",
+          "duration": "4:03",
+          "performers": "Tanya Anisimova",
+          "purchase": [],
+          "listen": []
+        },
+        {
+          "track": 4,
+          "title": "Presto",
+          "duration": "3:19",
+          "performers": "Tanya Anisimova",
+          "purchase": [],
+          "listen": []
+        },
+        {
+          "track": 5,
+          "title": "Allemanda",
+          "duration": "5:58",
+          "performers": "Tanya Anisimova",
+          "purchase": [],
+          "listen": []
+        },
+        {
+          "track": 6,
+          "title": "Corrente",
+          "duration": "3:01",
+          "performers": "Tanya Anisimova",
+          "purchase": [],
+          "listen": []
+        },{
+          "track": 7,
+          "title": "Sarabande",
+          "duration": "5:33",
+          "performers": "Tanya Anisimova",
+          "purchase": [],
+          "listen": []
+        },{
+          "track": 8,
+          "title": "Gigue",
+          "duration": "4:34",
+          "performers": "Tanya Anisimova",
+          "purchase": [],
+          "listen": []
+        }
+      ]
+    },
+    {
+      "title": "Sufi Soul<br/>",
+      "performers": "Tanya Anisimova",
+      "composer": "Tanya Anisimova",
+      "date": "2007",
+      "cover": "sufi.png",
+      "genre": "Classical",
+      "label": "Celle-stial Records",
+      "time": "1 Hour 3 Minutes",
+      "purchase": [
+        {
+          "store": "iTunes",
+          "icon": "apple-teal.png",
+          "url": "https://itunes.apple.com/us/album/sufi-soul/213550172"
+        },
+        {
+          "store": "Amazon Smile",
+          "icon": "amazonsmile-teal.png",
+          "url": "https://www.amazon.com/Sufi-Soul-Tanya-Anisimova/dp/B0013R61K2"
+        }
+      ],
+      "listen": [
+        {
+          "venue": "Spotify",
+          "icon": "spotify-teal.png",
+          "url": "https://open.spotify.com/album/1T3KFjjRcQ54JmNJLG32SQ"
+        }
+      ],
+      "songs": [
+        {
+          "track": 1,
+          "title": "Sufi Suite for Cello Solo, After Rumi",
+          "duration": "5:30",
+          "performers": "Tanya Anisimova",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/sufi-soul/213550172"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Sufi-Soul-Tanya-Anisimova/dp/B0013R61K2"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1T3KFjjRcQ54JmNJLG32SQ"
+            }
+          ]
+        },
+        {
+          "track": 2,
+          "title": "Sufi Suite, Dervishes Dance - Om",
+          "duration": "6:52",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/sufi-soul/213550172"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Sufi-Soul-Tanya-Anisimova/dp/B0013R61K2"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1T3KFjjRcQ54JmNJLG32SQ"
+            }
+          ]
+        },
+        {
+          "track": 3,
+          "title": "Mexico - Moscow for Cello and Piano",
+          "duration": "5:17",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/sufi-soul/213550172"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Sufi-Soul-Tanya-Anisimova/dp/B0013R61K2"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1T3KFjjRcQ54JmNJLG32SQ"
+            }
+          ]
+        },
+        {
+          "track": 4,
+          "title": "Improvisation",
+          "duration": "3:39",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/sufi-soul/213550172"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Sufi-Soul-Tanya-Anisimova/dp/B0013R61K2"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1T3KFjjRcQ54JmNJLG32SQ"
+            }
+          ]
+        },
+        {
+          "track": 5,
+          "title": "Quintet - Concerto, Sufi Scherzo",
+          "duration": "5:50",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/sufi-soul/213550172"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Sufi-Soul-Tanya-Anisimova/dp/B0013R61K2"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1T3KFjjRcQ54JmNJLG32SQ"
+            }
+          ]
+        },
+        {
+          "track": 6,
+          "title": "Quintet - Concerto, Adagio Misterioso",
+          "duration": "6:50",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/sufi-soul/213550172"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Sufi-Soul-Tanya-Anisimova/dp/B0013R61K2"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1T3KFjjRcQ54JmNJLG32SQ"
+            }
+          ]
+        },{
+          "track": 7,
+          "title": "Quintet - Concerto, Finale",
+          "duration": "7:18",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/sufi-soul/213550172"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Sufi-Soul-Tanya-Anisimova/dp/B0013R61K2"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1T3KFjjRcQ54JmNJLG32SQ"
+            }
+          ]
+        },{
+          "track": 8,
+          "title": "Improvisation",
+          "duration": "2:18",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/sufi-soul/213550172"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Sufi-Soul-Tanya-Anisimova/dp/B0013R61K2"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1T3KFjjRcQ54JmNJLG32SQ"
+            }
+          ]
+        },{
+          "track": 9,
+          "title": "Adonai for Cello and String Orchestra",
+          "duration": "15:10",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/sufi-soul/213550172"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Sufi-Soul-Tanya-Anisimova/dp/B0013R61K2"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1T3KFjjRcQ54JmNJLG32SQ"
+            }
+          ]
+        },{
+          "track": 10,
+          "title": "Improvisation",
+          "duration": "4:36",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/sufi-soul/213550172"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Sufi-Soul-Tanya-Anisimova/dp/B0013R61K2"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1T3KFjjRcQ54JmNJLG32SQ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mystical Strings - The Enchanted Cello",
+      "performers": "Tanya Anisimova and Master Charles Cannon",
+      "composer": "Tanya Anisimova",
+      "date": "2007",
+      "cover": "synch.png",
+      "genre": "Classical - Contemporary",
+      "label": "Celle-stial Records",
+      "time": "1 Hour 28 Seconds",
+      "purchase": [
+        {
+          "store": "Amazon Smile",
+          "icon": "amazonsmile-teal.png",
+          "url": "https://www.amazon.com/Mystical-Strings-Anisimova-Master-Charles/dp/B000R7G5W8/ref=sr_1_1?s=music&ie=UTF8&qid=1543453823&sr=1-1&keywords=tanya+anisimova"
+        }
+      ],
+      "listen": [],
+      "songs": [
+        {
+          "track": 1,
+          "title": "Sourceful Awareness",
+          "duration": "30:31",
+          "performers": "Tanya Anisimova",
+          "purchase": [],
+          "listen": []
+        },
+        {
+          "track": 2,
+          "title": "Blissful Moments",
+          "duration": "30:57",
+          "performers": "Tanya Anisimova",
+          "purchase": [],
+          "listen": []
+        }
+      ]
+    },
+
+    {
       "title": "J.S. Bach, Cello Suites, Volume 2",
       "performers": "Tanya Anisimova",
       "composer": "Johann Sebastian Bach",
@@ -463,7 +2003,7 @@
             {
               "store": "iTunes",
               "icon": "apple-teal.png",
-              "url": "https://itunes.apple.com/us/album/sarabande/73201337?i=73201192&app=itunes"
+              "url": "https://itunes.apple.com/us/album/courante/73201337?i=73201163&app=itunes"
             },
             {
               "store": "Amazon Smile",
@@ -526,6 +2066,1604 @@
               "venue": "Spotify",
               "icon": "spotify-teal.png",
               "url": "https://open.spotify.com/album/6DeCExU0wCUdGdOUBDMfLF"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cello Suites by J.S. Bach, Volume 1",
+      "performers": "Tanya Anisimova",
+      "composer": "Johann Sebastian Bach",
+      "date": "2004",
+      "cover": "bach2004-1.png",
+      "genre": "Classical",
+      "label": "Celle-stial Records",
+      "time": "1 Hour 7 Minutes",
+      "purchase": [
+        {
+          "store": "iTunes",
+          "icon": "apple-teal.png",
+          "url": "https://itunes.apple.com/us/album/cello-suites-by-j-s-bach/47603012"
+        },
+        {
+          "store": "Amazon Smile",
+          "icon": "amazonsmile-teal.png",
+          "url": "https://www.amazon.com/Cello-Suites-J-S-Bach-Tanya-Anisimova/dp/B0012A5WKU/ref=sr_1_4?s=dmusic&ie=UTF8&qid=1543553354&sr=1-4-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+        }
+      ],
+      "listen": [
+        {
+          "venue": "Spotify",
+          "icon": "spotify-teal.png",
+          "url": "https://open.spotify.com/album/4ynw4oQGd7vMr6oqeygfjA"
+        }
+      ],
+      "songs": [
+        {
+          "track": 1,
+          "title": "Suite I in G Major, Prelude",
+          "duration": "2:11",
+          "performers": "Tanya Anisimova",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/cello-suites-by-j-s-bach/47603012"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Cello-Suites-J-S-Bach-Tanya-Anisimova/dp/B0012A5WKU/ref=sr_1_4?s=dmusic&ie=UTF8&qid=1543553354&sr=1-4-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/4ynw4oQGd7vMr6oqeygfjA"
+            }
+          ]
+        },
+        {
+          "track": 2,
+          "title": "Allemande",
+          "duration": "4:21",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/cello-suites-by-j-s-bach/47603012"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Cello-Suites-J-S-Bach-Tanya-Anisimova/dp/B0012A5WKU/ref=sr_1_4?s=dmusic&ie=UTF8&qid=1543553354&sr=1-4-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/4ynw4oQGd7vMr6oqeygfjA"
+            }
+          ]
+        },
+        {
+          "track": 3,
+          "title": "Courante",
+          "duration": "2:21",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/cello-suites-by-j-s-bach/47603012"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Cello-Suites-J-S-Bach-Tanya-Anisimova/dp/B0012A5WKU/ref=sr_1_4?s=dmusic&ie=UTF8&qid=1543553354&sr=1-4-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/4ynw4oQGd7vMr6oqeygfjA"
+            }
+          ]
+        },
+        {
+          "track": 4,
+          "title": "Sarabande",
+          "duration": "3:46",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/cello-suites-by-j-s-bach/47603012"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Cello-Suites-J-S-Bach-Tanya-Anisimova/dp/B0012A5WKU/ref=sr_1_4?s=dmusic&ie=UTF8&qid=1543553354&sr=1-4-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/4ynw4oQGd7vMr6oqeygfjA"
+            }
+          ]
+        },
+        {
+          "track": 5,
+          "title": "Menuet I & II",
+          "duration": "3:54",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/cello-suites-by-j-s-bach/47603012"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Cello-Suites-J-S-Bach-Tanya-Anisimova/dp/B0012A5WKU/ref=sr_1_4?s=dmusic&ie=UTF8&qid=1543553354&sr=1-4-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/4ynw4oQGd7vMr6oqeygfjA"
+            }
+          ]
+        },
+        {
+          "track": 6,
+          "title": "Gigue",
+          "duration": "1:40",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/cello-suites-by-j-s-bach/47603012"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Cello-Suites-J-S-Bach-Tanya-Anisimova/dp/B0012A5WKU/ref=sr_1_4?s=dmusic&ie=UTF8&qid=1543553354&sr=1-4-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/4ynw4oQGd7vMr6oqeygfjA"
+            }
+          ]
+        },
+        {
+          "track": 7,
+          "title": "Suite III in C Major, Prelude",
+          "duration": "3:16",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/cello-suites-by-j-s-bach/47603012"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Cello-Suites-J-S-Bach-Tanya-Anisimova/dp/B0012A5WKU/ref=sr_1_4?s=dmusic&ie=UTF8&qid=1543553354&sr=1-4-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/4ynw4oQGd7vMr6oqeygfjA"
+            }
+          ]
+        },
+        {
+          "track": 8,
+          "title": "Allemande",
+          "duration": "3:17",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/cello-suites-by-j-s-bach/47603012"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Cello-Suites-J-S-Bach-Tanya-Anisimova/dp/B0012A5WKU/ref=sr_1_4?s=dmusic&ie=UTF8&qid=1543553354&sr=1-4-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/4ynw4oQGd7vMr6oqeygfjA"
+            }
+          ]
+        },
+        {
+          "track": 9,
+          "title": "Courante",
+          "duration": "3:10",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/cello-suites-by-j-s-bach/47603012"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Cello-Suites-J-S-Bach-Tanya-Anisimova/dp/B0012A5WKU/ref=sr_1_4?s=dmusic&ie=UTF8&qid=1543553354&sr=1-4-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/4ynw4oQGd7vMr6oqeygfjA"
+            }
+          ]
+        },
+        {
+          "track": 10,
+          "title": "Sarabande",
+          "duration": "5:16",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/cello-suites-by-j-s-bach/47603012"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Cello-Suites-J-S-Bach-Tanya-Anisimova/dp/B0012A5WKU/ref=sr_1_4?s=dmusic&ie=UTF8&qid=1543553354&sr=1-4-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/4ynw4oQGd7vMr6oqeygfjA"
+            }
+          ]
+        },
+        {
+          "track": 11,
+          "title": "Bouree I & II",
+          "duration": "3:29",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/cello-suites-by-j-s-bach/47603012"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Cello-Suites-J-S-Bach-Tanya-Anisimova/dp/B0012A5WKU/ref=sr_1_4?s=dmusic&ie=UTF8&qid=1543553354&sr=1-4-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/4ynw4oQGd7vMr6oqeygfjA"
+            }
+          ]
+        },
+        {
+          "track": 12,
+          "title": "Gigue",
+          "duration": "3:12",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/cello-suites-by-j-s-bach/47603012"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Cello-Suites-J-S-Bach-Tanya-Anisimova/dp/B0012A5WKU/ref=sr_1_4?s=dmusic&ie=UTF8&qid=1543553354&sr=1-4-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/4ynw4oQGd7vMr6oqeygfjA"
+            }
+          ]
+        },
+        {
+          "track": 13,
+          "title": "Suite V in C minor, Prelude",
+          "duration": "6:58",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/cello-suites-by-j-s-bach/47603012"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Cello-Suites-J-S-Bach-Tanya-Anisimova/dp/B0012A5WKU/ref=sr_1_4?s=dmusic&ie=UTF8&qid=1543553354&sr=1-4-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/4ynw4oQGd7vMr6oqeygfjA"
+            }
+          ]
+        },
+        {
+          "track": 14,
+          "title": "Allemande",
+          "duration": "7:13",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/cello-suites-by-j-s-bach/47603012"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Cello-Suites-J-S-Bach-Tanya-Anisimova/dp/B0012A5WKU/ref=sr_1_4?s=dmusic&ie=UTF8&qid=1543553354&sr=1-4-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/4ynw4oQGd7vMr6oqeygfjA"
+            }
+          ]
+        },
+        {
+          "track": 15,
+          "title": "Courante",
+          "duration": "2:06",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/cello-suites-by-j-s-bach/47603012"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Cello-Suites-J-S-Bach-Tanya-Anisimova/dp/B0012A5WKU/ref=sr_1_4?s=dmusic&ie=UTF8&qid=1543553354&sr=1-4-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/4ynw4oQGd7vMr6oqeygfjA"
+            }
+          ]
+        },
+        {
+          "track": 16,
+          "title": "Sarabande",
+          "duration": "3:28",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/cello-suites-by-j-s-bach/47603012"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Cello-Suites-J-S-Bach-Tanya-Anisimova/dp/B0012A5WKU/ref=sr_1_4?s=dmusic&ie=UTF8&qid=1543553354&sr=1-4-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/4ynw4oQGd7vMr6oqeygfjA"
+            }
+          ]
+        },
+        {
+          "track": 17,
+          "title": "Gavotte I & II",
+          "duration": "4:35",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/cello-suites-by-j-s-bach/47603012"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Cello-Suites-J-S-Bach-Tanya-Anisimova/dp/B0012A5WKU/ref=sr_1_4?s=dmusic&ie=UTF8&qid=1543553354&sr=1-4-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/4ynw4oQGd7vMr6oqeygfjA"
+            }
+          ]
+        },
+        {
+          "track": 18,
+          "title": "Gigue",
+          "duration": "2:55",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/cello-suites-by-j-s-bach/47603012"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/Cello-Suites-J-S-Bach-Tanya-Anisimova/dp/B0012A5WKU/ref=sr_1_4?s=dmusic&ie=UTF8&qid=1543553354&sr=1-4-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/4ynw4oQGd7vMr6oqeygfjA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "J.S.Bach's Six Sonatas and Partitas for Solo Violin",
+      "performers": "Tanya Anisimova",
+      "composer": "Johann Sebastian Bach",
+      "date": "2003",
+      "cover": "bach2003.png",
+      "genre": "Classical",
+      "label": "Celle-stial Records",
+      "time": "2 Hour 35 Minutes",
+      "purchase": [
+        {
+          "store": "iTunes",
+          "icon": "apple-teal.png",
+          "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+        },
+        {
+          "store": "Amazon Smile",
+          "icon": "amazonsmile-teal.png",
+          "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+        }
+      ],
+      "listen": [
+        {
+          "venue": "Spotify",
+          "icon": "spotify-teal.png",
+          "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+        }
+      ],
+      "songs": [
+        {
+          "track": 1,
+          "title": "Sonata in G minor, Adagio",
+          "duration": "4:55",
+          "performers": "Tanya Anisimova",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },
+        {
+          "track": 2,
+          "title": "Fuga (Allegro)",
+          "duration": "6:40",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },
+        {
+          "track": 3,
+          "title": "Siciliana",
+          "duration": "4:03",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },
+        {
+          "track": 4,
+          "title": "Presto",
+          "duration": "3:19",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },
+        {
+          "track": 5,
+          "title": "Allemanda",
+          "duration": "5:58",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },
+        {
+          "track": 6,
+          "title": "Corrente",
+          "duration": "3:01",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },{
+          "track": 7,
+          "title": "Sarabande",
+          "duration": "5:33",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },{
+          "track": 8,
+          "title": "Gigue",
+          "duration": "4:34",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },{
+          "track": 9,
+          "title": "Chaccone",
+          "duration": "17:05",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },{
+          "track": 10,
+          "title": "Preludio",
+          "duration": "4:16",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },
+        {
+          "track": 11,
+          "title": "Loure",
+          "duration": "4:05",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },{
+          "track": 12,
+          "title": "Gavotte en Rondo",
+          "duration": "3:51",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },{
+          "track": 13,
+          "title": "Menuet I and II",
+          "duration": "5:44",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },{
+          "track": 14,
+          "title": "Bourree",
+          "duration": "2:13",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },{
+          "track": 15,
+          "title": "Gigue",
+          "duration": "2:16",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },{
+          "track": 16,
+          "title": "Allemanda (Disc 2)",
+          "duration": "4:43",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },{
+          "track": 17,
+          "title": "Double",
+          "duration": "2:29",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },{
+          "track": 18,
+          "title": "Corrente",
+          "duration": "3:22",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },{
+          "track": 19,
+          "title": "Double",
+          "duration": "3:04",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },
+        {
+          "track": 20,
+          "title": "Sarabande",
+          "duration": "5:20",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },
+        {
+          "track": 21,
+          "title": "Double",
+          "duration": "4:55",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },
+        {
+          "track": 22,
+          "title": "Tempo di Borrea",
+          "duration": "2:36",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },
+        {
+          "track": 23,
+          "title": "Dobule",
+          "duration": "2:52",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },
+        {
+          "track": 24,
+          "title": "Grave",
+          "duration": "4:39",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },
+        {
+          "track": 25,
+          "title": "Fuga",
+          "duration": "9:14",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },
+        {
+          "track": 26,
+          "title": "Andante",
+          "duration": "6:06",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },
+        {
+          "track": 27,
+          "title": "Allegro",
+          "duration": "5:20",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },
+        {
+          "track": 28,
+          "title": "Adagio",
+          "duration": "4:07",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },
+        {
+          "track": 29,
+          "title": "Fuga",
+          "duration": "12:58",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },
+        {
+          "track": 30,
+          "title": "Largo",
+          "duration": "3:46",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        },
+        {
+          "track": 31,
+          "title": "Allegro assai",
+          "duration": "4:55",
+          "performers": "Tanya Anisimova",
+"purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/us/album/j-s-bachs-six-sonatas-and-partitas-for-solo-violin/64968808"
+            },
+            {
+              "store": "Amazon Smile",
+              "icon": "amazonsmile-teal.png",
+              "url": "https://www.amazon.com/J-S-Bachs-Sonatas-Partitas-Solo-Violin/dp/B0013R26N8/ref=sr_1_2?s=dmusic&ie=UTF8&qid=1543550861&sr=1-2-mp3-albums-bar-strip-0&keywords=tanya+anisimova"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/1VY2FzFHus4mE9cCnG2WWB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concert in Moscow",
+      "performers": "Tanya Anisimova",
+      "composer": "Johann Sebastian Bach and Ezra Laderman",
+      "date": "2002",
+      "cover": "moscow.png",
+      "genre": "Classical",
+      "label": "Celle-stial Records",
+      "time": "1 Hour 18 Minutes",
+      "purchase": [
+        {
+          "store": "iTunes",
+          "icon": "apple-teal.png",
+          "url": "https://itunes.apple.com/sg/album/concert-in-moscow/47604806"
+        },
+        {
+          "store": "Amazon Smile",
+          "icon": "amazonsmile-teal.png",
+          "url": "https://www.amazon.com/Concert-Moscow-Tanya-Anisimova/dp/B000CAGI2C"
+        }
+      ],
+      "listen": [
+        {
+          "venue": "Spotify",
+          "icon": "spotify-teal.png",
+          "url": "https://open.spotify.com/album/68Fh2Uoqc25QrhO3E8BkEF"
+        }
+      ],
+      "songs": [
+        {
+          "track": 1,
+          "title": "J.S. Bach, Cello Suite No. 5 in c minor, Prelude",
+          "duration": "7:29",
+          "performers": "Tanya Anisimova",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/sg/album/concert-in-moscow/47604806"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/68Fh2Uoqc25QrhO3E8BkEF"
+            }
+          ]
+        },
+        {
+          "track": 2,
+          "title": "Allemande",
+          "duration": "6:33",
+          "performers": "Tanya Anisimova",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/sg/album/concert-in-moscow/47604806"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/68Fh2Uoqc25QrhO3E8BkEF"
+            }
+          ]
+        },
+        {
+          "track": 3,
+          "title": "Courante",
+          "duration": "2:06",
+          "performers": "Tanya Anisimova",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/sg/album/concert-in-moscow/47604806"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/68Fh2Uoqc25QrhO3E8BkEF"
+            }
+          ]
+        },
+        {
+          "track": 4,
+          "title": "Sarabande",
+          "duration": "3:22",
+          "performers": "Tanya Anisimova",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/sg/album/concert-in-moscow/47604806"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/68Fh2Uoqc25QrhO3E8BkEF"
+            }
+          ]
+        },
+        {
+          "track": 5,
+          "title": "Gavotte I & II",
+          "duration": "4:53",
+          "performers": "Tanya Anisimova",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/sg/album/concert-in-moscow/47604806"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/68Fh2Uoqc25QrhO3E8BkEF"
+            }
+          ]
+        },
+        {
+          "track": 6,
+          "title": "Gigue",
+          "duration": "3:09",
+          "performers": "Tanya Anisimova",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/sg/album/concert-in-moscow/47604806"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/68Fh2Uoqc25QrhO3E8BkEF"
+            }
+          ]
+        },{
+          "track": 7,
+          "title": "J.S. Bach, Cello Suite No. 3 in C Major, Prelude",
+          "duration": "3:20",
+          "performers": "Tanya Anisimova",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/sg/album/concert-in-moscow/47604806"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/68Fh2Uoqc25QrhO3E8BkEF"
+            }
+          ]
+        },{
+          "track": 8,
+          "title": "Sarabande",
+          "duration": "4:50",
+          "performers": "Tanya Anisimova",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/sg/album/concert-in-moscow/47604806"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/68Fh2Uoqc25QrhO3E8BkEF"
+            }
+          ]
+        },{
+          "track": 9,
+          "title": "Gigue",
+          "duration": "3:36",
+          "performers": "Tanya Anisimova",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/sg/album/concert-in-moscow/47604806"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/68Fh2Uoqc25QrhO3E8BkEF"
+            }
+          ]
+        },{
+          "track": 10,
+          "title": "J.S. Bach, Violin partita No. 3 in D Major, Preludio",
+          "duration": "4:40",
+          "performers": "Tanya Anisimova",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/sg/album/concert-in-moscow/47604806"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/68Fh2Uoqc25QrhO3E8BkEF"
+            }
+          ]
+        },
+        {
+          "track": 11,
+          "title": "Ezra Laderman, A Single Voice (1995)",
+          "duration": "9:07",
+          "performers": "Tanya Anisimova",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/sg/album/concert-in-moscow/47604806"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/68Fh2Uoqc25QrhO3E8BkEF"
+            }
+          ]
+        },{
+          "track": 12,
+          "title": "Tanya Anisimova, September 11th (2001)",
+          "duration": "5:47",
+          "performers": "Tanya Anisimova",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/sg/album/concert-in-moscow/47604806"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/68Fh2Uoqc25QrhO3E8BkEF"
+            }
+          ]
+        },{
+          "track": 13,
+          "title": "J.S. Bach, Violin Sonata No. 1 in g minor, Adagio e Fuga",
+          "duration": "10:55",
+          "performers": "Tanya Anisimova",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/sg/album/concert-in-moscow/47604806"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/68Fh2Uoqc25QrhO3E8BkEF"
+            }
+          ]
+        },{
+          "track": 14,
+          "title": "Tanya Anisimova, Song on Mt. San Angelo (1995)",
+          "duration": "6:20",
+          "performers": "Tanya Anisimova",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/sg/album/concert-in-moscow/47604806"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/68Fh2Uoqc25QrhO3E8BkEF"
+            }
+          ]
+        },{
+          "track": 15,
+          "title": "Rohelio Tagel, Flamenco",
+          "duration": "2:43",
+          "performers": "Tanya Anisimova",
+          "purchase": [
+            {
+              "store": "iTunes",
+              "icon": "apple-teal.png",
+              "url": "https://itunes.apple.com/sg/album/concert-in-moscow/47604806"
+            }
+          ],
+          "listen": [
+            {
+              "venue": "Spotify",
+              "icon": "spotify-teal.png",
+              "url": "https://open.spotify.com/album/68Fh2Uoqc25QrhO3E8BkEF"
             }
           ]
         }

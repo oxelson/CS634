@@ -213,6 +213,13 @@ section.homepage ul li.last::after {
   display: block;
 }
 
+.subpage .fill ul li .content {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 .subpage .fill ul li .content img {
   border: 1px solid #000000;
 }
