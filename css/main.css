@@ -272,7 +272,9 @@ section.homepage ul li.last::after {
 .subpage .fill .songData,
 .subpage .fill .albumData,
 .subpage .fill .news,
-.subpage .fill .event {
+.subpage .fill .event,
+.subpage .fill .performances,
+.subpage .fill .performance {
   margin-top: 20px !important;
 }
 
@@ -419,3 +421,47 @@ section.homepage ul li.last::after {
   display: block;
   margin: 10px 0;
 }
+
+/* Performances */
+.subpage .fill .performances span.date {
+  color: #5F5F5F;
+  border-bottom: 1px solid #BABABA;
+  width: 100%;
+  display: block;
+}
+
+.subpage .fill .performance span.date {
+  color: #5F5F5F;
+  width: 100%;
+  display: block;
+}
+
+.subpage .fill .performances span.performers,
+.subpage .fill .performance span.performer {
+  width: 100%;
+  display: block;
+}
+
+.subpage .fill .performance span.performer {
+  margin: 10px 0;
+}
+
+.subpage .fill .performances span.venue,
+.subpage .fill .performance span.venue {
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+}
+
+.subpage .fill .performance iframe {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  display: block;
+  border: 1px solid #000000;
+}
+
+
+

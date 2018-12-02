@@ -164,6 +164,53 @@ let Discography = (function () {
     $('.fill').append($(row));
   }
 
+  /**
+   * Loads album data from local storage, parses the JSON object,
+   * formats each album for display and attaches to the DOM.
+   */
+  function displayAlbums() {
+
+    // Just in case the data isn't in local storage yet.
+    verifyData();
+
+
+    // Get albums from local storage.
+    let albums = JSON.parse(Storage.getData("albums"));
+    // Parse album data and create tag elements to attach to DOM.
+    for (let i = 0; i < albums.length; i++) {
+      let album = albums[i];
+
+      let div = $('<div class="content"></div> <!-- /.content -->');
+
+      // Create and attach link to album.
+      let link = album.cover.replace(/\.png/g, '');
+
+      // Create and attach album cover image.
+      let image = '<a href="albums.php?' + link + '"><img src="/images/' + album.cover + '" alt="' + album.title + '"/></a>';
+      $(div).append($(image));
+      $(div).append('<br/>');
+
+      // Create and attach album title.
+      $(div).append(album.title);
+      $(div).append('<br/>');
+
+      // Create and attach year of release.
+      $(div).append(album.date);
+      $(div).append('<br/><br/>');
+
+      // Create and link to album information.
+      let small = '<small><a href="albums.php?' + link + '">View album information</a></small>';
+      $(div).append($(small));
+
+      // Attache to DOM as unordered list.
+      let list = $('<ul></ul>');
+      let element = $('<li></li>');
+      $(element).append($(div));
+      $(list).append($(element));
+
+      $('.fill').append($(list));
+    }
+  }
 
   /**
    * Loads song data from local storage, parses the JSON object,
@@ -219,7 +266,7 @@ let Discography = (function () {
 
     let songData = $('<div class="col-sm-9 col-xs-12 songData"></div> <!-- /.songData -->');
 
-    // Sone title.
+    // Song title.
     let title = $('<b class="title">' + song.title + '</b>');
     $(songData).append($(title));
 
@@ -272,57 +319,6 @@ let Discography = (function () {
 
     // Attach row to DOM.
     $('.fill').append($(row2));
-
-
-  }
-
-
-  /**
-   * Loads album data from local storage, parses the JSON object,
-   * formats each album for display and attaches to the DOM.
-   */
-  function displayAlbums() {
-
-    // Just in case the data isn't in local storage yet.
-    verifyData();
-
-
-    // Get albums from local storage.
-    let albums = JSON.parse(Storage.getData("albums"));
-    // Parse album data and create tag elements to attach to DOM.
-    for (let i = 0; i < albums.length; i++) {
-      let album = albums[i];
-
-      let div = $('<div class="content"></div> <!-- /.content -->');
-
-      // Create and attach link to album.
-      let link = album.cover.replace(/\.png/g, '');
-
-      // Create and attach album cover image.
-      let image = '<a href="albums.php?' + link + '"><img src="/images/' + album.cover + '" alt="' + album.title + '"/></a>';
-      $(div).append($(image));
-      $(div).append('<br/>');
-
-      // Create and attach album title.
-      $(div).append(album.title);
-      $(div).append('<br/>');
-
-      // Create and attach year of release.
-      $(div).append(album.date);
-      $(div).append('<br/><br/>');
-
-      // Create and link to album information.
-      let small = '<small><a href="albums.php?' + link + '">View album information</a></small>';
-      $(div).append($(small));
-
-      // Attache to DOM as unordered list.
-      let list = $('<ul></ul>');
-      let element = $('<li></li>');
-      $(element).append($(div));
-      $(list).append($(element));
-
-      $('.fill').append($(list));
-    }
   }
 
   /**
@@ -333,7 +329,6 @@ let Discography = (function () {
 
     // Just in case the data isn't in local storage yet.
     verifyData();
-
 
     // Get albums from local storage.
     let albums = JSON.parse(Storage.getData("albums"));
@@ -367,14 +362,151 @@ let Discography = (function () {
     $('.fill').append($(row));
   }
 
+  /**
+   * Loads performance data from local storage, parses the JSON object,
+   * formats the given performance for display and attaches to the DOM.
+   *
+   * @param performanceOfInterest  The performance to display.
+   */
+  function displayPerformance(performanceOfInterest) {
 
-  // Expose these functions.
+    // Just in case the data isn't in local storage yet.
+    verifyData();
+
+    // Get performances from local storage.
+    let performancesData = JSON.parse(Storage.getData("performances"));
+    let performance = [];
+    // Parse performance data and push onto performance array.
+    for (let i = 0; i < performancesData.length; i++) {
+      let p = performancesData[i];
+      if (p.date.replace(/ /g, "-") === performanceOfInterest) {
+        performance.push(p);
+
+      }
+    }
+
+    // Create the container for the performances.
+    let colDiv = $('<div class="col"></div> <!-- /.col -->');
+
+    // There can be more than one entry for a performance.
+    for (let x = 0; x < performance.length; x++) {
+
+      let video = performance[x];
+
+      // Only for the first one:
+      if (x === 0) {
+        // Create and attach performance title.
+        let titleTag = $('<b class="title">' + video.title + '</b>');
+        $(colDiv).append($(titleTag));
+
+        // Create and attach date span tag.
+        let dateTag = $('<span class="date">' + video.date + '</span>');
+        $(colDiv).append($(dateTag));
+
+        // Create and attach performersTag.
+        let performersTag = $('<span class="performers">' + video.performers + '</span>');
+        $(colDiv).append($(performersTag));
+
+        // Create and attach venueTag.
+        let venueTag = $('<span class="venue">' + video.venue + '</span>');
+        $(colDiv).append($(venueTag));
+
+        // Create videoNumberTag & attach.
+        let song = "video";
+        if (performance.length > 1) {
+          song = "videos";
+        }
+        let videoNumberTag = $('<span class="videoNumber">' + performance.length + ' ' + song + ' of this performance available:</span>');
+        $(colDiv).append($(videoNumberTag));
+      }
+
+      // Create video (iframe) tag and attach.
+      let videoTag = $('<iframe width="560" height="315" src="' + video.url + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+      $(colDiv).append($(videoTag));
+
+      // Create composerTag and attach.
+      let composerTag = $('<span class="conposer">Composer: ' + video.composers + '</span>');
+      $(colDiv).append($(composerTag));
+
+      // Create descriptionTag and attach.
+      let descriptionTag = $('<span class="description">' + video.description + '</span>');
+      $(colDiv).append($(descriptionTag));
+    }
+
+    // Attach to DOM.
+    let performanceDiv = $('<div class="row performance"></div> <!-- /.performance -->');
+    $(performanceDiv).append($(colDiv));
+
+    $('.fill').append($(performanceDiv));
+  }
+
+
+  /**
+   * Loads performance data from local storage, parses the JSON object,
+   * formats the performance list for display and attaches to the DOM.
+   */
+  function displayPerformances() {
+
+    // Just in case the data isn't in local storage yet.
+    verifyData();
+
+    // Get performances from local storage.
+    let performancesData = JSON.parse(Storage.getData("performances"));
+    let processed = [];
+    // Parse performance data and create tag elements to attach to DOM.
+    for (let i = 0; i < performancesData.length; i++) {
+      let performance = performancesData[i];
+
+      // If we've already processed this event, move on to the next one.
+      if (processed.includes(performance.date)) {
+        continue;
+      }
+
+      // Create the container for the performances.
+      let colDiv = $('<div class="col"></div> <!-- /.col -->');
+
+      // Create and attach date span tag.
+      let dateTag = $('<span class="date">' + performance.date + '</span>');
+      $(colDiv).append($(dateTag));
+
+      // Create and attach performance title.
+      let titleTag = $('<b class="title">' + performance.title + '</b>');
+      $(colDiv).append($(titleTag));
+
+      // Create and attach performersTag.
+      let performersTag = $('<span class="performers">' + performance.performers + '</span>');
+      $(colDiv).append($(performersTag));
+
+      // Create and attach venueTag.
+      let venueTag = $('<span class="venue">' + performance.venue + '</span>');
+      $(colDiv).append($(venueTag));
+
+      // Create and attach link.
+      let link = performance.date;
+      link = link.replace(/ /g, "-");
+      let linkTag = $('<a href="performances.php?' + link + '" class="continue">View Performance</a>');
+      $(colDiv).append($(linkTag));
+
+      let performanceDiv = $('<div class="row performances"></div> <!-- /.performances -->');
+      $(performanceDiv).append($(colDiv));
+
+      $('.fill').append($(performanceDiv));
+
+      // Push onto processed array.
+      processed.push(performance.date);
+    }
+  }
+
+
+    // Expose these functions.
   return {
     verifyData: verifyData,
     displayAlbum: displayAlbum,
     displayAlbums: displayAlbums,
     displaySong: displaySong,
-    displaySongs: displaySongs
+    displaySongs: displaySongs,
+    displayPerformance: displayPerformance,
+    displayPerformances: displayPerformances
   };
 })();
 

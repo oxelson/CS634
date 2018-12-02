@@ -102,6 +102,7 @@ let Calendar = (function () {
       let e = calendar[i];
       if (e.date.replace(/ /g, "-") === eventOfInterest) {
         event = e;
+        break;
       }
     }
 

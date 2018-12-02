@@ -12,10 +12,10 @@
           let performance = window.location.search;
           if (performance === "" || performance === undefined || performance === null) {
             // Load all the performances.
-            Discography.displayAlbums();
+            Discography.displayPerformances();
           } else {
             // Load the requested performance.
-            Discography.displayAlbum(performance.replace(/\?/, ''));
+            Discography.displayPerformance(performance.replace(/\?/, ''));
           }
         });
       </script>
