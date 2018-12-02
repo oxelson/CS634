@@ -9,6 +9,8 @@ jQuery(document).ready(function(){
   Discography.verifyData();
   // Verify we have news data in storage.
   News.verifyData();
+  // Verify we have calendar data in storage.
+  Calendar.verifyData();
 
   // Populate the dropdown menu with the links in the nav bar.
   $.each($('header nav a'), function( index, value ) {

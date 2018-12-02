@@ -6,7 +6,7 @@
 let News = (function () {
   /**
    * Looks to see if news data is already in web storage, and if it
-   * isn't it get the initial news data and adds to local storage.
+   * isn't get the initial news data and adds to local storage.
    */
   function verifyData() {
     // Load news data into local storage if it isn't present.
@@ -62,8 +62,15 @@ let News = (function () {
 
     // Create image and attach to newsImage div.
     let image = $('<img src="/images/' + newsItem.image + '" alt="' + newsItem.title + '">');
-    $(newsImage).append($(image));
+    if (newsItem.url !== "") {
+      let imageLinkTag = $('<a href="' + newsItem.url + '"></a>');
+      $(imageLinkTag).append($(image));
+      $(newsImage).append($(imageLinkTag));
+    } else {
+      $(newsImage).append($(image));
+    }
 
+    // Create the container for the news content.
     let newsContent = $('<div class="col-sm-9 col-xs-12 newsContent"></div> <!-- /.newsContent -->');
 
     // Create and attach date span tag.
@@ -124,7 +131,7 @@ let News = (function () {
       // Create and attach link to news.
       let link = news.date;
       link = link.replace(/ /g, "-");
-      let linkTag = $('<a href="index.php?' + link + '" class="continue">Continue reading</a>');
+      let linkTag = $('<a href="index.php?' + link + '" class="continue">Continue Reading</a>');
       $(colDiv).append($(linkTag));
 
       let newsDiv = $('<div class="row news"></div> <!-- /.news -->');

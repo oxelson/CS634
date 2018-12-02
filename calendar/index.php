@@ -7,6 +7,16 @@
       <?php include '../head_include.php';?>
       <script>
         jQuery(document).ready(function(){
+          // If a specific event is requested, show its data;
+          // Otherwise get the calendar to display.
+          let event = window.location.search;
+          if (event === "" || event === undefined || event === null) {
+            // Load the calendar.
+            Calendar.displayCalendar();
+          } else {
+            // Load the requested event.
+            Calendar.displayEvent(event.replace(/\?/, ''));
+          }
         });
       </script>
     </head>
@@ -37,7 +47,8 @@
          <!-- right side -->
          <section class="col-sm-8 col-xs-12">
            <div class="fill">
-           </div>
+             <h3>2018 Events</h3>
+           </div> <!--/.fill -->
          </section>
        </div> <!-- /.row -->
 

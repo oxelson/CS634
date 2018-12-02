@@ -6,7 +6,7 @@
 let Discography = (function () {
   /**
    * Looks to see if album data is already in web storage, and if it
-   * isn't it get the initial album data and adds to local storage.
+   * isn't get the initial album data and adds to local storage.
    */
   function verifyData() {
     // Load album data into local storage if it isn't present.
@@ -14,6 +14,13 @@ let Discography = (function () {
       console.log('Initializing albums in local storage...');
       // Load the data into storage.
       getAlbumData();
+    }
+
+    // Load performance data into local storage if it isn't present.
+    if (!Storage.isStored('performances')) {
+      console.log('Initializing performances in local storage...');
+      // Load the data into storage.
+      getPerformanceData();
     }
   }
 
@@ -33,12 +40,30 @@ let Discography = (function () {
     });
   }
 
-    /**
-     * Loads album data from local storage, parses the JSON object,
-     * formats the given album for display and attaches to the DOM.
-     *
-     * @param albumOfInterest  The album to display.
-     */
+
+  /**
+   * Loads Performance JSON via AJAX request and returns string version of JSON object.
+   */
+  function getPerformanceData() {
+    $.ajax({
+      url: 'http://www.cs634-hur-01.designaspractice.com/js/Performances.JSON'
+    }).done(function (data) {
+      // Load into local storage.
+      Storage.addData('performances', JSON.stringify(data.performances));
+    }).fail(function (request) {
+      let message = 'Unable to load performance JSON data via AJAX.';
+      alert(message);
+      console.log(message);
+    });
+  }
+
+
+  /**
+   * Loads album data from local storage, parses the JSON object,
+   * formats the given album for display and attaches to the DOM.
+   *
+   * @param albumOfInterest  The album to display.
+   */
   function displayAlbum(albumOfInterest) {
 
     // Just in case the data isn't in local storage yet.

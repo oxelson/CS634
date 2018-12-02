@@ -60,6 +60,14 @@ h1 {
   display: inline !important;
 }
 
+a.continue {
+  margin-top: 10px;
+  width: 100%;
+  display:block;
+  font-size: 80%;
+  font-weight: bolder;
+}
+
 a.continue::after {
   content: "\0000a0 \003E";
 }
@@ -222,7 +230,8 @@ section.homepage ul li.last::after {
   margin: 0 !important;
 }
 .subpage .fill .albumCover img,
-.subpage .fill .newsImage img {
+.subpage .fill .newsImage img,
+.subpage .fill .eventImage img {
   float: left;
   border: 1px solid #000000;
   width: 100%;
@@ -247,7 +256,7 @@ section.homepage ul li.last::after {
   margin: 5px 0;
   padding: 2px;
   width: 100% !important;
-  border: 1px solid #BABABA
+  border: 1px solid #BABABA;
 }
 
 .subpage .fill .songDisplay ul.links {
@@ -262,7 +271,8 @@ section.homepage ul li.last::after {
 .subpage .fill .albumCover,
 .subpage .fill .songData,
 .subpage .fill .albumData,
-.subpage .fill .news {
+.subpage .fill .news,
+.subpage .fill .event {
   margin-top: 20px !important;
 }
 
@@ -299,13 +309,12 @@ section.homepage ul li.last::after {
   padding: 6px 0 0 0;
 }
 
-.subpage .fill  ul.songlist li span,
+.subpage .fill ul.songlist li span,
 .subpage .fill .masterSongList ul.songlist li span {
   float: right;
 }
 
 /* News */
-
 .subpage .fill .news span.date {
   color: #5F5F5F;
   border-bottom: 1px solid #BABABA;
@@ -324,3 +333,89 @@ section.homepage ul li.last::after {
   width: 25px;
 }
 
+.subpage .fill .news .newsImage {
+  padding: 0 !important;
+}
+
+/* Calendar */
+.subpage .fill .calendar {
+  display: table-row;
+  justify-content: center;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.subpage .fill .calendar li {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-grid;
+}
+
+.subpage .fill .calendar li .event {
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: 2px solid #BABABA;
+  padding: 10px;
+}
+
+.subpage .fill .calendar li .event .date,
+.subpage .fill .calendar li .event .title,
+.subpage .fill .calendar li .event .venue {
+  display: block;
+  width: 100%;
+}
+
+.subpage .fill .calendar li .event .day {
+  color: #BABABA;
+  font-size: 25pt;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.subpage .fill .calendar li .event .month {
+  font-size: 15pt;
+  color: #BABABA;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.subpage .fill .calendar li .event .year {
+  font-size: 15pt;
+  font-weight: lighter;
+  color: #BABABA;
+}
+
+.subpage .fill .calendar li .event .title {
+  border-top: 1px solid #BABABA;
+  padding: 10px 0 5px 0;
+}
+
+.subpage .fill .calendar li .event .venue {
+  color: #5F5F5F;
+  font-style: italic;
+}
+
+.subpage .fill .event .eventImage {
+  padding: 0 !important;
+}
+
+.subpage .fill .event .eventContent span.date {
+  color: #5F5F5F;
+  border-bottom: 1px solid #BABABA;
+  width: 100%;
+  display: block;
+}
+.subpage .fill .event .eventContent span.time,
+.subpage .fill .event .eventContent span.venue {
+  width: 100%;
+  display: block;
+}
+
+.subpage .fill .event .eventContent span.venue {
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+}
