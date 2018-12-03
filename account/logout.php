@@ -13,7 +13,7 @@
 
             if (Account.logout()) {
               // No bueno. Something went wrong with the logut operation.
-              console.log("Error processing logout request.  :-( ");
+              alert("Error processing logout request.  :-( ");
             } else {
               alert("Logout successful!");
 
@@ -35,29 +35,28 @@
             // Depending on if user is authenticated.
             if (authenticatedUser !== null) { // User authenticated.
 
-              // Remove update and delete links if they exist.
+              // Remove update and delete links if they exist (this will ensure no duplicates in next steps).
               $(".subpage nav ul #update").remove();
               $(".subpage nav ul #delete").remove();
-
               // Show links to update or delete account.
               let update = $('<li id="update"><a href="update.php">Update Account</a></li>');
               let del = $('<li id="delete"><a href="remove.php">Remove Account</a></li>');
               $(".subpage nav ul").append($(update));
               $(".subpage nav ul").append($(del));
 
-
               // Remove create link if it exists.
               $(".subpage nav ul #create").remove();
+
+              // Enable button.
+              $("button").removeAttr("disabled");
 
             } else {  // User NOT authenticated.
 
               // Disable button.
               $("button").attr("disabled", "disable");
 
-
-              // Remove create link if it exists.
+              // Remove create link if it exists (this will ensure no duplicates in next step).
               $(".subpage nav ul #create").remove();
-
               // Show links to create account.
               let create = $('<li id="create"><a href="create.php">Create Account</a></li>');
               $(".subpage nav ul").append($(create));

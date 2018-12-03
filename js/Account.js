@@ -40,8 +40,9 @@ let Account = (function () {
    * with predefined values in web storage. Return true if both login and password
    * matched. Otherwise, return false.
    *
-   * @param login
-   * @param password
+   * @param login  The login
+   * @param password  The password
+   * @returns {boolean} true if both login and password matched. Otherwise, return false
    */
   function authenticate(login, password) {
     let authenticated = false;
@@ -74,7 +75,7 @@ let Account = (function () {
    * The opposite of the authenticate() method. It changes authentication = false
    * for the authenticated user in web storage.
    *
-   * @returns {boolean}
+   * @returns {boolean} true if user is still authenticated (indicating failure); otherwise false.
    */
   function logout() {
     let authenticated = true;
@@ -134,20 +135,27 @@ let Account = (function () {
    */
   function toggleLoginLink(isAuthenticated) {
     let loginLink = $("header nav .login");
+    let dropDownMenuLink = $('header #menu_nav ul li .login');
     if (isAuthenticated) {
       // User is authenticated.
       $(loginLink).attr("href", "/account/logout.php");
       $(loginLink).text("LOGOUT");
+      $(dropDownMenuLink).attr("href", "/account/logout.php");
+      $(dropDownMenuLink).text("LOGOUT");
     } else {
       // Not authenticated.
       $(loginLink).attr("href", "/account");
       $(loginLink).text("LOGIN");
+      $(dropDownMenuLink).attr("href", "/account");
+      $(dropDownMenuLink).text("LOGIN");
     }
   }
 
   /**
    * Verifies that at least one person is authenticated (checks account info in web storage).
    * Returns the authenticated account; otherwise returns null.
+   *
+   * @returns  Authenticated account; otherwise returns null.
    */
   function isAuthenticated() {
     let accounts = JSON.parse(Storage.getData("accounts"));
@@ -168,6 +176,7 @@ let Account = (function () {
    * Returns true if user with provided login authenticated; otherwise returns false.
    *
    * @param login  The login to check.
+   * @returns {boolean}  true if user with provided login authenticated; otherwise returns false
    */
   function isUserAuthenticated(login) {
     let accounts = JSON.parse(Storage.getData("accounts"));
@@ -189,6 +198,7 @@ let Account = (function () {
    * if an account with the same login already exists.
    *
    * @param account  The account to create
+   * @returns {boolean}  true if account was created successfully; otherwise returns false
    */
   function createAccount(account) {
     let accounts = JSON.parse(Storage.getData("accounts"));
@@ -209,46 +219,57 @@ let Account = (function () {
   }
 
   /**
-   * Creates an account and stashes the data in web storage.  Returns
-   * true if account was created successfully; otherwise returns false
-   * if an account with the same login already exists.
+   * Updates the provided account in web storage.  Returns the updated account
+   * or null if there was an issue with updating the account.
    *
    * @param account  The account to create
+   * @returns  Updated account or null
    */
   function updateAccount(account) {
+    let updated = null;
     let accounts = JSON.parse(Storage.getData("accounts"));
+    let updatedAccounts = []; // Not the best way to handle it, but it works.
     // Get account data from local storage.
     if (accounts !== null) {
-      for (var i = 0; i < accounts.length; i++) {
+      for (var i = 0; i < accounts.length; i++){
         let a = accounts[i];
         if (a.login === account.login) {
-          return false;
+          updatedAccounts.push(account);
+          updated = account;
+        } else {
+          updatedAccounts.push(account);
         }
       }
-      accounts.push(account);
-    } else {
-      accounts = [];
     }
-    Storage.addData("accounts", JSON.stringify(accounts));
-    return true
+    Storage.addData("accounts", JSON.stringify(updatedAccounts));
+    return updated;
   }
 
   /**
-   * Retrieves account information from web storage using the provided login.
+   * Deletes account of the provided login form web storage.  Returns true if deletion was successful;
+   * otherwise false if unsuccessful or if login === tanya.
    *
-   * @param login  The login corresponding to the account to retrieve.
+   * @param login  The login corresponding to the account to delete
+   * @returns {boolean}  true if deletion was successful; otherwise false if unsuccessful or if login === tanya
    */
-  function getAccount(login) {
+  function removeAccount(login) {
+    if (login === "tanya") {
+      return false;
+    }
     let accounts = JSON.parse(Storage.getData("accounts"));
+    let updatedAccounts = []; // Not the best way to handle it, but it works.
     // Get account data from local storage.
     if (accounts !== null) {
-      for (var i = 0; i < accounts.length; i++) {
+      for (var i = 0; i < accounts.length; i++){
         let account = accounts[i];
-        if (account.login === login) {
-          return account;
+        if (account.login !== login) {
+          updatedAccounts.push(account);
         }
       }
     }
+    Storage.addData("accounts", JSON.stringify(updatedAccounts));
+    toggleLoginLink(false);
+    return accounts.length > updatedAccounts.length;
   }
 
   // Expose these functions.
@@ -261,7 +282,7 @@ let Account = (function () {
     isUserAuthenticated: isUserAuthenticated,
     createAccount: createAccount,
     updateAccount: updateAccount,
-    getAccount: getAccount
+    removeAccount: removeAccount
   };
 
 })();

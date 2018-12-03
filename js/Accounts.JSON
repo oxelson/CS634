@@ -2,10 +2,10 @@
   "accounts": [
     {
       "login": "tanya",
-      "emailAddress": "tanyaanisimova@foo.bar.baz",
+      "email": "tanyaanisimova@foo.bar.baz",
       "password": "tanya",
       "name": "Tanya Anisimova",
-      "address": "123 main Street",
+      "addr": "123 Main Street",
       "city": "Washington DC",
       "state": "",
       "postalCode": "20019",
@@ -14,9 +14,10 @@
     },
     {
       "login": "student",
-      "emailAddress": "student@somewhere.com@",
+      "email": "student@somewhere.com@",
       "password": "student",
       "name": "Joe Student",
+      "addr": "456 South Lane",
       "city": "Boston",
       "state": "Massachusetts",
       "postalCode": "02137",

@@ -44,10 +44,9 @@
             // Depending on if user is authenticated.
             if (authenticatedUser !== null) { // User authenticated.
 
-              // Remove update and delete links if they exist.
+              // Remove update and delete links if they exist (this will ensure no duplicates in next steps).
               $(".subpage nav ul #update").remove();
               $(".subpage nav ul #delete").remove();
-
               // Show links to update or delete account.
               let update = $('<li id="update"><a href="update.php">Update Account</a></li>');
               let del = $('<li id="delete"><a href="remove.php">Remove Account</a></li>');
@@ -70,9 +69,8 @@
               $("button").removeAttr("disabled");
               $("input").removeAttr("disabled");
 
-              // Remove create link if it exists.
+              // Remove create link if it exists (this will ensure no duplicates in next step).
               $(".subpage nav ul #create").remove();
-
               // Show links to create account.
               let create = $('<li id="create"><a href="create.php">Create Account</a></li>');
               $(".subpage nav ul").append($(create));

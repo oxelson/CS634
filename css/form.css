@@ -12,6 +12,12 @@ form {
   margin-top: 20px !important;
 }
 
+.update {
+  margin-top: 20px !important;
+  width: 100%;
+  display: flex;
+}
+
 .submit {
   padding: 0 15px !important;
 }

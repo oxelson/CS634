@@ -7,11 +7,9 @@
       <?php include '../head_include.php';?>
       <script>
         jQuery(document).ready(function() {
-
           // Submit form.
           $("button#submit").click(function() {
 
-            // Passwords match; Create account object.
             let account = {
               "name":  $("#name").val(),
               "address": $("#address1").val() + " " + $("#address2").val(),
@@ -25,13 +23,12 @@
               "authenticated": false
             }
             // Attempt to update the account.
-            if(!Account.createAccount(account)) {
-              // No bueno.  Print an error message:
-              $(".error").append('An account already exists with that login ID.  Please pick another.');
+            let updated = Account.updateAccount(account);
+            if(updated === null) {
+              // No bueno.
+              alert("An error occurred while updating your account information.");
             } else {
-               // Clear input fields.
-               $("input").val("");
-               alert("Account creation successful!  Please login.");
+              alert("Account update successful!");
             }
           });
 
@@ -49,33 +46,69 @@
           createLinks();
 
           /**
-           * Adds links to the DOM depending on if the user is logged in or not.
+           * Adds links to the DOM and populate form depending on if the user is logged in or not.
            */
           function createLinks() {
+            let authenticatedUser = Account.isAuthenticated();
+
             // Depending on if user is authenticated.
-            if (Account.isAuthenticated()) {
+            if (authenticatedUser !== null) { // User authenticated.
 
-              // Remove delete links if it exist.
+              // Enable form (except login ID field).
+              $("button").removeAttr("disabled");
+              $("button").removeAttr("disabled");
+              $("#loginId").attr("disabled", "disabled");
+
+              // Populate the web form with existing account data.
+               $("#name").val(authenticatedUser.name),
+               $("#address").val(authenticatedUser.addr);
+               $("#city").val(authenticatedUser.city);
+               $("#state").val(authenticatedUser.state);
+               $("#postalCode").val(authenticatedUser.postalCode);
+               $("#country").val(authenticatedUser.country);
+               $("#loginId").val(authenticatedUser.login);
+               $("#email").val(authenticatedUser.email);
+               $("#password").val(authenticatedUser.password);
+
+              // Remove delete links if it exist (this will ensure no duplicates in next step).
               $(".subpage nav ul #delete").remove();
-
               // Show link to delete account.
               let del = $('<li id="delete"><a href="remove.php">Remove Account</a></li>');
               $(".subpage nav ul").append($(del));
 
-              // Remove create link if it exists.
-              $(".subpage nav ul #login").remove();
-              // Remove create link if it exists.
-              $(".subpage nav ul #create").remove();
-            } else {
-              // Remove create link if it exists.
+              // Remove login link if it exists.
               $(".subpage nav ul #login").remove();
               // Remove create link if it exists.
               $(".subpage nav ul #create").remove();
 
+              // Remove logout link if it exists (this will ensure no duplicates in next step).
+              $(".subpage nav ul #logout").remove();
+              // Add link to logout.
+              let logout = $('<li id="logout"><a href="logout.php">Logout</a></li>');
+              $(".subpage nav ul").prepend($(logout));
+
+
+            } else {  // User NOT authenticated.
+
+              // Shouldn't be able to fill out form if unauthenticated.
+              // Clear input & disable fields
+              $("input").val("");
+              // Disable form.
+              $("button").attr("disabled","disabled");
+              $("input").attr("disabled","disabled");
+
+              // Remove logout link if it exists.
+              $(".subpage nav ul #logout").remove();
+
+              // Remove create link if it exists (this will ensure no duplicates in next step).
+              $(".subpage nav ul #login").remove();
               // Show link to login.
               let login = $('<li id="login"><a href="login.php">Login</a></li>');
               $(".subpage nav ul").prepend($(login));
-              // Show links to create account.
+
+              // Remove create link if it exists (this will ensure no duplicates in next step).
+              $(".subpage nav ul #create").remove();
+              // Show link to create account.
               let create = $('<li id="create"><a href="create.php">Create Account</a></li>');
               $(".subpage nav ul").append($(create));
 
@@ -97,10 +130,7 @@
 
          <nav class="col-sm-8 col-xs-12 right">
           <ul>
-            <li><a href="login.php">Login</a></li>
-            <li><a href="create.php">Create Account</a></li>
             <li class="active"><a href="update.php">Update Account</a></li>
-            <li><a href="remove.php">Remove Account</a></li>
           </ul>
          </nav>
 
@@ -119,46 +149,45 @@
            <div class="fill">
              <div class="row">
                <h3>Update your Account</h3>
-               <div class="col-sm-6 col-xs-12">
-                 <div class="form-group">
-                   <input type="text" class="form-control col-form-label-sm" id="name" placeholder="Full Name">
+               <div class="update">
+                 <div class="col-sm-6 col-xs-12">
+                   <div class="form-group">
+                     <input type="text" class="form-control col-form-label-sm" id="name" placeholder="Full Name">
+                   </div>
+                   <div class="form-group">
+                     <input type="text" class="form-control col-form-label-sm" id="address" placeholder="Address">
+                   </div>
+                   <div class="form-group">
+                     <input type="text" class="form-control col-form-label-sm" id="city" placeholder="City">
+                   </div>
+                   <div class="form-group">
+                     <input type="text" class="form-control col-form-label-sm" id="state" placeholder="Province/State">
+                   </div>
+                   <div class="form-group">
+                     <input type="text" class="form-control col-form-label-sm" id="postalCode" placeholder="Postal Code">
+                   </div>
+                   <div class="form-group">
+                     <input type="text" class="form-control col-form-label-sm" id="country" placeholder="Country">
+                   </div>
                  </div>
-                 <div class="form-group">
-                   <input type="text" class="form-control col-form-label-sm" id="address1" placeholder="Address">
+                 <div class="col-sm-6 col-xs-12">
+                   <div class="form-group">
+                     <input type="text" class="form-control col-form-label-sm" id="loginId" placeholder="Login ID" disabled>
+                   </div>
+                   <div class="form-group">
+                     <input type="email" class="form-control col-form-label-sm" id="email" placeholder="Email Address">
+                   </div>
+                   <div class="form-group">
+                     <input type="password" class="form-control col-form-label-sm" id="password" placeholder="Password">
+                   </div>
+                   <div class="error"></div>
+                   <div class="form-group recaptcha">
+                     <img src="/images/check.png" alt="I am not a robot"> I am not a robot
+                   </div>
+                   <button type="submit" id="submit" class="btn btn-primary">Update</button>
+                   <button type="submit" id="reset" class="btn btn-secondary">Reset</button>
                  </div>
-                 <div class="form-group">
-                   <input type="text" class="form-control col-form-label-sm" id="address2" placeholder="Address (Optional)">
-                 </div>
-                 <div class="form-group">
-                   <input type="text" class="form-control col-form-label-sm" id="city" placeholder="City">
-                 </div>
-                 <div class="form-group">
-                   <input type="text" class="form-control col-form-label-sm" id="state" placeholder="Province/State">
-                 </div>
-                 <div class="form-group">
-                   <input type="text" class="form-control col-form-label-sm" id="postalCode" placeholder="Postal Code">
-                 </div>
-                 <div class="form-group">
-                   <input type="text" class="form-control col-form-label-sm" id="country" placeholder="Country">
-                 </div>
-               </div>
-               <div class="col-sm-6 col-xs-12">
-                 <div class="form-group">
-                   <input type="text" class="form-control col-form-label-sm" id="loginId" placeholder="Login ID">
-                 </div>
-                 <div class="form-group">
-                   <input type="email" class="form-control col-form-label-sm" id="email" placeholder="Email Address">
-                 </div>
-                 <div class="form-group">
-                   <input type="password" class="form-control col-form-label-sm" id="password" placeholder="Password">
-                 </div>
-                 <div class="error"></div>
-                 <div class="form-group recaptcha">
-                   <img src="/images/check.png" alt="I am not a robot"> I am not a robot
-                 </div>
-                 <button type="submit" id="submit" class="btn btn-primary">Login</button>
-                 <button type="submit" id="reset" class="btn btn-secondary">Reset</button>
-               </div>
+               </div> <!--/.update -->
              <div> <!--/.row -->
            </div> <!-- /.fill -->
          </section>

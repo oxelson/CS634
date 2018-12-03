@@ -17,7 +17,7 @@
               // Passwords match; Create account object.
               let account = {
                 "name":  $("#name").val(),
-                "address": $("#address1").val() + " " + $("#address2").val(),
+                "addr": $("#address").val(),
                 "city": $("#city").val(),
                 "state": $("#state").val(),
                 "postalCode": $("#postalCode").val(),
@@ -32,8 +32,9 @@
                 // No bueno.  Print an error message:
                 $(".error").append('An account already exists with that login ID.  Please pick another.');
               } else {
-                 // Clear input fields.
-                 $("input").val("");
+                // create links depending on authentication status.
+                 createLinks();
+
                  alert("Account creation successful!  Please login.");
               }
             }
@@ -56,13 +57,14 @@
            * Adds links to the DOM depending on if the user is logged in or not.
            */
           function createLinks() {
-            // Depending on if user is authenticated.
-            if (Account.isAuthenticated()) {
 
-              // Remove update and delete links if they exist.
+            let authenticatedUser = Account.isAuthenticated();
+            // Depending on if user is authenticated.
+            if (authenticatedUser !== null) { // User authenticated.
+
+              // Remove update and delete links if they exist (this will ensure no duplicates in next steps).
               $(".subpage nav ul #update").remove();
               $(".subpage nav ul #delete").remove();
-
               // Show links to update or delete account.
               let update = $('<li id="update"><a href="update.php">Update Account</a></li>');
               let del = $('<li id="delete"><a href="remove.php">Remove Account</a></li>');
@@ -71,10 +73,18 @@
 
               // Remove create link if it exists.
               $(".subpage nav ul #login").remove();
-            } else {
-              // Remove create link if it exists.
-              $(".subpage nav ul #login").remove();
 
+              // Shouldn't be able to fill out form if authenticated.
+              // Clear input & disable fields
+              $("input").val("");
+              // Disable form.
+              $("button").attr("disabled","disabled");
+              $("input").attr("disabled","disabled");
+
+            } else { // User NOT authenticated.
+
+              // Remove login link if it exists (this will ensure no duplicates in next steps).
+              $(".subpage nav ul #login").remove();
               // Show link to login.
               let login = $('<li id="login"><a href="login.php">Login</a></li>');
               $(".subpage nav ul").prepend($(login));
@@ -82,6 +92,10 @@
               // Remove update and delete links if they exist.
               $(".subpage nav ul #update").remove();
               $(".subpage nav ul #delete").remove();
+
+              // Enable form.
+              $("button").removeAttr("disabled");
+              $("input").removeAttr("disabled");
             }
           }
         });
@@ -123,10 +137,7 @@
                    <input type="text" class="form-control col-form-label-sm" id="name" placeholder="Full Name">
                  </div>
                  <div class="form-group">
-                   <input type="text" class="form-control col-form-label-sm" id="address1" placeholder="Address">
-                 </div>
-                 <div class="form-group">
-                   <input type="text" class="form-control col-form-label-sm" id="address2" placeholder="Address (Optional)">
+                   <input type="text" class="form-control col-form-label-sm" id="address" placeholder="Address">
                  </div>
                  <div class="form-group">
                    <input type="text" class="form-control col-form-label-sm" id="city" placeholder="City">
@@ -158,7 +169,7 @@
                  <div class="form-group recaptcha">
                    <img src="/images/check.png" alt="I am not a robot"> I am not a robot
                  </div>
-                 <button type="submit" id="submit" class="btn btn-primary">Login</button>
+                 <button type="submit" id="submit" class="btn btn-primary">Create</button>
                  <button type="submit" id="reset" class="btn btn-secondary">Reset</button>
                </div>
              <div> <!--/.row -->
