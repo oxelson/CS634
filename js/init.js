@@ -14,6 +14,9 @@ jQuery(document).ready(function(){
   // Verify we have account data in storage.
   Account.verifyData();
 
+  // Make sure the login/logout link is updated accordingly.
+  Account.manageLoginLink();
+
   // Populate the dropdown menu with the links in the nav bar.
   $.each($('header nav a'), function( index, value ) {
     if (!$(this).hasClass('menu')) {

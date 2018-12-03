@@ -45,7 +45,6 @@ let Account = (function () {
    */
   function authenticate(login, password) {
     let authenticated = false;
-
     let accounts = JSON.parse(Storage.getData("accounts"));
     let updatedAccounts = []; // Not the best way to handle it, but it works.
     // Get account data from local storage.
@@ -57,6 +56,7 @@ let Account = (function () {
           account.authenticated = true;
           updatedAccounts.push(account);
           authenticated = true;
+          manageLoginLink(account);
         } else {
           updatedAccounts.push(account);
         }
@@ -71,8 +71,83 @@ let Account = (function () {
   }
 
   /**
+   * The opposite of the authenticate() method. It changes authentication = false
+   * for the authenticated user in web storage.
+   *
+   * @returns {boolean}
+   */
+  function logout() {
+    let authenticated = true;
+
+    let accounts = JSON.parse(Storage.getData("accounts"));
+    let updatedAccounts = []; // Not the best way to handle it, but it works.
+    // Get account data from local storage.
+    if (accounts !== null) {
+      for (var i = 0; i < accounts.length; i++){
+        let account = accounts[i];
+        let auth = account.authenticated;
+        if (auth) {
+          // Change authenticated to true in web storage.
+          account.authenticated = false;
+          updatedAccounts.push(account);
+          authenticated = false;
+          toggleLoginLink(false);
+        } else {
+          updatedAccounts.push(account);
+        }
+      }
+    }
+    Storage.addData("accounts", JSON.stringify(updatedAccounts));
+    return authenticated;
+  }
+
+  /**
+   * Invokes the toggleLoginLink() method using the provided user account.
+   * Attempts to determine whether user is authenticated or not if no user
+   * account provided.
+   *
+   * @param account  The authenticated user's account (can be undefined).
+   */
+  function manageLoginLink(account) {
+    // Handed an account, so the user already is authenticated.
+    if (account !== undefined) {
+      toggleLoginLink(true);
+    } else {
+      // No account given, see if we can determine if user is authenticated.
+      account = isAuthenticated();
+      // And try again...
+      if (account !== null) {
+        // Able to detect the user is authenticated.
+        toggleLoginLink(true);
+      } else {
+        // Still not logged in.
+        toggleLoginLink(false);
+      }
+    }
+  }
+
+  /**
+   * Toggles the login/logout link in the header to show the appropriate
+   * text/link depending on the provided authentication status.
+   *
+   * @param isAuthenticated  true if user is authenticated; otherwise false.
+   */
+  function toggleLoginLink(isAuthenticated) {
+    let loginLink = $("header nav .login");
+    if (isAuthenticated) {
+      // User is authenticated.
+      $(loginLink).attr("href", "/account/logout.php");
+      $(loginLink).text("LOGOUT");
+    } else {
+      // Not authenticated.
+      $(loginLink).attr("href", "/account");
+      $(loginLink).text("LOGIN");
+    }
+  }
+
+  /**
    * Verifies that at least one person is authenticated (checks account info in web storage).
-   * Returns true if someone is authenticated; otherwise returns false.
+   * Returns the authenticated account; otherwise returns null.
    */
   function isAuthenticated() {
     let accounts = JSON.parse(Storage.getData("accounts"));
@@ -81,11 +156,11 @@ let Account = (function () {
       for (var i = 0; i < accounts.length; i++) {
         let account = accounts[i];
         if (account.authenticated === true) {
-          return account.authenticated;
+          return account;
         }
       }
     }
-    return false;
+    return null;
   }
 
   /**
@@ -133,15 +208,60 @@ let Account = (function () {
     return true
   }
 
+  /**
+   * Creates an account and stashes the data in web storage.  Returns
+   * true if account was created successfully; otherwise returns false
+   * if an account with the same login already exists.
+   *
+   * @param account  The account to create
+   */
+  function updateAccount(account) {
+    let accounts = JSON.parse(Storage.getData("accounts"));
+    // Get account data from local storage.
+    if (accounts !== null) {
+      for (var i = 0; i < accounts.length; i++) {
+        let a = accounts[i];
+        if (a.login === account.login) {
+          return false;
+        }
+      }
+      accounts.push(account);
+    } else {
+      accounts = [];
+    }
+    Storage.addData("accounts", JSON.stringify(accounts));
+    return true
+  }
 
+  /**
+   * Retrieves account information from web storage using the provided login.
+   *
+   * @param login  The login corresponding to the account to retrieve.
+   */
+  function getAccount(login) {
+    let accounts = JSON.parse(Storage.getData("accounts"));
+    // Get account data from local storage.
+    if (accounts !== null) {
+      for (var i = 0; i < accounts.length; i++) {
+        let account = accounts[i];
+        if (account.login === login) {
+          return account;
+        }
+      }
+    }
+  }
 
   // Expose these functions.
   return {
     verifyData: verifyData,
     authenticate: authenticate,
+    logout: logout,
+    manageLoginLink: manageLoginLink,
     isAuthenticated: isAuthenticated,
     isUserAuthenticated: isUserAuthenticated,
-    createAccount: createAccount
+    createAccount: createAccount,
+    updateAccount: updateAccount,
+    getAccount: getAccount
   };
 
 })();

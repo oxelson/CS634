@@ -59,7 +59,6 @@ let Calendar = (function () {
       let datePieces = event.date.split(" ");
       let day = datePieces[0];
       let month = datePieces[1];
-      console.log(month);
       let year = datePieces[2];
       let dateTag = $('<span class="date"></span><span class="day">' + day + '</span><span class="month">' + month + '</span><span class="year">' + year + '</span></span>');
       $(eventDiv).append($(dateTag));

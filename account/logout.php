@@ -1,34 +1,25 @@
-<!-- ACCOUNT: LOGIN -->
+<!-- ACCOUNT: LOGOUT -->
 <!DOCTYPE HTML>
   <html>
     <head>
-      <title>Tanya Anisimova : Account - Login </title>
+      <title>Tanya Anisimova : Account - Logout </title>
       <meta name="description" content="Website Account" />
       <?php include '../head_include.php';?>
       <script>
         jQuery(document).ready(function(){
 
-          // Authenticate user.
+          // Log user out.
           $("button").click(function() {
-            let login = $("#loginId").val();
-            let password = $("#password").val();
 
-            if (!Account.authenticate(login, password)) {
-              // No bueno.  Print an error message:
-              $(".error").append('Bad credentials.  Please try again.');
+            if (Account.logout()) {
+              // No bueno. Something went wrong with the logut operation.
+              console.log("Error processing logout request.  :-( ");
             } else {
-              // Clear input fields.
-              $("input").val("");
-              alert("Login successful!");
+              alert("Logout successful!");
 
               // create links depending on authentication status.
               createLinks();
             }
-          });
-
-          // Remove any previous error messages.
-          $("input").focusin(function() {
-            $(".error").empty();
           });
 
           // create links depending on authentication status.
@@ -54,21 +45,15 @@
               $(".subpage nav ul").append($(update));
               $(".subpage nav ul").append($(del));
 
+
               // Remove create link if it exists.
               $(".subpage nav ul #create").remove();
 
-              // Disable login form.
-              $("button").attr("disabled","disabled");
-              $("input").attr("disabled","disabled");
-
-              // Display login messages.
-              $(".success").append('You are logged in as ' + authenticatedUser.login);
-
             } else {  // User NOT authenticated.
 
-              // Enable login form.
-              $("button").removeAttr("disabled");
-              $("input").removeAttr("disabled");
+              // Disable button.
+              $("button").attr("disabled", "disable");
+
 
               // Remove create link if it exists.
               $(".subpage nav ul #create").remove();
@@ -97,7 +82,7 @@
 
          <nav class="col-sm-8 col-xs-12 right">
           <ul>
-            <li id="login" class="active"><a href="login.php">Login</a></li>
+            <li class="active"><a href="logout.php">Logout</a></li>
           </ul>
          </nav>
 
@@ -115,16 +100,9 @@
          <section class="col-sm-8 col-xs-12">
            <div class="fill">
              <div class="row">
-               <h3>Login</h3>
-               <div class="col-8 login">
-                 <div class="error"></div><div class="success"></div>
-                 <div class="form-group">
-                   <input type="text" class="form-control col-form-label-sm" id="loginId" placeholder="Login ID">
-                 </div>
-                 <div class="form-group">
-                   <input type="password" class="form-control col-form-label-sm" id="password" placeholder="Password">
-                 </div>
-                 <button type="submit" class="btn btn-primary">Login</button>
+               <h3>Logout</h3>
+               <div class="col-8 logout">
+                 <button type="submit" class="btn btn-danger">Logout</button>
                </div> <!--/.login -->
              <div> <!--/.row -->
            </div> <!-- /.fill -->

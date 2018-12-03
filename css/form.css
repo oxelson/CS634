@@ -8,7 +8,7 @@ form {
   width: 100%;
 }
 
-.login {
+.logout {
   margin-top: 20px !important;
 }
 
@@ -34,5 +34,9 @@ form {
   margin-bottom: 10px;
 }
 
+.success {
+  color: #0000FF;
+  margin-bottom: 10px;
+}
 
 
