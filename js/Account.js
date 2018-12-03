@@ -81,7 +81,6 @@ let Account = (function () {
       for (var i = 0; i < accounts.length; i++) {
         let account = accounts[i];
         if (account.authenticated === true) {
-          console.log("HHHHHH");
           return account.authenticated;
         }
       }
@@ -109,12 +108,40 @@ let Account = (function () {
     return false;
   }
 
+  /**
+   * Creates an account and stashes the data in web storage.  Returns
+   * true if account was created successfully; otherwise returns false
+   * if an account with the same login already exists.
+   *
+   * @param account  The account to create
+   */
+  function createAccount(account) {
+    let accounts = JSON.parse(Storage.getData("accounts"));
+    // Get account data from local storage.
+    if (accounts !== null) {
+      for (var i = 0; i < accounts.length; i++) {
+        let a = accounts[i];
+        if (a.login === account.login) {
+          return false;
+        }
+      }
+      accounts.push(account);
+    } else {
+      accounts = [];
+    }
+    Storage.addData("accounts", JSON.stringify(accounts));
+    return true
+  }
+
+
+
   // Expose these functions.
   return {
     verifyData: verifyData,
     authenticate: authenticate,
     isAuthenticated: isAuthenticated,
-    isUserAuthenticated: isUserAuthenticated
+    isUserAuthenticated: isUserAuthenticated,
+    createAccount: createAccount
   };
 
 })();

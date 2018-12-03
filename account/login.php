@@ -40,6 +40,11 @@
           function createLinks() {
             // Depending on if user is authenticated.
             if (Account.isAuthenticated()) {
+
+              // Remove update and delete links if they exist.
+              $(".subpage nav ul #update").remove();
+              $(".subpage nav ul #delete").remove();
+
               // Show links to update or delete account.
               let update = $('<li id="update"><a href="update.php">Update Account</a></li>');
               let del = $('<li id="delete"><a href="remove.php">Remove Account</a></li>');
@@ -49,6 +54,10 @@
               // Remove create link if it exists.
               $(".subpage nav ul #create").remove();
             } else {
+
+              // Remove create link if it exists.
+              $(".subpage nav ul #create").remove();
+
               // Show links to create account.
               let create = $('<li id="create"><a href="create.php">Create Account</a></li>');
               $(".subpage nav ul").append($(create));
