@@ -7,6 +7,9 @@
       <?php include '../head_include.php';?>
       <script>
         jQuery(document).ready(function(){
+          $("button").click(function() {
+            alert("This form sends a message to Tanya.");
+          });
         });
       </script>
     </head>
@@ -25,7 +28,6 @@
             <li><a href="booking.php">Booking Request</a></li>
           </ul>
          </nav>
-
        </div> <!-- /.row -->
 
 
@@ -39,11 +41,11 @@
          <!-- right side -->
          <section class="col-sm-8 col-xs-12">
            <div class="fill">
-             <div class="row">
-               <h3>Send a Message to Tanya</h3>
-               <p>Use the following form to send a private message to Tanya Anisimova.</p>
-               <form>
-                 <div class="col-6">
+             <form>
+               <div class="row">
+                 <h3>Send a Message to Tanya</h3>
+                 <p>Use the following form to send a private message to Tanya Anisimova.</p>
+                 <div class="col-sm-6 col-xs-12">
                    <div class="form-group">
                      <input type="text" class="form-control col-form-label-sm" id="name" placeholder="Full Name">
                    </div>
@@ -53,18 +55,21 @@
                    <div class="form-group">
                      <input type="text" class="form-control col-form-label-sm" id="subject" placeholder="Subject">
                    </div>
-                   <!-- recaptcha -->
-                   <div class="g-recaptcha" data-sitekey="6LePN34UAAAAAA4lYnH6jZ1mng6j0Q9p0FlwL7lI"></div>
-                   <p></p>
-                   <button type="submit" class="btn btn-primary">Send Message</button>
                  </div>
-                 <div class="col-6">
+                 <div class="col-sm-6 col-xs-12">
                    <div class="form-group">
-                     <textarea class="form-control rounded-0 col-form-label-sm" id="message" placeholder="Message" rows="12"></textarea>
+                     <textarea class="form-control rounded-0 col-form-label-sm" id="message" placeholder="Message" rows="8"></textarea>
                    </div>
                  </div>
-               </form>
-             <div> <!--/.row -->
+
+                 <div class="col-sm-6 col-xs-12 submit">
+                   <div class="form-group recaptcha">
+                     <img src="/images/check.png" alt="I am not a robot"> I am not a robot
+                   </div>
+                   <button type="submit" class="btn btn-primary">Send Message</button>
+                 </div>
+               </div> <!--/.row -->
+             </form>
            </div> <!-- /.fill -->
          </section>
        </div> <!-- /.row -->

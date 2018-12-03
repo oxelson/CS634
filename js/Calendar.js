@@ -10,7 +10,7 @@ let Calendar = (function () {
    */
   function verifyData() {
     // Load calendar data into local storage if it isn't present.
-    if (!Storage.isStored('calendar')) {
+    if (!Storage.isStored("calendar")) {
       console.log('Initializing calendars in local storage...');
       // Load the data into storage.
       getCalendarData();
@@ -155,8 +155,7 @@ let Calendar = (function () {
     $('.fill').append($(eventDiv));
   }
 
-
-    // Expose these functions.
+  // Expose these functions.
   return {
     verifyData: verifyData,
     displayCalendar: displayCalendar,

@@ -5,12 +5,14 @@
  */
 jQuery(document).ready(function(){
 
-  // Verify we have album data in storage.
+  // Verify we have album & performance data in storage.
   Discography.verifyData();
   // Verify we have news data in storage.
   News.verifyData();
   // Verify we have calendar data in storage.
   Calendar.verifyData();
+  // Verify we have account data in storage.
+  Account.verifyData();
 
   // Populate the dropdown menu with the links in the nav bar.
   $.each($('header nav a'), function( index, value ) {

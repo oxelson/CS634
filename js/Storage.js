@@ -11,9 +11,7 @@ let Storage = (function () {
    * @param value  The data to be stored in local storage.
    */
   function addData(key, value) {
-    if (typeof(Storage) !== 'undefined') {
-      localStorage.setItem(key, value);
-    } 
+    localStorage.setItem(key, value);
   }
 
   /**
@@ -22,8 +20,11 @@ let Storage = (function () {
    * @param key  The key to look for in local storage.
    */
   function isStored(key) {
-    if (typeof(Storage) !== 'undefined') {
-      localStorage.hasOwnProperty(key);
+    let value = getData(key);
+    if (value !== null) {
+      return true;
+    } else {
+      return false;
     }
   }
 
@@ -33,9 +34,7 @@ let Storage = (function () {
    * @param key  The key used to retrieve the data in local storage.
    */
   function getData(key) {
-    if (typeof(Storage) !== 'undefined') {
-      return localStorage.getItem(key);
-    }
+    return localStorage.getItem(key);
   }
 
   /**
@@ -44,9 +43,7 @@ let Storage = (function () {
    * @param key  The key to remove the data in local storage.
    */
   function removeData(key) {
-    if (typeof(Storage) !== 'undefined') {
-      localStorage.removeItem(key);
-    }
+    localStorage.removeItem(key);
   }
 
   // Expose these functions.

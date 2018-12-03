@@ -5,3 +5,5 @@ https://commons.wikimedia.org/wiki/File:St_James_Church_Piccadilly_Interior.jpg
 Lonpicman at English Wikipedia
 
 http://www.promisek.org/Programs.aspx
+
+ <img src="/images/tanya-homepage.png" alt="Photo of Tanya Anisimova by Paul Purpura."/>

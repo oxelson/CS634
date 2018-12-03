@@ -69,6 +69,7 @@
                    </div>
                  </div>
                  <div class="col-6">
+
                    <div class="form-group">
                      <input type="email" class="form-control col-form-label-sm" id="email" placeholder="Email Address">
                    </div>

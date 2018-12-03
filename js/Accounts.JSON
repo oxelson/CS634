@@ -1,0 +1,27 @@
+{
+  "accounts": [
+    {
+      "login": "tanya",
+      "emailAddress": "tanyaanisimova@foo.bar.baz",
+      "password": "tanya",
+      "name": "Tanya Anisimova",
+      "address": "123 main Street",
+      "city": "Washington DC",
+      "state": "",
+      "postalCode": "20019",
+      "country": "USA",
+      "authenticated": false
+    },
+    {
+      "login": "student",
+      "emailAddress": "student@somewhere.com@",
+      "password": "student",
+      "name": "Joe Student",
+      "city": "Boston",
+      "state": "Massachusetts",
+      "postalCode": "02137",
+      "country": "USA",
+      "authenticated": false
+    }
+  ]
+}
