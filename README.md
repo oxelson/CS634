@@ -17,7 +17,8 @@ The sprint retrospective is avaiable in the [Team 1 Trello](https://trello.com/b
 
 We removed two items from the Sprint 1 backlog:
 
-1. The 'Classical Music Lover views song lyrics' card was removed from the sprints altogether (currently located in the 'Backlog Items Removed From Sprint 1' section of [Team 1's Trello](https://trello.com/b/CjFGS03b/cs634-group-1-team-1) board. The primary reason for this is that any of Tanya's lyrics are not actual words, but vocalizations. As a team fullfilling all roles (Product Owner, Development Team, Scrum Master, etc.), we decided that trying to implement this item would not provide any real value to the end result of the sprint,  Hence, it's removal was determined to not affect the overall sprint goal.
+1. The 'Classical Music Lover views song lyrics' card was removed from the sprints altogether (currently located in the 'Backlog Items Removed From Sprint 1' section of [Team 1's Trello](https://trello.com/b/CjFGS03b/cs634-group-1-team-1) board. The primary reason for this is that any of Tanya's lyrics are not actual words, but vocalizations. As a team fulfilling all roles (Product Owner, Development Team, Scrum Master, etc.), we decided that trying to implement this item would not provide any real value to the end result of the sprint,  Hence, it's removal was determined to not affect the overall sprint goal.
+
 2. The 'Student purchases sheet music' item was moved to the sprint 2 backlog.  The team decided that the merits offered by this particular item were more in-line with the goals of sprint 2 (which is mostly devoted to the incorporation of student instruction into the website).
 
 ### Website sources & credits
