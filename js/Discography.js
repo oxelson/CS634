@@ -136,7 +136,7 @@ let Discography = (function () {
 
     // If tanya is authenticated, show links to update and delete album.
     let user = Account.isAuthenticated();
-    if (user !== null) {
+    if (user.login === 'tanya') {
       let blankElement = $('<li class="blank"></li>');
       $(linkList).append($(blankElement));
       let updateElement = $('<li class="admin"><a href="update.php?type=album&' + albumOfInterest + '">Update Album</a></li>');
@@ -403,8 +403,7 @@ let Discography = (function () {
 
     // If tanya is authenticated, show links to update and delete song.
     let user = Account.isAuthenticated();
-    if (user !== null) {
-
+    if (user.login === 'tanya') {
       let row3 = $('<div class="row songDisplay"></div>');
 
       // Create list for displaying update/deletion of song.
@@ -517,7 +516,7 @@ let Discography = (function () {
 
         // If tanya is authenticated, show links to update and delete song.
         let user = Account.isAuthenticated();
-        if (user !== null) {
+        if (user.login === 'tanya') {
 
           // Create list for displaying update/deletion of performance.
           let linkList = $('<ul class="adminLinks "></ul>');
