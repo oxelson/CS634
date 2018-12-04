@@ -12,7 +12,7 @@
 
             let account = {
               "name":  $("#name").val(),
-              "address": $("#address1").val() + " " + $("#address2").val(),
+              "address": $("#address").val(),
               "city": $("#city").val(),
               "state": $("#state").val(),
               "postalCode": $("#postalCode").val(),
@@ -149,45 +149,41 @@
            <div class="fill">
              <div class="row">
                <h3>Update your Account</h3>
-               <div class="update">
-                 <div class="col-sm-6 col-xs-12">
-                   <div class="form-group">
-                     <input type="text" class="form-control col-form-label-sm" id="name" placeholder="Full Name">
-                   </div>
-                   <div class="form-group">
-                     <input type="text" class="form-control col-form-label-sm" id="address" placeholder="Address">
-                   </div>
-                   <div class="form-group">
-                     <input type="text" class="form-control col-form-label-sm" id="city" placeholder="City">
-                   </div>
-                   <div class="form-group">
-                     <input type="text" class="form-control col-form-label-sm" id="state" placeholder="Province/State">
-                   </div>
-                   <div class="form-group">
-                     <input type="text" class="form-control col-form-label-sm" id="postalCode" placeholder="Postal Code">
-                   </div>
-                   <div class="form-group">
-                     <input type="text" class="form-control col-form-label-sm" id="country" placeholder="Country">
-                   </div>
+               <div class="update"></div>
+               <div class="col-sm-6 col-xs-12">
+                 <div class="form-group">
+                   <input type="text" class="form-control col-form-label-sm" id="name" placeholder="Full Name">
                  </div>
-                 <div class="col-sm-6 col-xs-12">
-                   <div class="form-group">
-                     <input type="text" class="form-control col-form-label-sm" id="loginId" placeholder="Login ID" disabled>
-                   </div>
-                   <div class="form-group">
-                     <input type="email" class="form-control col-form-label-sm" id="email" placeholder="Email Address">
-                   </div>
-                   <div class="form-group">
-                     <input type="password" class="form-control col-form-label-sm" id="password" placeholder="Password">
-                   </div>
-                   <div class="error"></div>
-                   <div class="form-group recaptcha">
-                     <img src="/images/check.png" alt="I am not a robot"> I am not a robot
-                   </div>
-                   <button type="submit" id="submit" class="btn btn-primary">Update</button>
-                   <button type="submit" id="reset" class="btn btn-secondary">Reset</button>
+                 <div class="form-group">
+                   <input type="text" class="form-control col-form-label-sm" id="address" placeholder="Address">
                  </div>
-               </div> <!--/.update -->
+                 <div class="form-group">
+                   <input type="text" class="form-control col-form-label-sm" id="city" placeholder="City">
+                 </div>
+                 <div class="form-group">
+                   <input type="text" class="form-control col-form-label-sm" id="state" placeholder="Province/State">
+                 </div>
+                 <div class="form-group">
+                   <input type="text" class="form-control col-form-label-sm" id="postalCode" placeholder="Postal Code">
+                 </div>
+                 <div class="form-group">
+                   <input type="text" class="form-control col-form-label-sm" id="country" placeholder="Country">
+                 </div>
+               </div>
+               <div class="col-sm-6 col-xs-12">
+                 <div class="form-group">
+                   <input type="text" class="form-control col-form-label-sm" id="loginId" placeholder="Login ID" disabled>
+                 </div>
+                 <div class="form-group">
+                   <input type="email" class="form-control col-form-label-sm" id="email" placeholder="Email Address">
+                 </div>
+                 <div class="form-group">
+                   <input type="password" class="form-control col-form-label-sm" id="password" placeholder="Password">
+                 </div>
+                 <div class="error"></div>
+                 <button type="submit" id="submit" class="btn btn-primary">Update</button>
+                 <button type="submit" id="reset" class="btn btn-secondary">Reset</button>
+               </div>
              <div> <!--/.row -->
            </div> <!-- /.fill -->
          </section>

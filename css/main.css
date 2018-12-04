@@ -177,6 +177,7 @@ section.homepage ul li.last::after {
   text-align: center;
 }
 
+
 /* Sub-page content */
 .subpage .fill {
   margin-top: 3%;
@@ -253,17 +254,34 @@ section.homepage ul li.last::after {
   display: block;
 }
 
-.subpage .fill ul.links {
+.subpage .fill ul.links,
+.subpage .fill ul.adminLinks {
   justify-content: flex-start;
   margin: 10px 0;
   padding: 0;
 }
 
-.subpage .fill ul.links li {
+.subpage .fill ul.links li,
+.subpage .fill ul.adminLinks li {
   margin: 5px 0;
   padding: 2px;
   width: 100% !important;
   border: 1px solid #BABABA;
+}
+
+.subpage .fill ul.adminLinks li {
+  width: 30% !important;
+  border: 2px solid #FF0000;
+  margin-right: 20px;
+}
+
+
+.subpage .fill ul.links li.blank {
+    border: none !important;
+}
+
+.subpage .fill ul.links li.admin {
+    border: 2px solid #FF0000;
 }
 
 .subpage .fill .songDisplay ul.links {
@@ -308,6 +326,7 @@ section.homepage ul li.last::after {
   margin: 0;
   padding: 6px 0 0 0;
 }
+
 
 /* for some reason we need to declare this separate from the one above */
 .subpage .fill .masterSongList ul.songlist li {

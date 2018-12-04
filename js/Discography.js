@@ -57,6 +57,29 @@ let Discography = (function () {
     });
   }
 
+  /**
+   * Retrieves the data of the provided album.
+   *
+   * @param albumOfInterest  The album whose data we need to retrieve.
+   */
+  function getAlbum(albumOfInterest) {
+    // Just in case the data isn't in local storage yet.
+    verifyData();
+
+    // Get albums from local storage.
+    let albums = JSON.parse(Storage.getData("albums"));
+    let album;
+
+    // Parse album data and get the requested album.
+    for (let i = 0; i < albums.length; i++) {
+      let album = albums[i];
+      // If matches.
+      if (album.cover.replace(/\.png/, '') === albumOfInterest) {
+        return album;
+      }
+    }
+  }
+
 
   /**
    * Loads album data from local storage, parses the JSON object,
@@ -109,6 +132,18 @@ let Discography = (function () {
       let element = $('<li>Purchase on <a href="' + store.url + '">' + store.store + '</a></li>');
       // Add purchase elements to linkList.
       $(linkList).append($(element));
+    }
+
+    // If tanya is authenticated, show links to update and delete album.
+    let user = Account.isAuthenticated();
+    if (user !== null) {
+      let blankElement = $('<li class="blank"></li>');
+      $(linkList).append($(blankElement));
+      let updateElement = $('<li class="admin"><a href="update.php?type=album&' + albumOfInterest + '">Update Album</a></li>');
+      $(linkList).append($(updateElement));
+
+      let removeElement = $('<li class="admin"><a href="remove.php?type=album&' + albumOfInterest + '">Remove Album</a></li>');
+      $(linkList).append($(removeElement));
     }
 
     // Add linkList to albumCover div.
@@ -212,6 +247,48 @@ let Discography = (function () {
 
     // Attach to DOM as unordered list.
     $('.fill').append($(list));
+  }
+
+
+  /**
+   * Retrieves the data of the provided song.
+   *
+   * @param songOfInterest  The song whose data we need to retrieve.
+   */
+  function getSong(songOfInterest) {
+    // Just in case the data isn't in local storage yet.
+    verifyData();
+
+    // Get the track number from the songOfInterest.
+    let separator = songOfInterest.lastIndexOf('-');
+    let trackNumber = songOfInterest.slice((separator + 1), songOfInterest.length);
+
+    // Get album from the songOfInterest.
+    let songAlbum = songOfInterest.slice(0, separator);
+
+    // Get albums from local storage.
+    let albums = JSON.parse(Storage.getData("albums"));
+
+    let album;
+    // Parse album data and get the requested album.
+    for (let i = 0; i < albums.length; i++) {
+      let a = albums[i];
+      // If album matches.
+      if (a.cover.replace(/\.png/, '') === songAlbum) {
+        album = a;
+        break
+      }
+    }
+    // Get the album track corresponding to the trackNumber.
+    // (I'm assuming that the song data may not be in order by track number).
+    for (var s = 0; s < album.songs.length; s++) {
+      let song = album.songs[s];
+      let track = song.track;
+      if (track === parseInt(trackNumber)) {
+        song.album = album.title;
+        return song;
+      }
+    }
   }
 
   /**
@@ -321,6 +398,26 @@ let Discography = (function () {
 
     // Attach row to DOM.
     $('.fill').append($(row2));
+
+
+
+    // If tanya is authenticated, show links to update and delete song.
+    let user = Account.isAuthenticated();
+    if (user !== null) {
+
+      let row3 = $('<div class="row songDisplay"></div>');
+
+      // Create list for displaying update/deletion of song.
+      let linkList = $('<ul class="links"></ul>');
+      let updateElement = $('<li class="admin"><a href="update.php?type=song&' + songOfInterest + '">Update Song</a></li>');
+      $(linkList).append($(updateElement));
+
+      let removeElement = $('<li class="admin"><a href="remove.php?type=song&' + songOfInterest + '">Remove Song</a></li>');
+      $(linkList).append($(removeElement));
+      $(row3).append($(linkList));
+      // Attach row to DOM.
+      $('.fill').append($(row3));
+    }
   }
 
   /**
@@ -365,6 +462,27 @@ let Discography = (function () {
   }
 
   /**
+   * Retrieves the data of the provided performance.
+   *
+   * @param performanceOfInterest  The performance whose data we need to retrieve.
+   */
+  function getPerformance(performanceOfInterest) {
+    // Just in case the data isn't in local storage yet.
+    verifyData();
+
+    // Get performances from local storage.
+    let performancesData = JSON.parse(Storage.getData("performances"));
+    let performance = [];
+    // Parse performance data and push onto performance array.
+    for (let i = 0; i < performancesData.length; i++) {
+      let p = performancesData[i];
+      if (p.date.replace(/ /g, "-") === performanceOfInterest) {
+        return p;
+      }
+    }
+  }
+
+  /**
    * Loads performance data from local storage, parses the JSON object,
    * formats the given performance for display and attaches to the DOM.
    *
@@ -383,7 +501,6 @@ let Discography = (function () {
       let p = performancesData[i];
       if (p.date.replace(/ /g, "-") === performanceOfInterest) {
         performance.push(p);
-
       }
     }
 
@@ -397,6 +514,22 @@ let Discography = (function () {
 
       // Only for the first one:
       if (x === 0) {
+
+        // If tanya is authenticated, show links to update and delete song.
+        let user = Account.isAuthenticated();
+        if (user !== null) {
+
+          // Create list for displaying update/deletion of performance.
+          let linkList = $('<ul class="adminLinks "></ul>');
+          let updateElement = $('<li class="admin"><a href="update.php?type=performance&' + performanceOfInterest + '">Update Performance</a></li>');
+          $(linkList).append($(updateElement));
+
+          let removeElement = $('<li class="admin"><a href="remove.php?type=performance&' + performanceOfInterest + '">Remove Performance</a></li>');
+          $(linkList).append($(removeElement));
+          $(colDiv).append($(linkList));
+        }
+
+
         // Create and attach performance title.
         let titleTag = $('<b class="title">' + video.title + '</b>');
         $(colDiv).append($(titleTag));
@@ -500,13 +633,16 @@ let Discography = (function () {
   }
 
 
-    // Expose these functions.
+  // Expose these functions.
   return {
     verifyData: verifyData,
+    getAlbum: getAlbum,
     displayAlbum: displayAlbum,
     displayAlbums: displayAlbums,
+    getSong: getSong,
     displaySong: displaySong,
     displaySongs: displaySongs,
+    getPerformance: getPerformance,
     displayPerformance: displayPerformance,
     displayPerformances: displayPerformances
   };

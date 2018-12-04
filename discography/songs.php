@@ -17,6 +17,31 @@
             // Load the requested song.
             Discography.displaySong(song.replace(/\?/, ''));
           }
+
+          // Create links depending on authentication status.
+          createLinks();
+
+          /**
+           * Adds links to the DOM depending on if tanya is logged in or not.
+           */
+          function createLinks() {
+
+            let authenticatedUser = Account.isAuthenticated();
+
+            // Depending on if user is authenticated.
+            if (authenticatedUser.login === "tanya") { // Tanya authenticated.
+
+              // Remove add link if it exists (this will ensure no duplicates in next step).
+              $(".subpage nav ul #addItem").remove();
+              // Add link to add a new discography item.
+              let addItem = $('<li id="addItem"><a href="add.php">Add</a></li>');
+              $(".subpage nav ul").prepend($(addItem));
+
+            } else {  // Someone else authenticated or user NOT authenticated.
+              // Remove link to add a new discography item.
+              $(".subpage nav ul #addItem").remove();
+            }
+          }
         });
       </script>
     </head>
