@@ -225,6 +225,25 @@ section.homepage ul li.last::after {
   border: 1px solid #000000;
 }
 
+.subpage .fill .realList {
+  list-style-type: disc !important;
+  margin: 0 0 20px 0 !important;
+  padding: 0 !important;
+}
+
+.subpage .fill .realList li {
+  display: block;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 2px 0 2px 20px !important;
+}
+
+.subpage .fill .realList li::before {
+  content: "\2022 \0000a0 \0000a0 \0000a0 ";
+  font-size: 12pt;
+}
+
+
 /* album */
 .subpage .fill .row {
   padding: 0 5% !important;
