@@ -4,6 +4,11 @@ Hossam Abdel-Ghaffar, Long Nguyen, & Jennifer Oxelson Ganter
 
 MET CS 637 Agile Software Development
 
+### Links
+* Team 1 [website](http://www.cs634-hur-01.designaspractice.com/) with sprint 1 work
+* Team 1 [Trello](https://trello.com/b/CjFGS03b/cs634-group-1-team-1) board
+* Sprint 1 [GitHub code repo](https://github.com/oxelson/CS634) containing all of the code for the website
+
 ### Where to find the sprint retrospective
 
 The sprint retrospective is avaiable in the [Team 1 Trello](https://trello.com/b/CjFGS03b/cs634-group-1-team-1) board (on the right side -- it has it's own column).
@@ -39,8 +44,18 @@ We have two user accounts set up by default (but you are welcome to create your 
   * login: student
   * password: student
   
-Only Tanya's login/account has any significance with respect to accessing discography CRUD functionality.  (It is worth mentioning that we don't have access control for the site in place, but created the accounts 
+Only Tanya's login/account has any significance with respect to accessing discography CRUD functionality.  
+
+It is worth mentioning that we don't have any real access control for the site in place (no backend, no access control), but have 'mocked' some rudimentary visibility to certain types of content depending on the user authenticated.  As such, it please note that either authenticated user can access/perform account CRUD functionality; whereas only Tanya's account can access/perform the discography CRUD functionality.
+
+### Which web forms are functional and which ones are not
+
+1. The [Contact](http://www.cs634-hur-01.designaspractice.com/contact/) section of the website contains a couple of web forms that simulate contacting Tanya.  Clicking the submit button on both of these forms will only result in an alert message.
+
+2. The [Account](http://www.cs634-hur-01.designaspractice.com/account/) section of the website contains various forms for webite account CRUD functionality and user authentication/logout.  *These forms are quazi-functional*, meaning they firectly modify the account data in web storage and perform a rudimentary authentication of sorts.  
+
+Please note that no legitimate input validation is being performed for these forms and the recaptcha is a stub and therefore is non-fuctional.  
+
+Please also note you cannot remove tanya's account, but you *can* remove the student's account.  (To restore the original data, just clobber the local storage data and reload the website.)
 
 
-    login information and what he can see  & where when authenticated as tanya or student
-    what part of the site has functional forms and which ones are for show (e.g., discography CRUD)
