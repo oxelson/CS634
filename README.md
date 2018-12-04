@@ -11,7 +11,7 @@ MET CS 637 Agile Software Development
 
 ### Where to find the sprint retrospective
 
-The sprint retrospective is avaiable in the [Team 1 Trello](https://trello.com/b/CjFGS03b/cs634-group-1-team-1) board (on the right side -- it has it's own column).
+The sprint retrospective is available in the [Team 1 Trello](https://trello.com/b/CjFGS03b/cs634-group-1-team-1) board (on the right side -- it has it's own column).
 
 ### Removal of items from Sprint 1 backlog
 
@@ -53,9 +53,9 @@ It is worth mentioning that we don't have any real access control for the site i
 
 1. The [Contact](http://www.cs634-hur-01.designaspractice.com/contact/) section of the website contains a couple of web forms that simulate contacting Tanya.  Clicking the submit button on both of these forms will only result in an alert message.
 
-2. The [Account](http://www.cs634-hur-01.designaspractice.com/account/) section of the website contains various forms for webite account CRUD functionality and user authentication/logout.  *These forms are quazi-functional*, meaning they firectly modify the account data in web storage and perform a rudimentary authentication of sorts.  
+2. The [Account](http://www.cs634-hur-01.designaspractice.com/account/) section of the website contains various forms for webite account CRUD functionality and user authentication/logout.  *These forms are quazi-functional*, meaning they directly modify the account data in web storage and perform a rudimentary authentication of sorts.  
 
-Please note that no legitimate input validation is being performed for these forms and the recaptcha is a stub and therefore is non-fuctional.  
+Please note that no legitimate input validation is being performed for these forms and the recaptcha is a stub and therefore is non-functional.  
 
 Please also note you cannot remove tanya's account, but you *can* remove the student's account.  (To restore the original data, just clobber the local storage data and reload the website.)
 
