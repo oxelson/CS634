@@ -12,6 +12,8 @@ echo "
                <li><a href='/discography'>DISCOGRAPHY</a></li>
                <li><a href='/about'>ABOUT</a></li>
                <li><a href='/contact'>CONTACT</a></li>
+               <li><a href='/instruction'>INSTRUCTION</a></li>
+               <li><a href='/search'>SEARCH</a></li>
              </ul>
              <div class='auth'>
                <div class='menu'><img src='/images/menu.png' alt='Menu'/></div>

@@ -60,7 +60,7 @@ header nav ul li {
 }
 
 header nav .auth {
-  margin: 22px 0px;
+  margin: 22px 0;
   float: right;
 }
 
@@ -98,7 +98,7 @@ header #menu_nav.col ul {
 }
 
 header #menu_nav.col ul li {
-  width: 33%;
+  width: 23%;
   display: inline;
   margin: 5px 0;
   padding: 0;

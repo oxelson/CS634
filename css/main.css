@@ -81,6 +81,14 @@ small {
   font-size: 90%;
 }
 
+.quote-open {
+  margin-top: 10px;
+  padding-top: 15px;
+  text-indent: 40px;
+  background: transparent url('../images/double-quote.png') no-repeat top left;
+}
+
+
 /* right-side cotnent */
 section {
   text-align: center;
@@ -369,14 +377,16 @@ section.homepage ul li.last::after {
   display: block;
 }
 
-.subpage nav ul.socialmedia li {
+.subpage .fill .socialmedia {
+  color: #5F5F5F;
   text-align:right;
   margin: 0 !important;
-  border: none !important;
-  width: 100%;
+  float: right;
+  position: relative;
+  top: -40px;
 }
 
-.subpage nav ul.socialmedia li img {
+.subpage .fill .socialmedia  img {
   width: 25px;
 }
 

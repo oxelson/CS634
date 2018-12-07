@@ -31,6 +31,8 @@
 
          <nav class="col-sm-7 col-xs-12 right">
           <ul>
+            <li class="active"><a href="index.php">View</a></li>
+            <li><a href="subscribe.php">Subscribe</a></li>
           </ul>
          </nav>
 

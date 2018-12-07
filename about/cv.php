@@ -22,6 +22,7 @@
          <nav class="col-sm-8 col-xs-12 right">
           <ul>
             <li class="active"><a href="cv.php">Curriculum Vitae</a></li>
+            <li><a href="reviews.php">Reviews</a></li>
           </ul>
          </nav>
 
@@ -38,10 +39,9 @@
          <!-- right side -->
          <section class="col-sm-8 col-xs-12">
            <div class="fill">
+             <h3>Curriculum Vitae</h3>
              <div class="row">
                <div class="col">
-                 <h3>Curriculum Vitae</h3>
-
                  <h5>Contact Information</h5>
 
                  <p>123 Main Street<br/>

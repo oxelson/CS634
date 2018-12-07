@@ -1,22 +1,21 @@
-<!-- NEWS -->
+<!-- NEWS: SUBSCRIBE -->
 <!DOCTYPE HTML>
   <html>
     <head>
-      <title>Tanya Anisimova : News & Announcements</title>
+      <title>Tanya Anisimova : News & Announcements - Subscribe</title>
       <meta name="description" content="Tanya Anisimova's News & Announcements" />
       <?php include '../head_include.php';?>
       <script>
         jQuery(document).ready(function(){
-          // If a specific news item is requested, show its data;
-          // Otherwise get all of the news items to display.
-          let item = window.location.search;
-          if (item === "" || item === undefined || item === null) {
-            // Load all the news items.
-            News.displayNewsItems();
-          } else {
-            // Load the requested news item.
-            News.displayNewsItem(item.replace(/\?/, ''));
-          }
+          // Subscribe user. Regexp from https://www.w3resource.com/javascript/form/email-validation.php
+          $("button").click(function() {
+            let address = $("#emailAddress").val();
+             if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(address)) {
+               alert("You have been subscribed to Tanya's News & Announcements.\n A welcome message has been sent to the provided address.");
+             } else {
+               alert("Please enter a valid email address.");
+             }
+          });
         });
       </script>
     </head>
@@ -31,8 +30,8 @@
 
          <nav class="col-sm-5 col-xs-12 right">
           <ul>
-            <li class="active"><a href="index.php">View</a></li>
-            <li><a href="subscribe.php">Subscribe</a></li>
+            <li><a href="index.php">View</a></li>
+            <li class="active"><a href="subscribe.php">Subscribe</a></li>
           </ul>
          </nav>
 
@@ -49,14 +48,22 @@
          <!-- right side -->
          <section class="col-sm-8 col-xs-12">
            <div class="fill">
-             <h3>Latest Updates</h3>
+             <h3>Subscribe</h3>
              <div class="socialmedia">
-               Follow Tanya: &nbsp;
                <a href='https://open.spotify.com/artist/5XmzcguryovRXLUzEkBACB'><img src='/images/spotify-teal.png' alt='Listen to Tanya's music on Spotify'/>
                <a href='https://vimeo.com/search?q=tanya-anisimova'><img src='/images/vimeo-teal.png' alt='Watch Tanya's performances on Vimeo'/></a>
                <a href='https://www.facebook.com/TANYAANISIMOVAA'><img src='/images/facebook-teal.png' alt='Follow Tanya on Facebook'/></a>
                <a href='https://www.youtube.com/channel/UCXa0NSwoFPPOeWIkVbaTeCQ'><img src='/images/youtube-teal.png' alt='Watch Tanya's performances on YouTube'/></a>
              </div> <!-- /.socialmedia -->
+             <p>Sign up to receive notifications about the latest news and announcements.</p>
+             <div class="row subscribe">
+               <div class="col">
+                 <div class="form-group">
+                   <input type="email" class="form-control col-form-label-sm" id="emailAddress" placeholder="Email Address">
+                 </div>
+                 <button type="submit" class="btn btn-primary">Subscribe</button>
+               </div> <!-- /.col-8 -->
+             </div> <!-- /.row -->
            </div> <!-- /.fill -->
          </section>
        </div> <!-- /.row -->

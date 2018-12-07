@@ -99,3 +99,7 @@ span#inputGroupFileAddon01.input-group-text {
 #warning {
   margin-top: 20px;
 }
+
+.subpage .fill .row.subscribe {
+  margin-top: 20px !important;
+}
