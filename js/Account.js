@@ -253,7 +253,7 @@ let Account = (function () {
    * @returns {boolean}  true if deletion was successful; otherwise false if unsuccessful or if login === tanya
    */
   function removeAccount(login) {
-    if (login === "tanya") {
+    if (login === "tanya" || login === "student") {
       return false;
     }
     let accounts = JSON.parse(Storage.getData("accounts"));

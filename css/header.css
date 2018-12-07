@@ -15,7 +15,6 @@ header .container {
 
 /* Override bootstrap */
 header .row {
-  height: 80px;
   margin: 0 !important;
   background: transparent url('../images/bar-fill.png') repeat-x 0 20px;
 }

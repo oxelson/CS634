@@ -377,17 +377,14 @@ section.homepage ul li.last::after {
   display: block;
 }
 
-.subpage .fill .socialmedia {
-  color: #5F5F5F;
+.subpage .fill h3.sm .socialmedia {
   text-align:right;
   margin: 0 !important;
   float: right;
-  position: relative;
-  top: -40px;
 }
 
-.subpage .fill .socialmedia  img {
-  width: 25px;
+.subpage .fill h3.sm .socialmedia  img {
+  width: 20px;
 }
 
 .subpage .fill .news .newsImage {

@@ -26,6 +26,7 @@
           <ul>
             <li class="active"><a href="index.php">Send Message</a></li>
             <li><a href="booking.php">Booking Request</a></li>
+            <li><a href="instruction.php">Lessons Request</a></li>
           </ul>
          </nav>
        </div> <!-- /.row -->

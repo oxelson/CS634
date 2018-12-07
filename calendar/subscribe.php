@@ -11,7 +11,7 @@
           $("button").click(function() {
             let address = $("#emailAddress").val();
              if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(address)) {
-               alert("You have been subscribed to Tanya's Calendar of Events.\n A welcome message has been sent to the provided address.");
+               alert("You have been subscribed to Tanya's Calendar of Events.");
              } else {
                alert("Please enter a valid email address.");
              }

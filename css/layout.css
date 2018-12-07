@@ -12,9 +12,6 @@
 /* Mobile Styles & Small Tablets */
 @media only screen and (max-width: 575px) {
   /* Header dropdown nav goes from 4 columns to two */
-  header .row {
-    height: 120px !important;
-  }
 
   header #menu_nav.col ul li {
     width: 45% !important;

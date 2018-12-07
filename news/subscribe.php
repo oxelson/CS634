@@ -11,7 +11,7 @@
           $("button").click(function() {
             let address = $("#emailAddress").val();
              if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(address)) {
-               alert("You have been subscribed to Tanya's News & Announcements.\n A welcome message has been sent to the provided address.");
+               alert("You have been subscribed to Tanya's News & Announcements.");
              } else {
                alert("Please enter a valid email address.");
              }
@@ -48,13 +48,15 @@
          <!-- right side -->
          <section class="col-sm-8 col-xs-12">
            <div class="fill">
-             <h3>Subscribe</h3>
-             <div class="socialmedia">
-               <a href='https://open.spotify.com/artist/5XmzcguryovRXLUzEkBACB'><img src='/images/spotify-teal.png' alt='Listen to Tanya's music on Spotify'/>
-               <a href='https://vimeo.com/search?q=tanya-anisimova'><img src='/images/vimeo-teal.png' alt='Watch Tanya's performances on Vimeo'/></a>
-               <a href='https://www.facebook.com/TANYAANISIMOVAA'><img src='/images/facebook-teal.png' alt='Follow Tanya on Facebook'/></a>
-               <a href='https://www.youtube.com/channel/UCXa0NSwoFPPOeWIkVbaTeCQ'><img src='/images/youtube-teal.png' alt='Watch Tanya's performances on YouTube'/></a>
-             </div> <!-- /.socialmedia -->
+             <h3 class="sm">
+               Subscribe
+               <div class="socialmedia">
+                 <a href='https://open.spotify.com/artist/5XmzcguryovRXLUzEkBACB'><img src='/images/spotify-teal.png' alt='Listen to Tanya's music on Spotify'/>
+                 <a href='https://vimeo.com/search?q=tanya-anisimova'><img src='/images/vimeo-teal.png' alt='Watch Tanya's performances on Vimeo'/></a>
+                 <a href='https://www.facebook.com/TANYAANISIMOVAA'><img src='/images/facebook-teal.png' alt='Follow Tanya on Facebook'/></a>
+                 <a href='https://www.youtube.com/channel/UCXa0NSwoFPPOeWIkVbaTeCQ'><img src='/images/youtube-teal.png' alt='Watch Tanya's performances on YouTube'/></a>
+               </div> <!-- /.socialmedia -->
+             </h3>
              <p>Sign up to receive notifications about the latest news and announcements.</p>
              <div class="row subscribe">
                <div class="col">

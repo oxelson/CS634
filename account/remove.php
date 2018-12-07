@@ -13,7 +13,9 @@
 
             let authenticatedUser = Account.isAuthenticated();
             if (authenticatedUser.login === "tanya") {
-              alert("You are not allowed to delete Tanya's account.  Try this feature with the student account.  :-( ");
+              alert("You are not allowed to delete Tanya's account.  Try this feature with your own created account.  :-( ");
+            } else if (authenticatedUser.login === "student") {
+              alert("You are not allowed to delete the student's account.  Try this feature with your own created account.  :-( ");
             } else {
               if (!Account.removeAccount(authenticatedUser.login)) {
                 // No bueno. Something went wrong with the logout operation.
