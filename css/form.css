@@ -25,9 +25,11 @@ form {
 .addAlbum,
 .addSong,
 .addPerformance,
+.addSheetMusic,
 .updateAlbum,
 .updateSong,
-.updatePerformance{
+.updatePerformance,
+.updateSheetMusic {
   width: 100%;
   margin: 20px 0 0 0 !important;
 }
@@ -102,4 +104,8 @@ span#inputGroupFileAddon01.input-group-text {
 
 .subpage .fill .row.subscribe {
   margin-top: 20px !important;
+}
+
+#purchase {
+  cursor: pointer;
 }

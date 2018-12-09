@@ -655,6 +655,10 @@ let Discography = (function () {
   }
 
 
+  /**
+   *
+   * @param sheetMusicOfInterest
+   */
   function displaySheetMusic(sheetMusicOfInterest) {
     // Just in case the data isn't in local storage yet.
     verifyData();
@@ -691,6 +695,13 @@ let Discography = (function () {
     // Create and attach description.
     let descriptionTag = $('<span>' + sheetMusic.description + '</span>');
     $(sheetMusicContent).append($(descriptionTag));
+
+    // Create and attach preview link.
+    let preview = $('<button type="submit" id="preview" class="btn btn-primary submit">Preview</button> &nbsp; &nbsp;  &nbsp; <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppmcvdam.png" alt="Credit Card Badges" id="purchase"><br/><br/>');
+    $(sheetMusicContent).append($(preview));
+
+    let tos = $('<b class="title">Terms of Sale</b><p>IMPORTANT: All music sold via this website is &copy; Tanya Anisimova. Please do not distribute the PDF files as this consitutes intellectual copyright theft. Because the order is delivered digitally no refunds can be offered. PDF files are sold <i>as is</i>, and like any published music is not guaranteed to be free of error. If you spot any errors please let me know.If you have a problem downloading your sheet music or have any questions please contact me. It would be helpful if you can give details of the time of your order and the piece(s) ordered.</p>');
+    $(sheetMusicContent).append($(tos));
 
     /* Attach to DOM */
     let sheetMusicDiv = $('<div class="row sheetMusic"></div> <!-- /.sheetMusic -->');
@@ -734,6 +745,12 @@ let Discography = (function () {
 
       $('.fill').append($(sheetMusicDiv));
     }
+    let rowDiv = $('<div class="row"></div> <!-- /.row -->');
+    let colDiv = $('<div class="col"></div> <!-- /.col -->');
+    let tos = $('<p>&nbsp;</p><b class="title">Terms of Sale</b><p>IMPORTANT: All music sold via this website is &copy; Tanya Anisimova. Please do not distribute the PDF files as this consitutes intellectual copyright theft. Because the order is delivered digitally no refunds can be offered. PDF files are sold <i>as is</i>, and like any published music is not guaranteed to be free of error. If you spot any errors please let me know.If you have a problem downloading your sheet music or have any questions please contact me. It would be helpful if you can give details of the time of your order and the piece(s) ordered.</p>');
+    $(colDiv).append($(tos));
+    $(rowDiv).append($(colDiv));
+    $('.fill').append($(rowDiv));
   }
 
 

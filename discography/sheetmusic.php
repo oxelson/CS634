@@ -18,6 +18,16 @@
             Discography.displaySheetMusic(sheetMusic.replace(/\?/, ''));
           }
 
+          // Show preview
+          $("#preview").click(function() {
+            let url = "/discography/sheetmusic/" + sheetMusic.replace(/\?/, '') + ".pdf";
+            window.open(url, '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');
+          });
+
+          // Show purchase
+          $("#purchase").click(function() {
+            alert("This would take you to PayPal to purchase the sheet music.");
+          });
 
           // Create links depending on authentication status.
           createLinks();

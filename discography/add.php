@@ -12,9 +12,10 @@
           $("button").attr("disabled","disabled");
           $("input").attr("disabled","disabled");
 
-          // Start off with songs and performance forms hidden & album firm visible.
+          // Start off with songs, performance, and sheet music forms hidden & album firm visible.
           $(".subpage .fill .addSong").addClass("hidden");
           $(".subpage .fill .addPerformance").addClass("hidden");
+          $(".subpage .fill .addSheetMusic").addClass("hidden");
           $(".subpage .fill .addAlbum").removeClass("hidden");
           //
           $(".fNav a").click(function() {
@@ -24,21 +25,29 @@
             $(this).parent("div").addClass("fauxActive");
 
             if (selected === "song") {
-              // Hide album & performance forms, show song form.
+              // Hide album, performance, and sheet music forms, show song form.
               $(".subpage .fill .addSong").removeClass("hidden");
               $(".subpage .fill .addPerformance").addClass("hidden");
               $(".subpage .fill .addAlbum").addClass("hidden");
-
+              $(".subpage .fill .addSheetMusic").addClass("hidden");
             } else if (selected === "album") {
-              // Hide song & performance forms, show album form.
+              // Hide song, performance, and sheet music forms, show album form.
               $(".subpage .fill .addSong").addClass("hidden");
               $(".subpage .fill .addPerformance").addClass("hidden");
               $(".subpage .fill .addAlbum").removeClass("hidden");
-            } else {
-              // Hide album & song forms, show performance form.
+              $(".subpage .fill .addSheetMusic").addClass("hidden");
+            } else if (selected === "album") {
+              // Hide album, song, and sheet music forms, show performance form.
               $(".subpage .fill .addSong").addClass("hidden");
               $(".subpage .fill .addPerformance").removeClass("hidden");
               $(".subpage .fill .addAlbum").addClass("hidden");
+              $(".subpage .fill .addSheetMusic").addClass("hidden");
+            } else {
+              // Hide album, song, and performance forms, show sheet music form.
+              $(".subpage .fill .addSong").addClass("hidden");
+              $(".subpage .fill .addPerformance").addClass("hidden");
+              $(".subpage .fill .addAlbum").addClass("hidden");
+              $(".subpage .fill .addSheetMusic").removeClass("hidden");
             }
 
           });
@@ -101,18 +110,23 @@
            <div class="fill">
              <div class="row fauxNav">
                <h3>Add an Item to Discography</h3>
-               <div class="col-sm-3 col-xs-12 fNav fauxActive">
+               <div class="col-sm-2 col-xs-12 fNav fauxActive">
                  <a href="#" id="album">Add Album</a>
                </div>
                <div class="col-sm-1 col-xs-12 blank">
                </div>
-               <div class="col-sm-3 col-xs-12 fNav">
+               <div class="col-sm-2 col-xs-12 fNav">
                  <a href="#" id="song">Add Song</a>
                </div>
                <div class="col-sm-1 col-xs-12 blank">
                </div>
-               <div class="col-sm-3 col-xs-12 fNav">
+               <div class="col-sm-2 col-xs-12 fNav">
                 <a href="#" id="performance">Add Performance</a>
+               </div>
+               <div class="col-sm-1 col-xs-12 blank">
+               </div>
+               <div class="col-sm-2 col-xs-12 fNav">
+                <a href="#" id="sheetmusic">Add Sheet Music</a>
                </div>
              </div> <!--/.row -->
 
@@ -265,6 +279,40 @@
                  <button type="submit" id="reset" class="btn btn-secondary">Reset</button>
                </div>
              </div> <!--/.addPerformance-->
+
+
+
+             <div class="row addSheetMusic">
+
+               <div class="col-sm-6 col-xs-12">
+                 <div class="form-group">
+                   <input type="text" class="form-control col-form-label-sm" id="sheetMusicTitle" placeholder="Sheet Music Title">
+                 </div>
+                 <div class="form-group">
+                   <input type="text" class="form-control col-form-label-sm" id="sheetMusicSummmary" placeholder="Summary">
+                 </div>
+                 <div class="form-group">
+                   <input type="text" class="form-control col-form-label-sm" id="price" placeholder="Price">
+                 </div>
+                 <div class="form-group">
+                   <div class="dropdown">
+                     <button class="btn-sm btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Select PayPal Account
+                     </button>
+                   </div>
+                 </div>
+               </div>
+               <div class="col-sm-6 col-xs-12">
+                 <div class="form-group">
+                   <textarea class="form-control rounded-0 col-form-label-sm" id="sheetMusicDescription" placeholder="Description" rows="8"></textarea>
+                 </div>
+
+                 <button type="submit" id="submit" class="btn btn-primary">Add Sheet Music</button>
+                 <button type="submit" id="reset" class="btn btn-secondary">Reset</button>
+               </div>
+             </div> <!--/.addSheetMusic-->
+
+
 
            </div> <!--/.fill -->
          </section>
