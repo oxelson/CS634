@@ -104,6 +104,7 @@
             <li><a href="albums.php">Albums</a></li>
             <li><a href="songs.php">Songs</a></li>
             <li><a href="performances.php">Performances</a></li>
+            <li><a href="sheetmusic.php">Sheet Music</a></li>
           </ul>
          </nav>
 

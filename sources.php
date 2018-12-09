@@ -60,8 +60,8 @@
                    <li> <a href="https://itunes.apple.com/us/artist/tanya-anisimova/id47602083">Tanya Anisimova's iTunes Store</a>.</li>
                    <li> <a href="https://www.amazon.com/s/ref=sr_nr_n_4?rh=n:163856011,k:tanya+anisimova&keywords=tanya+anisimova">Tanya Anisimova's Amazon Smile Store</a>.</li>
                    <li> <a href="https://thecellocompanion.info/category/intermediate-technique/">The Cello Companion</a> Online Instruction.</li>
-                   <li> <a href="https://www.musicnotes.com/sheetmusic/mtd.asp?ppn=MN0124907#ProductDetails">White Christmas</a> Sheet Music.</li>
                    <li> <a href="https://www.8notes.com/scores/411.asp">Silent Night</a> Sheet Music.</li>
+                   <li> <a href="https://www.youtube.com/watch?v=qorDu6yTcbY">Video of Emma</a> playing Silent Night.</li>
                  </ul>
                  
 

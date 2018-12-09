@@ -27,20 +27,25 @@
           function createLinks() {
 
             let authenticatedUser = Account.isAuthenticated();
+            if (authenticatedUser !== null) {
 
-            // Depending on if user is authenticated.
-            if (authenticatedUser.login === "tanya") { // Tanya authenticated.
+              // Depending on if user is authenticated.
+              if (authenticatedUser.login === "tanya") { // Tanya authenticated.
 
-              // Remove add link if it exists (this will ensure no duplicates in next step).
-              $(".subpage nav ul #addItem").remove();
-              // Add link to add a new discography item.
-              let addItem = $('<li id="addItem"><a href="add.php">Add</a></li>');
-              $(".subpage nav ul").prepend($(addItem));
+                // Remove add link if it exists (this will ensure no duplicates in next step).
+                $(".subpage nav ul #addItem").remove();
+                // Add link to add a new discography item.
+                let addItem = $('<li id="addItem"><a href="add.php">Add</a></li>');
+                $(".subpage nav ul").prepend($(addItem));
 
-            } else {  // Someone else authenticated or user NOT authenticated.
-              // Remove link to add a new discography item.
+              } else {  // Someone else authenticated.
+                // Remove link to add a new discography item.
+                $(".subpage nav ul #addItem").remove();
+              }
+            } else {  // User NOT authenticated.
               $(".subpage nav ul #addItem").remove();
             }
+
           }
         });
       </script>
@@ -60,6 +65,7 @@
             <li><a href="albums.php">Albums</a></li>
             <li class="active"><a href="songs.php">Songs</a></li>
             <li><a href="performances.php">Performances</a></li>
+            <li><a href="sheetmusic.php">Sheet Music</a></li>
           </ul>
          </nav>
 

@@ -115,7 +115,6 @@ let Calendar = (function () {
     // Create the container for the event content.
     let eventContent = $('<div class="col-sm-9 col-xs-12 eventContent"></div> <!-- /.eventContent -->');
 
-
     // Create and attach date span tag.
     let dateTag = $('<span class="date">' + event.date + '</span>');
     $(eventContent).append($(dateTag));

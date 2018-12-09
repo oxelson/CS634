@@ -22,6 +22,13 @@ let Discography = (function () {
       // Load the data into storage.
       getPerformanceData();
     }
+
+    // Load sheet music data into local storage if it isn't present.
+    if (!Storage.isStored('sheetmusic')) {
+      console.log('Initializing sheetmusic in local storage...');
+      // Load the data into storage.
+      getSheetMusicData();
+    }
   }
 
   /**
@@ -52,6 +59,22 @@ let Discography = (function () {
       Storage.addData('performances', JSON.stringify(data.performances));
     }).fail(function (request) {
       let message = 'Unable to load performance JSON data via AJAX.';
+      alert(message);
+      console.log(message);
+    });
+  }
+
+  /**
+   * Loads sheet music JSON via AJAX request and returns string version of JSON object.
+   */
+  function getSheetMusicData() {
+    $.ajax({
+      url: 'http://www.cs634-hur-01.designaspractice.com/js/SheetMusic.JSON'
+    }).done(function (data) {
+      // Load into local storage.
+      Storage.addData('sheetmusic', JSON.stringify(data.sheetmusic));
+    }).fail(function (request) {
+      let message = 'Unable to load sheet music JSON data via AJAX.';
       alert(message);
       console.log(message);
     });
@@ -632,6 +655,88 @@ let Discography = (function () {
   }
 
 
+  function displaySheetMusic(sheetMusicOfInterest) {
+    // Just in case the data isn't in local storage yet.
+    verifyData();
+
+    // Get sheet music from local storage.
+    let sheetMusicData = JSON.parse(Storage.getData("sheetmusic"));
+    let sheetMusic;
+    // Parse sheet music data.
+    for (let i = 0; i < sheetMusicData.length; i++) {
+      if (sheetMusicData[i].id === sheetMusicOfInterest) {
+        sheetMusic = sheetMusicData[i];
+        break;
+      }
+    }
+
+    // Create the container for the sheet music image.
+    let sheetMusicImage = $('<div class="col-sm-3 col-xs-12 sheetMusicImage"></div> <!-- /.sheetMusicImage -->');
+
+    // Create image and attach to sheetMusicImage div.
+    let image = $('<img src="/discography/sheetmusic/images/' + sheetMusic.image + '" alt="' + sheetMusic.title + '">');
+    $(sheetMusicImage).append($(image));
+
+    // Create the container for the sheet music content.
+    let sheetMusicContent = $('<div class="col-sm-9 col-xs-12 sheetMusicContent"></div> <!-- /.sheetMusicContent -->');
+
+    // Create and attach title.
+    let titleTag = $('<b class="title">' + sheetMusic.title + '</b><br/>');
+    $(sheetMusicContent).append($(titleTag));
+
+    // Create and attach price.
+    let priceTag = $('<span class="deemp">PDF Download: ' + sheetMusic.price + '</span><br/><br/>');
+    $(sheetMusicContent).append($(priceTag));
+
+    // Create and attach description.
+    let descriptionTag = $('<span>' + sheetMusic.description + '</span>');
+    $(sheetMusicContent).append($(descriptionTag));
+
+    /* Attach to DOM */
+    let sheetMusicDiv = $('<div class="row sheetMusic"></div> <!-- /.sheetMusic -->');
+    $(sheetMusicDiv).append($(sheetMusicImage));
+    $(sheetMusicDiv).append($(sheetMusicContent));
+    $('.fill').append($(sheetMusicDiv));
+  }
+
+  /**
+   * Loads sheet music data from local storage, parses the JSON object,
+   * formats the sheet music list for display and attaches to the DOM.
+   */
+  function displayAllSheetMusic() {
+    // Just in case the data isn't in local storage yet.
+    verifyData();
+
+    // Get sheet music from local storage.
+    let sheetMusicData = JSON.parse(Storage.getData("sheetmusic"));
+
+    // Parse sheet music data.
+    for (let i = 0; i < sheetMusicData.length; i++) {
+      let sheetMusic = sheetMusicData[i];
+
+      // Create the container for the sheet music items
+      let colDiv = $('<div class="col"></div> <!-- /.col -->');
+
+      // Create and attach title.
+      let titleTag = $('<b class="title">' + sheetMusic.title + '</b>');
+      $(colDiv).append($(titleTag));
+
+      // Create and attach summary.
+      let summaryTag = $('<span>' + sheetMusic.summary + '</span>');
+      $(colDiv).append($(summaryTag));
+
+      // Create and attach link.
+      let linkTag = $('<a href="sheetmusic.php?' + sheetMusic.id + '" class="continue">Purchase</a>');
+      $(colDiv).append($(linkTag));
+
+      let sheetMusicDiv = $('<div class="row sheetmusic"></div> <!-- /.sheetmusic -->');
+      $(sheetMusicDiv).append($(colDiv));
+
+      $('.fill').append($(sheetMusicDiv));
+    }
+  }
+
+
   // Expose these functions.
   return {
     verifyData: verifyData,
@@ -643,7 +748,9 @@ let Discography = (function () {
     displaySongs: displaySongs,
     getPerformance: getPerformance,
     displayPerformance: displayPerformance,
-    displayPerformances: displayPerformances
+    displayPerformances: displayPerformances,
+    displaySheetMusic: displaySheetMusic,
+    displayAllSheetMusic: displayAllSheetMusic
   };
 })();
 

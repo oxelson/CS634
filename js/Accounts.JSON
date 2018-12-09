@@ -14,9 +14,9 @@
     },
     {
       "login": "student",
-      "email": "student@somewhere.com@",
+      "email": "ehoster@somewhere.com@",
       "password": "student",
-      "name": "Joe Student",
+      "name": "Emma Hoster",
       "addr": "456 South Lane",
       "city": "Boston",
       "state": "Massachusetts",

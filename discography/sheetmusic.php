@@ -1,22 +1,23 @@
-<!-- DISCOGRAPHY: ALBUMS -->
+<!-- DISCOGRAPHY: SHEET MUSIC -->
 <!DOCTYPE HTML>
   <html>
     <head>
-      <title>Tanya Anisimova : Discography - Performances</title>
+      <title>Tanya Anisimova : Discography - Sheet Music</title>
       <meta name="description" content="Tanya Anisimova's Discography" />
       <?php include '../head_include.php';?>
       <script>
         jQuery(document).ready(function(){
-          // If a specific performance is requested, show its data;
-          // Otherwise get all of the performances to display.
-          let performance = window.location.search;
-          if (performance === "" || performance === undefined || performance === null) {
-            // Load all the performances.
-            Discography.displayPerformances();
+          // If a specific sheet music item is requested, show its data;
+          // Otherwise get all of the sheet music to display.
+          let sheetMusic = window.location.search;
+          if (sheetMusic === "" || sheetMusic=== undefined || sheetMusic === null) {
+            // Load all the sheet music.
+            Discography.displayAllSheetMusic();
           } else {
-            // Load the requested performance.
-            Discography.displayPerformance(performance.replace(/\?/, ''));
+            // Load the requested sheet music.
+            Discography.displaySheetMusic(sheetMusic.replace(/\?/, ''));
           }
+
 
           // Create links depending on authentication status.
           createLinks();
@@ -46,6 +47,7 @@
             } else {  // User NOT authenticated.
               $(".subpage nav ul #addItem").remove();
             }
+
           }
 
         });
@@ -65,8 +67,8 @@
           <ul>
             <li><a href="albums.php">Albums</a></li>
             <li><a href="songs.php">Songs</a></li>
-            <li class="active"><a href="performances.php">Performances</a></li>
-            <li><a href="sheetmusic.php">Sheet Music</a></li>
+            <li><a href="performances.php">Performances</a></li>
+            <li class="active"><a href="sheetmusic.php">Sheet Music</a></li>
           </ul>
          </nav>
 
@@ -83,7 +85,7 @@
          <!-- right side -->
          <section class="col-sm-8 col-xs-12">
            <div class="fill">
-             <h3>Performances by Tanya Anisimova</h3>
+             <h3>Sheet Music by Tanya Anisimova</h3>
            </div> <!--/.fill -->
          </section>
        </div> <!-- /.row -->

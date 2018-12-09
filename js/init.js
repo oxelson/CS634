@@ -5,7 +5,7 @@
  */
 jQuery(document).ready(function(){
 
-  // Verify we have album & performance data in storage.
+  // Verify we have album, performance & sheet music data in storage.
   Discography.verifyData();
   // Verify we have news data in storage.
   News.verifyData();
@@ -13,6 +13,8 @@ jQuery(document).ready(function(){
   Calendar.verifyData();
   // Verify we have account data in storage.
   Account.verifyData();
+  // Verify we have lesson data in storage.
+  Instruction.verifyData();
 
   // Make sure the login/logout link is updated accordingly.
   Account.manageLoginLink();

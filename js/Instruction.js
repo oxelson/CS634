@@ -34,16 +34,176 @@ let Instruction = (function () {
     });
   }
 
-
-  function displayLessons() {
-
+  function displayLesson(lessonOfInterest) {
     // If tanya or student are authenticated, show lessons; otherwise, show request instruction form.
     let user = Account.isAuthenticated();
     if (user !== null) {
       if (user.login === 'tanya' || user.login === 'student') {
-        // Tanya or student is logged in.
+        // Tanya or student is logged in; show the lesson.
+
+        // Just in case the data isn't in local storage yet.
+        verifyData();
+
+        // Get lesson data from local storage.
+        let lessonData = JSON.parse(Storage.getData("lessons"));
+        let lesson;
+        // Parse lesson data and create tag elements to attach to DOM.
+        for (let i = 0; i < lessonData.length; i++) {
+          let title = lessonData[i].title;
+          if (title.replace(/ /g, "_") === lessonOfInterest) {
+            lesson = lessonData[i];
+            break;
+          }
+        }
+
+        $('.fill').append('<h3 class="sm">' + lesson.title + '<div class="level"><b>' + lesson.level + '</b> </div></h3>');
+
+        let lessonsDiv = $('<div class="col lessons"></div> <!-- /.col -->');
 
 
+        // Create & attach student info (if tanya).
+        if (user.login === "tanya") {
+          let student = $('<span class="deemp">Assigned to: <b class="noblock">' + lesson.studentName + '</b></span><br/>');
+          $(lessonsDiv).append(student);
+        }
+        // Create & attach lesson status.
+        let status;
+        if (lesson.status === "complete") {
+          status = $('<span> Status: <em class="statusComplete">' + lesson.status + '</em></span><br/>');
+        } else {
+          status = $('<span> Status: <em class="statusNotStarted">' + lesson.status + '</em></span><br/>');
+        }
+        $(lessonsDiv).append(status);
+
+        $(lessonsDiv).append('<h5>LESSON INSTRUCTIONS</h5>');
+
+
+
+        // Create & attach sheet music (if applicable).
+        if (lesson.sheetmusic !== "") {
+          let title = $('<span>Required sheet music: <a href="'+ lesson.sheetmusic + '">' + lesson.title + '</a></span><br/><br/>');
+          $(lessonsDiv).append(title);
+        }
+
+        // Create & attach lesson instructions.
+        let instructions = $('<span>' + lesson.instructions + '</span>');
+        $(lessonsDiv).append(instructions);
+
+        // Create & attach reference video (iframe) and attach (if applicable).
+        if (lesson.refvideo !== "") {
+          let videoTag = $('<span>Consult the following video for reference:<br/><br/><iframe width="560" height="315" src="' + lesson.refvideo + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>');
+          $(lessonsDiv).append($(videoTag));
+        }
+
+
+        // Create/show student lesson.
+        $(lessonsDiv).append('<h5>UPLOAD VIDEO OF LESSON</h5>');
+
+        // Create video upload form (if student)
+        let videoUpload;
+        if (user.login === "student") {
+          if (lesson.status !== "complete") {
+            // No video uploaded yet.
+            videoUpload = $('<div class="form-group">Upload your video for Tanya to review. <div class="input-group"> <div class="input-group-prepend"> <span class="input-group-text" id="inputGroupFileAddon01">Upload</span> </div> <div class="custom-file"> <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01"> <label class="custom-file-label" for="inputGroupFile01">Video of Recital</label> </div> </div> </div><div class="form-group"><textarea class="form-control rounded-0 col-form-label-sm" id="information" placeholder="Comments about video" rows="8"></textarea></div> <button type="submit" class="btn btn-primary">Submit</button> &nbsp; <button type="submit" id="reset" class="btn btn-secondary">Reset</button>');
+          } else {
+            // Video uploaded
+            videoUpload = $('<iframe width="560" height="315" src="' + lesson.studentVideo + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span> <div class="form-group"><textarea class="form-control rounded-0 col-form-label-sm" id="information" placeholder="" rows="3">Hi Tanya!  Please critique my video.  ;-) </textarea></div><button type="submit" class="btn btn-primary">Submit</button> &nbsp; <button type="submit" id="reset" class="btn btn-secondary">Reset</button>');
+          }
+        } else {  // Tanya
+          if (lesson.status === "complete") {
+            videoUpload = $('<iframe width="560" height="315" src="' + lesson.studentVideo + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span><p>Hi Tanya!  Please critique my video.  ;-)</p>');
+          } else {
+            videoUpload = $('<p>Student has not uploaded video yet.</p>');
+          }
+        }
+        $(lessonsDiv).append($(videoUpload));
+
+
+        $(lessonsDiv).append('<h5>LESSON FEEDBACK</h5>');
+        // Create feedback form (if tanya).
+        let feedback;
+        if (user.login === "tanya") {
+          // Create feedback form group and attach to right column.
+          feedback = $('<div class="form-group"><textarea class="form-control rounded-0 col-form-label-sm" id="feedback" placeholder="Add Feedback/Critique Here" rows="8"></textarea></div><br/><button type="submit" class="btn btn-primary">Submit Feedback</button> &nbsp; <button type="submit" id="reset" class="btn btn-secondary">Reset</button>');
+        } else {
+          // Show student feedback for lesson (if it exists).
+          if (lesson.feedback !== "") {
+            feedback = $('<p>' + lesson.feedback + '</p>');
+          } else {
+            feedback = $('<p>Tanya will provide feedback when a video is uploaded.</p>');
+          }
+        }
+        $(lessonsDiv).append($(feedback));
+
+        // Attach to DOM.
+        $('.fill').append($(lessonsDiv));
+
+      } else {
+        // Someone else is logged in.
+        printRequestForm();
+      }
+    } else {
+      // No one is login in.
+      printRequestForm();
+    }
+  }
+
+
+  /**
+   *  Displays all of the available lessons (visible only to Tanya & the student).
+   *  Otherwise, show the request instruction form to everyone else.
+   */
+  function displayLessons() {
+    // If tanya or student are authenticated, show lessons; otherwise, show request instruction form.
+    let user = Account.isAuthenticated();
+    if (user !== null) {
+      if (user.login === 'tanya' || user.login === 'student') {
+        // Tanya or student is logged in; show lessons.
+
+        // Just in case the data isn't in local storage yet.
+        verifyData();
+
+        $('.fill').append('<h3>Available Lessons</h3>');
+        // Get lesson data from local storage.
+        let lessonData = JSON.parse(Storage.getData("lessons"));
+        // Parse lesson data and create tag elements to attach to DOM.
+        for (let i = 0; i < lessonData.length; i++) {
+          let lesson = lessonData[i];
+
+          let lessonsDiv = $('<div class="col lessons"></div> <!-- /.col -->');
+          // Create & attach lesson Level.
+          let level = $('<div class="level"><b>' + lesson.level + '</b>  </div>');
+
+          if (user.login === "tanya") {
+            let student = $('<span>Assigned to: <b>' + lesson.studentName + '</b></span>');
+            $(level).append(student);
+          }
+          $(lessonsDiv).append(level);
+
+          // Create & attach lesson title.
+          let title = $('<div class="title">' + lesson.title + '</div>');
+          $(lessonsDiv).append(title);
+
+          // Create & attach lesson summary.
+          let summary = $('<span>' + lesson.summary + '</span><br/>');
+          $(lessonsDiv).append(summary);
+
+          // Create & attach lesson status.
+          let status;
+          if (lesson.status === "complete") {
+            status = $('<span> Status: <em class="statusComplete">' + lesson.status + '</em></span>');
+          } else {
+            status = $('<span> Status: <em class="statusNotStarted">' + lesson.status + '</em></span>');
+          }
+          $(lessonsDiv).append(status);
+
+          // Create & attach link to lesson.
+          let link = $('<a href="index.php?' + lesson.title.replace(/ /g, "_") + '" class="continue">View Lesson</a>');
+          $(lessonsDiv).append(link);
+
+          // Attach to DOM.
+          $('.fill').append($(lessonsDiv));
+        }
 
       } else {
         // Someone else is logged in.
@@ -129,6 +289,8 @@ let Instruction = (function () {
 
   // Expose these functions.
   return {
+    verifyData: verifyData,
+    displayLesson: displayLesson,
     displayLessons: displayLessons
   };
 })();

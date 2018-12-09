@@ -266,6 +266,7 @@ section.homepage ul li.last::after {
 }
 .subpage .fill .albumCover img,
 .subpage .fill .newsImage img,
+.subpage .fill .sheetMusicImage img,
 .subpage .fill .eventImage img {
   float: left;
   border: 1px solid #000000;
@@ -326,7 +327,10 @@ section.homepage ul li.last::after {
 .subpage .fill .news,
 .subpage .fill .event,
 .subpage .fill .performances,
-.subpage .fill .performance {
+.subpage .fill .performance,
+.subpage .fill .lessons,
+.subpage .fill .sheetmusic,
+.subpage .fill .sheetMusic{
   margin-top: 20px !important;
 }
 
@@ -387,7 +391,8 @@ section.homepage ul li.last::after {
   width: 20px;
 }
 
-.subpage .fill .news .newsImage {
+.subpage .fill .news .newsImage,
+.subpage .fill .sheetMusic .sheetMusicImage {
   padding: 0 !important;
 }
 
@@ -505,7 +510,8 @@ section.homepage ul li.last::after {
   margin: 10px 0;
 }
 
-.subpage .fill .performance iframe {
+.subpage .fill .performance iframe,
+.subpage .fill .lessons iframe {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -515,5 +521,67 @@ section.homepage ul li.last::after {
   border: 1px solid #000000;
 }
 
+/* Instruction */
+.subpage .fill h3.sm .level {
+  font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-size: 10pt;
+  text-align:right;
+  margin: 0 !important;
+  float: right;
+  padding: 3px;
+  display: inline;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+}
+
+.subpage .fill .lessons img {
+  width:100%;
+}
+
+
+.subpage .fill .lessons .level {
+  font-size: 10pt;
+  margin: 30px 0 5px 0;
+  display: block;
+  width: 100%;
+}
+
+.subpage .fill .lessons .level b {
+  padding: 3px;
+  display: inline;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+}
+
+.subpage .fill .lessons .level span {
+  color: #5F5F5F;
+  float: right;
+  font-size: 8pt;
+}
+
+.subpage .fill .lessons .level span b {
+  font-weight: bolder;
+  display: inline;
+  background-color: #FFFFFF;
+  padding: 5px;
+  color: #000000;
+
+}
+
+.subpage .fill .lessons .title {
+  border-top: 1px solid #BABABA;
+}
+
+
+.subpage .fill .lessons span em.statusComplete {
+  font-weight: bolder;
+  color: #0000FF;
+}
+
+
+.subpage .fill .lessons span em.statusNotStarted {
+  font-weight: bolder;
+  color: #FF0000;
+}
 
 

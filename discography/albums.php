@@ -29,17 +29,22 @@
 
             let authenticatedUser = Account.isAuthenticated();
 
-            // Depending on if user is authenticated.
-            if (authenticatedUser.login === "tanya") { // Tanya authenticated.
+            if (authenticatedUser !== null) {
 
-              // Remove add link if it exists (this will ensure no duplicates in next step).
-              $(".subpage nav ul #addItem").remove();
-              // Add link to add a new discography item.
-              let addItem = $('<li id="addItem"><a href="add.php">Add</a></li>');
-              $(".subpage nav ul").prepend($(addItem));
+              // Depending on if user is authenticated.
+              if (authenticatedUser.login === "tanya") { // Tanya authenticated.
 
-            } else {  // Someone else authenticated or user NOT authenticated.
-              // Remove link to add a new discography item.
+                // Remove add link if it exists (this will ensure no duplicates in next step).
+                $(".subpage nav ul #addItem").remove();
+                // Add link to add a new discography item.
+                let addItem = $('<li id="addItem"><a href="add.php">Add</a></li>');
+                $(".subpage nav ul").prepend($(addItem));
+
+              } else {  // Someone else authenticated.
+                // Remove link to add a new discography item.
+                $(".subpage nav ul #addItem").remove();
+              }
+            } else {  // User NOT authenticated.
               $(".subpage nav ul #addItem").remove();
             }
           }
@@ -62,6 +67,7 @@
             <li class="active"><a href="albums.php">Albums</a></li>
             <li><a href="songs.php">Songs</a></li>
             <li><a href="performances.php">Performances</a></li>
+            <li><a href="sheetmusic.php">Sheet Music</a></li>
           </ul>
          </nav>
 

@@ -1,0 +1,40 @@
+{
+  "sheetmusic": [
+    {
+      "id": "farela",
+      "title": "Farela For Cello & Piano",
+      "url": "farela.pdf",
+      "summary": "The title Farela stands for three musical pitches, F-D-A. It was conceived in 2015 as an encore piece for pianist Pi-Hsun Shih and myself.",
+      "description": "<p>The title Farela stands for three musical pitches, F-D-A. It was conceived in 2015 as an encore piece for pianist Pi-Hsun Shih and myself. I had planned to compose a minimalistic, slightly whimsical bonbon to use for topping off our usually very intense programs. However, the project developed a will of its own resulting in a 15-minute-long virtuosic duet with equally dramatic piano and cello parts.</p><p>The outer sections are lively, with subtle flamenco elements. The middle section is slower and more lyrical. Pitches F-D-A are sort of a leitmotif, which appears frequently throughout the piece, especially at its climatic points.</p><p>Pi-Hsun Shih and the composer premiered the piece in November of 2015, in Promisek Concert Series in Bridgewater, Connecticut.</p>",
+      "image": "farela.jpg",
+      "price": "$14.99"
+    },
+    {
+      "id": "icelandic",
+      "title": "Icelandic Ballad For Cello & Piano",
+      "url": "IcelandicBalled.pdf",
+      "summary": "The idea to write Icelandic Ballad for Cello and Piano came to me upon listening to the 14th century Icelandic hymn “Almighty G-d of All Lands” (Book of Lilja, c. 1340).",
+      "description": "<p>The idea to write Icelandic Ballad for Cello and Piano came to me upon listening to the 14th century Icelandic hymn “Almighty G-d of All Lands” (Book of Lilja, c. 1340). The simple beauty of this chant, its self-contained structure, plus the component, which I would like to call “macro-ethnos” or “universal folk” quality - compelled me to create the Ballad.</p><p>The theme is followed by ten variations. If one takes a closer look, one will be able to follow the history of western music, from the mediaeval to the future, unfolding through the piece.</p><p>In October 2007, the composer and Prof. Lydia Frumkin gave the first performance of the work in Washington, D.C., to high critical acclaim. European premiere took place later that month at Salurinn Hall in Reykjavik.</p>",
+      "image": "icelandic-ballad.jpg",
+      "price": "$14.99"
+    },
+    {
+      "id": "sept11",
+      "title": "September 11 For Solo Cello",
+      "url": "september11.pdf",
+      "summary": "September 11 for solo cello  came to me soon after the horrible events in September of 2001.",
+      "description": "<p>September 11 for solo cello  came to me soon after the horrible events in September of 2001.</p><p>The work is in a form of a chaconne. The world premiere took place during my solo recital in October of 2001, at The National Hebrew Congregation, in Washington, D.C. and it was featured on my 2002 Concert in Moscow CD.</p><p>While preparing for a concert last year, I decided to revise the work. The present version is slightly longer; the culmination is more developed.</p><p>While this composition has a mournful aura, it is not a work of a desperate anguish, but rather a life-affirming one. There is an all-pervading light. The souls of the innocent are not lost, but remembered forever with love.</p>",
+      "image": "september11.jpg",
+      "price": "$14.99"
+    },
+    {
+      "id": "sufi",
+      "title": "Sufi Suite For Solo Cello",
+      "url": "sufi-suite.pdf",
+      "summary": "Sufi Suite was inspired by Jalāl ad-Dīn Muhammad Rūmī poetry.",
+      "description": "<p>'Where Shams-I Tabriz walks, the footprints become notations of music and the holes you fall through into space.' Rumi (translated by Coleman Barks)</p><p>Sufi Suite was composed during summer of 2005 and was first performed in 2006, at Roerich Museum in New York City. Since its premiere, Sufi Suite has been played in Boston, Moscow, Mexico, and Australia. In 2007, it was included in Sufi Soul CD, which was described by Heather Kurzbauer in The Strad Magazine as “deep, exploratory and richly rewarding” and was featured on Amsterdam’s Radio 4.</p><p> Sufi Suite was inspired by Jalāl ad-Dīn Muhammad Rūmī poetry. The first movement, After Rumi, is an arabesque-like prelude. The second movement, OM, is more substantial in size and combines vocal chanting (sang by the performer) and varied and intricate rhythms of a Sufi dance.</p>",
+      "image": "sufi-suite.jpg",
+      "price": "$9.99"
+    }
+  ]
+}

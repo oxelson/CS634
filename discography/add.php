@@ -54,10 +54,12 @@
 
             let authenticatedUser = Account.isAuthenticated();
 
-            // Depending on if user is authenticated.
-            if (!authenticatedUser.login === "tanya") { // Someone else authenticated or user NOT authenticated.
-              // Remove link to add a new discography item.
-              $(".subpage nav ul #addItem").remove();
+            if (authenticatedUser !== null) {
+              // Depending on if user is authenticated.
+              if (!authenticatedUser.login === "tanya") { // Someone else authenticated or user NOT authenticated.
+                // Remove link to add a new discography item.
+                $(".subpage nav ul #addItem").remove();
+              }
             }
           }
 
@@ -80,6 +82,7 @@
             <li><a href="albums.php">Albums</a></li>
             <li><a href="songs.php">Songs</a></li>
             <li><a href="performances.php">Performances</a></li>
+            <li><a href="sheetmusic.php">Sheet Music</a></li>
           </ul>
          </nav>
 

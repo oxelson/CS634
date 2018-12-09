@@ -16,7 +16,7 @@
            Instruction.displayLessons();
           } else {
             // Load the requested lesson.
-            //Instruction.displayLesson(lesson.replace(/\?/, ''));
+            Instruction.displayLesson(lesson.replace(/\?/, ''));
           }
 
           // Create links depending on authentication status.
@@ -49,9 +49,6 @@
             }
           }
 
-
-
-
         });
       </script>
     </head>
@@ -82,7 +79,6 @@
          <!-- right side -->
          <section class="col-sm-8 col-xs-12">
            <div class="fill">
-
 
            </div> <!-- /.fill -->
          </section>
