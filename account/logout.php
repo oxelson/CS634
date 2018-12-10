@@ -8,19 +8,14 @@
       <script>
         jQuery(document).ready(function(){
 
-          // Log user out.
-          $("button").click(function() {
-
-            if (Account.logout()) {
-              // No bueno. Something went wrong with the logut operation.
-              alert("Error processing logout request.  :-( ");
-            } else {
-              alert("Logout successful!");
-
-              // create links depending on authentication status.
-              createLinks();
-            }
-          });
+          // Log the user out.
+          if (Account.logout()) {
+            // No bueno. Something went wrong with the logout operation.
+            alert("Error processing logout request.  :-( ");
+          } else {
+            // create links depending on authentication status.
+            createLinks();
+          }
 
           // create links depending on authentication status.
           createLinks();
@@ -47,13 +42,16 @@
               // Remove create link if it exists.
               $(".subpage nav ul #create").remove();
 
-              // Enable button.
-              $("button").removeAttr("disabled");
-
             } else {  // User NOT authenticated.
 
-              // Disable button.
-              $("button").attr("disabled", "disable");
+              // Clear success div and span elements (this will ensure no duplicates in next steps).
+              $(".success").empty();
+              $(".logout span").empty();
+              $(".success").append("<p>You have been logged out.</p>");
+              $(".logout span").append("<p>You will be redirected to the home page in a few seconds.</p>");
+              setTimeout(function () {
+                window.location.replace("/");
+              }, 3000);
 
               // Remove create link if it exists (this will ensure no duplicates in next step).
               $(".subpage nav ul #create").remove();
@@ -92,7 +90,7 @@
        <div class="row subpage">
          <!-- left side -->
          <aside class="col-sm-4 col-xs-12">
-          <img src="/images/cello-dark.png" alt="Photo by Omar Khaled from Pexels."/>
+          <img src="/images/bow2.png" alt="Photo from European Violins."/>
          </aside>
 
          <!-- right side -->
@@ -101,7 +99,7 @@
              <div class="row">
                <h3>Logout</h3>
                <div class="col-8 logout">
-                 <button type="submit" class="btn btn-danger">Logout</button>
+                 <div class="success"></div><span></span>
                </div> <!--/.login -->
              <div> <!--/.row -->
            </div> <!-- /.fill -->

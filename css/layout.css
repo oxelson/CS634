@@ -61,7 +61,7 @@
   }
 }
 
-@media only screen and (max-width: 959px) {
+@media only screen and (max-width: 1009px) {
   /* Hide the nav links & show the menu icon */
   header nav ul {
     display: none;
@@ -111,13 +111,6 @@
 }
 
 /* Tablets and wide screens */
-@media only screen and (min-width: 960px) and (max-width: 1009px) {
-  /* Decrease spacing between nav elements & decrease font size */
-  header  {
-    font-size: 12pt !important;
-  }
-}
-
 @media only screen and (min-width: 1010px) and (max-width: 1034px) {
   /* Decrease spacing between nav elements */
   header nav ul li {
@@ -134,10 +127,7 @@
 
 
 @media only screen and (min-width: 1050px) and (max-width: 1069px) {
-  /* Decrease spacing between nav elements & decrease font size */
-  header {
-    font-size: 13pt !important;
-  }
+  /* Decrease spacing between nav elements*/
   header nav ul li  {
     margin: 22px 13px !important;
   }

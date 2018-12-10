@@ -9,20 +9,22 @@
         jQuery(document).ready(function(){
 
           // Authenticate user.
-          $("button").click(function() {
-            let login = $("#loginId").val();
-            let password = $("#password").val();
+          $('input').keypress(function (e) {
+            let key = e.which;
+            if(key === 13)  {
+              // the enter key code
+                let login = $("#loginId").val();
+                let password = $("#password").val();
 
-            if (!Account.authenticate(login, password)) {
-              // No bueno.  Print an error message:
-              $(".error").append('Bad credentials.  Please try again.');
-            } else {
-              // Clear input fields.
-              $("input").val("");
-              alert("Login successful!");
-
-              // create links depending on authentication status.
-              createLinks();
+                if (!Account.authenticate(login, password)) {
+                  // No bueno.  Print an error message:
+                  $(".error").append('Bad credentials.  Please try again.');
+                } else {
+                  // Clear input fields.
+                $("input").val("");
+                 // create links depending on authentication status.
+                 createLinks();
+                }
             }
           });
 
@@ -57,17 +59,25 @@
               $(".subpage nav ul #create").remove();
 
               // Disable login form.
-              $("button").attr("disabled","disabled");
-              $("input").attr("disabled","disabled");
+              $("input").addClass("hidden");
 
-              // Display login messages.
-              $(".success").append('You are logged in as ' + authenticatedUser.login);
+              // Clear success div and span elements (this will ensure no duplicates in next steps).
+              $(".success").empty();
+              $(".login span").empty();
+              $(".success").append("<p>Login successful!</p>");
+              $(".login span").append("<p>You are logged in as <b class='noblock'>" + authenticatedUser.login + "</b></p><p>You will be redirected to the home page in a few seconds.</p>");
+              setTimeout(function () {
+                window.location.replace("/");
+              }, 3000);
 
             } else {  // User NOT authenticated.
 
+              // Clear success div and span elements.
+              $(".success").empty();
+              $(".login span").empty();
+
               // Enable login form.
-              $("button").removeAttr("disabled");
-              $("input").removeAttr("disabled");
+              $("input").removeClass("hidden");
 
               // Remove create link if it exists (this will ensure no duplicates in next step).
               $(".subpage nav ul #create").remove();
@@ -106,7 +116,7 @@
        <div class="row subpage">
          <!-- left side -->
          <aside class="col-sm-4 col-xs-12">
-          <img src="/images/cello-dark.png" alt="Photo by Omar Khaled from Pexels."/>
+          <img src="/images/bow2.png" alt="Photo from European Violins."/>
          </aside>
 
          <!-- right side -->
@@ -115,14 +125,13 @@
              <div class="row">
                <h3>Login</h3>
                <div class="col-8 login">
-                 <div class="error"></div><div class="success"></div>
+                 <div class="error"></div><div class="success"></div><span></span>
                  <div class="form-group">
                    <input type="text" class="form-control col-form-label-sm" id="loginId" placeholder="Login ID">
                  </div>
                  <div class="form-group">
                    <input type="password" class="form-control col-form-label-sm" id="password" placeholder="Password">
                  </div>
-                 <button type="submit" class="btn btn-primary">Login</button>
                </div> <!--/.login -->
              <div> <!--/.row -->
            </div> <!-- /.fill -->

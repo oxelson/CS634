@@ -7,6 +7,7 @@ echo "
            <div class='col left'></div>
            <nav class='col'>
              <ul>
+               <li><a href='/'>HOME</a></li>
                <li><a href='/news'>NEWS</a></li>
                <li><a href='/calendar'>CALENDAR</a></li>
                <li><a href='/discography'>DISCOGRAPHY</a></li>

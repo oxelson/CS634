@@ -5,10 +5,6 @@
       <title>Tanya Anisimova : ABOUT - Curriculum Vitae</title>
       <meta name="description" content="Tanya Anisimova's Curriculum Vitae" />
       <?php include '../head_include.php';?>
-      <script>
-        jQuery(document).ready(function(){
-        });
-      </script>
     </head>
     <body>
      <?php include '../header.php';?>
@@ -33,7 +29,7 @@
        <div class="row subpage">
          <!-- left side -->
          <aside class="col-sm-4 col-xs-12">
-          <img src="/images/cello-dark.png" alt="Photo by Omar Khaled from Pexels."/>
+          <img src="/images/scroll.png" alt="Photo by Freepik."/>
          </aside>
 
          <!-- right side -->

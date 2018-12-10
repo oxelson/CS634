@@ -12,11 +12,11 @@
 
        <div class="row subpage">
           <!-- page title -->
-         <div class="col-sm-4 col-xs-12 left">
+         <div class="col-sm-3 col-xs-12 left">
           <h1>Sources</h1>
          </div>
 
-         <nav class="col-sm-8 col-xs-12 right">
+         <nav class="col-sm-9 col-xs-12 right">
          </nav>
 
        </div> <!-- /.row -->
@@ -26,7 +26,7 @@
        <div class="row subpage">
          <!-- left side -->
          <aside class="col-sm-4 col-xs-12">
-          <img src="/images/cello-dark.png" alt="Photo by Omar Khaled from Pexels."/>
+          <img src="/images/tanya-homepage.png" alt="Photo of Tanya Anisimova by Paul Purpura."/>
          </aside>
 
          <!-- right side -->
@@ -40,7 +40,7 @@
                  <ul class="realList">
 
                    <li><a href="/images/floral-background.png">Corner Floral Frame</a> sourced from <a href="https://www.publicdomainpictures.net/en/view-image.php?image=65562&picture=floral-corner-frame">Public Domain Pictures</a>.</li>
-                   <li><a href="/images/cello-dark.png">Subpage image of Tanya</a> sourced from <a href="https://www.pexels.com/photo/black-classic-music-violin-861884/">Omar Khaled via Pexels</a>.</li>
+                   <li><a href="/images/cello-dark.png">Discography image of Tanya</a> sourced from <a href="https://www.pexels.com/photo/black-classic-music-violin-861884/">Omar Khaled via Pexels</a>.</li>
                    <li><a href="/images/tanya-homepage.png">Homepage image of Tanya</a> sourced from <a href="http://www.tanyaanisimova.com/">Paul Purpura via Tanya Anisimova's website</a>.</li>
                    <li><a href="/images/st_andrews.png">St Andrew's image</a> sourced from <a href="https://commons.wikimedia.org/w/index.php?curid=70163494">Peter K Burian via Wikimedia Commons</a>.</li>
                    <li><a href="/images/ushaw.png">Ushaw image</a> sourced from <a href="https://www.musicdurham.co.uk/venue/ushaw-college/">Music in Durham website</a>.</li>
@@ -50,6 +50,12 @@
                    <li><a href="/images/arts_on_the_green.png">Arts on the Green image </a> sourced from <a href="https://www.artsonthegreen.info/"> Arts on the Green website</a>.</li>
                    <li><a href="/images/esgf.png">Eastern Shore Guitar Festival image </a> sourced from <a href="https://www.washcoll.edu/departments/music/eastern-shore-guitar-festival/">Eastern Shore Guitar Festival and Workshop website</a>.</li>
                    <li><a href="/images/loyola.png">Loyola image </a> sourced from <a href="https://www.luc.edu/">Loyola  website</a>.</li>
+                   <li><a href="/images/scroll.png">About image </a> sourced from <a href="https://nl.freepik.com/index.php?goto=74&idfoto=2042549&term=viool%20detail">Freepik website</a>.</li>
+                   <li><a href="/images/bow.png">Calendar image </a> sourced from <a href="https://unsplash.com/photos/rAfTkgvIYkA">Massimo Sartirana at the 4usky website</a>.</li>
+                   <li><a href="/images/profile.png">Instruction image </a> sourced from <a href="http://www.4usky.com/download/164131867.html">Ivonne Boulay at the Unsplash website</a>.</li>
+                   <li><a href="/images/bow2.png">Account image </a> sourced from <a href="http://www.europeanviolins.eu/en/otto-guetter-cello-bow.html">European Violins website</a>.</li>
+                   <li><a href="/images/scroll2.png">Search image </a> sourced from <a href="https://finelystrung.com/2013/09/28/cello-scroll/#jp-carousel-4062">Finely Strung website</a>.</li>
+                   <li><a href="http://www.cs634-hur-01.designaspractice.com/instruction/index.php?Stretch_Position">Stretch position lesson images </a> sourced from <a href="https://thecellocompanion.info/category/intermediate-technique/">The Cello Companion</a> Online Instruction (login to see these images).</li>
                    <li>All other images of Tanya and albums sourced from <a href="http://www.tanyaanisimova.com/">Tanya Anisimova's website</a>.</li>
                  </ul>
 

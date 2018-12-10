@@ -31,7 +31,7 @@
        <div class="row subpage">
          <!-- left side -->
          <aside class="col-sm-4 col-xs-12">
-          <img src="/images/cello-dark.png" alt="Photo by Omar Khaled from Pexels."/>
+          <img src="/images/scroll2.png" alt="Photo from Finely Strung."/>
          </aside>
 
          <!-- right side -->
