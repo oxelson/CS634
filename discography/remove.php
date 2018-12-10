@@ -18,6 +18,8 @@
           let discographyType = dataItems[0];
           let itemToUpdate = dataItems[1];
 
+          // For page title.
+          let title;
 
           let warningTextStart = 'Are you certain you wish to remove <i>';
           let warningTextEnd = '</i>? (This process cannot be undone.)';
@@ -30,6 +32,10 @@
             // Create messages.
             warningText = warningTextStart + songToUpdate.title + warningTextEnd;
             buttonText = 'Remove Song';
+
+            // For page title.
+            title = "Song";
+
           }
 
           if (discographyType === "album") {
@@ -38,6 +44,10 @@
             // Create messages.
             warningText = warningTextStart + albumToUpdate.title + warningTextEnd;
             buttonText = 'Remove Album';
+
+            // For page title.
+            title = "Album";
+
           }
 
           if (discographyType === "performance") {
@@ -46,7 +56,28 @@
             // Create messages.
             warningText = warningTextStart + performanceToUpdate.title + warningTextEnd;
             buttonText = 'Remove Performance';
+
+            // For page title.
+            title = "Performance";
+
           }
+
+          if (discographyType === "sheetmusic") {
+            // Get sheet music data to update
+            let sheetMusicToUpdate = Discography.getSheetMusic(itemToUpdate);
+
+            // Create messages.
+            warningText = warningTextStart + sheetMusicToUpdate.title + warningTextEnd;
+            buttonText = 'Remove Sheet Music';
+
+            // For page title.
+            title = "Sheet Music";
+          }
+
+
+          // Create page title & attach to DOM.
+          let pageTitle = $('<h3>Remove '+ title +' from Discography</h3>');
+          $(".fauxNav").prepend($(pageTitle));
 
           $("#warning").append(warningText);
           $("#removeButton").append(buttonText);
@@ -88,7 +119,6 @@
          <section class="col-sm-8 col-xs-12">
            <div class="fill">
              <div class="row fauxNav">
-               <h3>Remove Item From Discography</h3>
                <p id="warning"></p>
                <div class="col-8 remove">
                  <button type="submit" id="removeButton" class="btn btn-danger"></button>

@@ -17,7 +17,13 @@
           $(".subpage .fill .addPerformance").addClass("hidden");
           $(".subpage .fill .addSheetMusic").addClass("hidden");
           $(".subpage .fill .addAlbum").removeClass("hidden");
-          //
+
+          // Unattach any page title to avoid duplicates.
+          $(".fauxNav h3").remove();
+          // Create page title & attach to DOM.
+          let pageTitle = $('<h3>Add Album to Discography</h3>');
+          $(".fauxNav").prepend($(pageTitle));
+
           $(".fNav a").click(function() {
             let selected = $(this).attr("id");
             // Make song link in subNav active.
@@ -30,28 +36,46 @@
               $(".subpage .fill .addPerformance").addClass("hidden");
               $(".subpage .fill .addAlbum").addClass("hidden");
               $(".subpage .fill .addSheetMusic").addClass("hidden");
+              // Unattach any page title to avoid duplicates.
+              $(".fauxNav h3").remove();
+              // Create page title & attach to DOM.
+              let pageTitle = $('<h3>Add Song to Discography</h3>');
+              $(".fauxNav").prepend($(pageTitle));
             } else if (selected === "album") {
               // Hide song, performance, and sheet music forms, show album form.
               $(".subpage .fill .addSong").addClass("hidden");
               $(".subpage .fill .addPerformance").addClass("hidden");
               $(".subpage .fill .addAlbum").removeClass("hidden");
               $(".subpage .fill .addSheetMusic").addClass("hidden");
-            } else if (selected === "album") {
+              // Unattach any page title to avoid duplicates.
+              $(".fauxNav h3").remove();
+              // Create page title & attach to DOM.
+              let pageTitle = $('<h3>Add Album to Discography</h3>');
+              $(".fauxNav").prepend($(pageTitle));
+            } else if (selected === "performance") {
               // Hide album, song, and sheet music forms, show performance form.
               $(".subpage .fill .addSong").addClass("hidden");
               $(".subpage .fill .addPerformance").removeClass("hidden");
               $(".subpage .fill .addAlbum").addClass("hidden");
               $(".subpage .fill .addSheetMusic").addClass("hidden");
+              // Unattach any page title to avoid duplicates.
+              $(".fauxNav h3").remove();
+              // Create page title & attach to DOM.
+              let pageTitle = $('<h3>Add Performance to Discography</h3>');
+              $(".fauxNav").prepend($(pageTitle));
             } else {
               // Hide album, song, and performance forms, show sheet music form.
               $(".subpage .fill .addSong").addClass("hidden");
               $(".subpage .fill .addPerformance").addClass("hidden");
               $(".subpage .fill .addAlbum").addClass("hidden");
               $(".subpage .fill .addSheetMusic").removeClass("hidden");
+              // Unattach any page title to avoid duplicates.
+              $(".fauxNav h3").remove();
+              // Create page title & attach to DOM.
+              let pageTitle = $('<h3>Add Sheet Music to Discography</h3>');
+              $(".fauxNav").prepend($(pageTitle));
             }
-
           });
-
 
           // Create links depending on authentication status.
           createLinks();
@@ -71,7 +95,6 @@
               }
             }
           }
-
         });
       </script>
     </head>
@@ -109,23 +132,17 @@
          <section class="col-sm-8 col-xs-12">
            <div class="fill">
              <div class="row fauxNav">
-               <h3>Add an Item to Discography</h3>
-               <div class="col-sm-2 col-xs-12 fNav fauxActive">
+
+               <div class="col-sm-3 col-xs-12 fNav fauxActive">
                  <a href="#" id="album">Add Album</a>
                </div>
-               <div class="col-sm-1 col-xs-12 blank">
-               </div>
-               <div class="col-sm-2 col-xs-12 fNav">
+               <div class="col-sm-3 col-xs-12 fNav">
                  <a href="#" id="song">Add Song</a>
                </div>
-               <div class="col-sm-1 col-xs-12 blank">
-               </div>
-               <div class="col-sm-2 col-xs-12 fNav">
+               <div class="col-sm-3 col-xs-12 fNav">
                 <a href="#" id="performance">Add Performance</a>
                </div>
-               <div class="col-sm-1 col-xs-12 blank">
-               </div>
-               <div class="col-sm-2 col-xs-12 fNav">
+               <div class="col-sm-3 col-xs-12 fNav">
                 <a href="#" id="sheetmusic">Add Sheet Music</a>
                </div>
              </div> <!--/.row -->

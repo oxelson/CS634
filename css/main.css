@@ -72,6 +72,10 @@ a.continue::after {
   content: "\0000a0 \003E";
 }
 
+ol {
+  padding-left: 20px;
+}
+
 /* left-side image */
 aside img {
   width: 100%;
@@ -301,15 +305,17 @@ section.homepage ul li.last::after {
   width: 30% !important;
   border: 2px solid #FF0000;
   margin-right: 20px;
+  text-align: center;
 }
 
 
 .subpage .fill ul.links li.blank {
-    border: none !important;
+  border: none !important;
 }
 
 .subpage .fill ul.links li.admin {
-    border: 2px solid #FF0000;
+  border: 2px solid #FF0000;
+  text-align: center;
 }
 
 .subpage .fill .songDisplay ul.links {
@@ -330,7 +336,10 @@ section.homepage ul li.last::after {
 .subpage .fill .performance,
 .subpage .fill .lessons,
 .subpage .fill .sheetmusic,
-.subpage .fill .sheetMusic{
+.subpage .fill .sheetMusic,
+.subpage .fill .conference,
+.subpage .fill .addLesson,
+.subpage .fill .search {
   margin-top: 20px !important;
 }
 
@@ -558,30 +567,55 @@ section.homepage ul li.last::after {
   float: right;
   font-size: 8pt;
 }
-
 .subpage .fill .lessons .level span b {
   font-weight: bolder;
   display: inline;
   background-color: #FFFFFF;
   padding: 5px;
   color: #000000;
-
 }
-
 .subpage .fill .lessons .title {
   border-top: 1px solid #BABABA;
 }
-
-
 .subpage .fill .lessons span em.statusComplete {
   font-weight: bolder;
   color: #0000FF;
 }
-
-
 .subpage .fill .lessons span em.statusNotStarted {
   font-weight: bolder;
   color: #FF0000;
 }
 
+
+/* chat */
+
+.subpage .fill .chat ul.chatMessages {
+  margin-bottom: 30px;
+}
+.subpage .fill .chat ul.chatMessages li {
+  border: 1px solid #000000;
+  display: block;
+  width: 90% !important;
+  border-radius: 15px;
+}
+
+.subpage .fill .chat ul.chatMessages li .atTime {
+  font-size: 80%;
+  font-weight: bolder;
+}
+
+.subpage .fill .chat ul.chatMessages li.tanya {
+  background-color: #8CB0B5;
+  margin-right: 20px;
+}
+
+.subpage .fill .chat ul.chatMessages li.student {
+  background-color: #E6E6FA;
+  margin-left: 30px;
+}
+
+/* conference */
+.subpage .fill .conference p {
+  margin-top: 30px !important;
+}
 

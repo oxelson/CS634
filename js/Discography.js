@@ -159,14 +159,16 @@ let Discography = (function () {
 
     // If tanya is authenticated, show links to update and delete album.
     let user = Account.isAuthenticated();
-    if (user.login === 'tanya') {
-      let blankElement = $('<li class="blank"></li>');
-      $(linkList).append($(blankElement));
-      let updateElement = $('<li class="admin"><a href="update.php?type=album&' + albumOfInterest + '">Update Album</a></li>');
-      $(linkList).append($(updateElement));
+    if (user !== null) {
+      if (user.login === 'tanya') {
+        let blankElement = $('<li class="blank"></li>');
+        $(linkList).append($(blankElement));
+        let updateElement = $('<li class="admin"><a href="update.php?type=album&' + albumOfInterest + '">Update Album</a></li>');
+        $(linkList).append($(updateElement));
 
-      let removeElement = $('<li class="admin"><a href="remove.php?type=album&' + albumOfInterest + '">Remove Album</a></li>');
-      $(linkList).append($(removeElement));
+        let removeElement = $('<li class="admin"><a href="remove.php?type=album&' + albumOfInterest + '">Remove Album</a></li>');
+        $(linkList).append($(removeElement));
+      }
     }
 
     // Add linkList to albumCover div.
@@ -386,6 +388,17 @@ let Discography = (function () {
       '<small class="deemp">Lyrics:</small> none <br/>');
     $(songData).append($(metadata));
 
+    // Sheet music.
+    if (song.sheetmusic !== null) {
+      let sheetmusic;
+      if (song.sheetmusic !== "" && song.sheetmusic !== undefined) {
+        sheetmusic = $('<small class="deemp">Sheet music:</small> <a href="/discography/sheetmusic.php?' + song.sheetmusic + '">available for purchase</a><br/>');
+      } else {
+        sheetmusic = $('<small class="deemp">Sheet music:</small> unavailable<br/>');
+      }
+      $(songData).append($(sheetmusic));
+    }
+
     // Add songData to row.
     $(row).append($(songData));
 
@@ -426,19 +439,21 @@ let Discography = (function () {
 
     // If tanya is authenticated, show links to update and delete song.
     let user = Account.isAuthenticated();
-    if (user.login === 'tanya') {
-      let row3 = $('<div class="row songDisplay"></div>');
+    if (user !== null) {
+      if (user.login === 'tanya') {
+        let row3 = $('<div class="row songDisplay"></div>');
 
-      // Create list for displaying update/deletion of song.
-      let linkList = $('<ul class="links"></ul>');
-      let updateElement = $('<li class="admin"><a href="update.php?type=song&' + songOfInterest + '">Update Song</a></li>');
-      $(linkList).append($(updateElement));
+        // Create list for displaying update/deletion of song.
+        let linkList = $('<ul class="links"></ul>');
+        let updateElement = $('<li class="admin"><a href="update.php?type=song&' + songOfInterest + '">Update Song</a></li>');
+        $(linkList).append($(updateElement));
 
-      let removeElement = $('<li class="admin"><a href="remove.php?type=song&' + songOfInterest + '">Remove Song</a></li>');
-      $(linkList).append($(removeElement));
-      $(row3).append($(linkList));
-      // Attach row to DOM.
-      $('.fill').append($(row3));
+        let removeElement = $('<li class="admin"><a href="remove.php?type=song&' + songOfInterest + '">Remove Song</a></li>');
+        $(linkList).append($(removeElement));
+        $(row3).append($(linkList));
+        // Attach row to DOM.
+        $('.fill').append($(row3));
+      }
     }
   }
 
@@ -539,16 +554,18 @@ let Discography = (function () {
 
         // If tanya is authenticated, show links to update and delete song.
         let user = Account.isAuthenticated();
-        if (user.login === 'tanya') {
+        if (user !== null) {
+          if (user.login === 'tanya') {
 
-          // Create list for displaying update/deletion of performance.
-          let linkList = $('<ul class="adminLinks "></ul>');
-          let updateElement = $('<li class="admin"><a href="update.php?type=performance&' + performanceOfInterest + '">Update Performance</a></li>');
-          $(linkList).append($(updateElement));
+            // Create list for displaying update/deletion of performance.
+            let linkList = $('<ul class="adminLinks "></ul>');
+            let updateElement = $('<li class="admin"><a href="update.php?type=performance&' + performanceOfInterest + '">Update Performance</a></li>');
+            $(linkList).append($(updateElement));
 
-          let removeElement = $('<li class="admin"><a href="remove.php?type=performance&' + performanceOfInterest + '">Remove Performance</a></li>');
-          $(linkList).append($(removeElement));
-          $(colDiv).append($(linkList));
+            let removeElement = $('<li class="admin"><a href="remove.php?type=performance&' + performanceOfInterest + '">Remove Performance</a></li>');
+            $(linkList).append($(removeElement));
+            $(colDiv).append($(linkList));
+          }
         }
 
 
@@ -588,6 +605,14 @@ let Discography = (function () {
       // Create descriptionTag and attach.
       let descriptionTag = $('<span class="description">' + video.description + '</span>');
       $(colDiv).append($(descriptionTag));
+
+      // Sheet music.
+      if (video.sheetmusic !== null) {
+        if (video.sheetmusic !== "" && video.sheetmusic !== undefined) {
+          let sheetmusic = $('<span>Sheet music for this song is </span> <a href="/discography/sheetmusic.php?' + video.sheetmusic + '">available for purchase</a>');
+          $(colDiv).append($(sheetmusic));
+        }
+      }
     }
 
     // Attach to DOM.
@@ -655,9 +680,34 @@ let Discography = (function () {
   }
 
 
+
   /**
+   * Retrieves the data of the provided sheet music.
    *
-   * @param sheetMusicOfInterest
+   * @param sheetMusicOfInterest  The sheet music whose data we need to retrieve.
+   */
+  function getSheetMusic(sheetMusicOfInterest) {
+    // Just in case the data isn't in local storage yet.
+    verifyData();
+
+    // Get sheetMusics from local storage.
+    let sheetMusicsData = JSON.parse(Storage.getData("sheetmusic"));
+
+    // Parse sheetMusic data and return match.
+    for (let i = 0; i < sheetMusicsData.length; i++) {
+      let sheetMusic = sheetMusicsData[i];
+      if (sheetMusic.id.replace(/ /g, "-") === sheetMusicOfInterest) {
+        return sheetMusic;
+      }
+    }
+  }
+
+
+  /**
+   * Loads sheet music data from local storage, parses the JSON object,
+   * formats the given sheet music for display and attaches to the DOM.
+   *
+   * @param sheetMusicOfInterest The sheet music to display.
    */
   function displaySheetMusic(sheetMusicOfInterest) {
     // Just in case the data isn't in local storage yet.
@@ -702,6 +752,22 @@ let Discography = (function () {
 
     let tos = $('<b class="title">Terms of Sale</b><p>IMPORTANT: All music sold via this website is &copy; Tanya Anisimova. Please do not distribute the PDF files as this consitutes intellectual copyright theft. Because the order is delivered digitally no refunds can be offered. PDF files are sold <i>as is</i>, and like any published music is not guaranteed to be free of error. If you spot any errors please let me know.If you have a problem downloading your sheet music or have any questions please contact me. It would be helpful if you can give details of the time of your order and the piece(s) ordered.</p>');
     $(sheetMusicContent).append($(tos));
+
+    // If tanya is authenticated, show links to update and delete sheet music.
+    let user = Account.isAuthenticated();
+    if (user !== null) {
+      if (user.login === 'tanya') {
+
+        // Create list for displaying update/deletion of sheet music.
+        let linkList = $('<ul class="adminLinks "></ul>');
+        let updateElement = $('<li class="admin"><a href="update.php?type=sheetmusic&' + sheetMusicOfInterest + '">Update Sheet Music</a></li>');
+        $(linkList).append($(updateElement));
+
+        let removeElement = $('<li class="admin"><a href="remove.php?type=sheetmusic&' + sheetMusicOfInterest + '">Remove Sheet Music</a></li>');
+        $(linkList).append($(removeElement));
+        $(sheetMusicContent).append($(linkList));
+      }
+    }
 
     /* Attach to DOM */
     let sheetMusicDiv = $('<div class="row sheetMusic"></div> <!-- /.sheetMusic -->');
@@ -766,6 +832,7 @@ let Discography = (function () {
     getPerformance: getPerformance,
     displayPerformance: displayPerformance,
     displayPerformances: displayPerformances,
+    getSheetMusic: getSheetMusic,
     displaySheetMusic: displaySheetMusic,
     displayAllSheetMusic: displayAllSheetMusic
   };

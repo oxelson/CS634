@@ -1,38 +1,30 @@
-<!-- INSTRUCTION -->
+<!-- INSTRUCTION: REMOVE -->
 <!DOCTYPE HTML>
   <html>
     <head>
-      <title>Tanya Anisimova : Student Instruction</title>
+      <title>Tanya Anisimova : Student Instruction - Remove</title>
       <meta name="description" content="Student Instruction by Tanya Anisimova" />
       <?php include '../head_include.php';?>
       <script>
         jQuery(document).ready(function(){
 
-          // If a specific lesson is requested, show its data;
-          // Otherwise get all of the lessons to display.
-          let lesson = window.location.search;
-          if (lesson === "" || lesson === undefined || lesson === null) {
-            // Load all the lessons.
-           Instruction.displayLessons();
-          } else {
-            // Load the requested lesson.
-            Instruction.displayLesson(lesson.replace(/\?/, ''));
-          }
-
           // Form submit actions.
-          $("#requestInstruction").click(function() {
-            alert("Filling out this form and clicking 'Send Request For Instruction' would send the message to Tanya.");
-          });
-          $("#submitFeedback").click(function() {
-            alert("Filling out the form and clicking 'Submit Feedback' would allow Tanya to provide feedback for the student.");
-          });
-          $("#uploadVideo").click(function() {
-            alert("This would upload the student's video and corresponding comments to the page.");
+          $("#removeButton").click(function() {
+            alert("This would remove the lesson from the website.");
           });
 
-          $("#reset").click(function() {
-            alert("Clicking this button would reset the form.");
-          });
+          // Find out what we need to remove from query string.
+          let queryString = window.location.search;
+          queryString = queryString.replace(/\?/, "");
+
+          // Get lesson data to remove.
+          let lessonToRemove = Instruction.getLesson(queryString);
+
+          let warningTextStart = 'Are you certain you wish to remove <i>';
+          let warningTextEnd = '</i>? (This process cannot be undone.)';
+          let warningText = warningTextStart + lessonToRemove.title + warningTextEnd;
+          $("#warning").append(warningText);
+
 
           // Create links depending on authentication status.
           createLinks();
@@ -48,7 +40,7 @@
             if (authenticatedUser !== null) {
 
               // Tanya or student is authenticated.
-              if (authenticatedUser.login === "tanya" || authenticatedUser.login === "student") {
+              if (authenticatedUser.login === "tanya") {
                 // Remove list items if they exists (this will ensure no duplicates in next step).
                 $(".subpage nav ul li").remove();
                 // Add list items.
@@ -58,13 +50,10 @@
                 $(".subpage nav ul").prepend($(conference));
                 let chat = $('<li><a href="chat.php">Chat</a></li>');
                 $(".subpage nav ul").prepend($(chat));
-                let lessons = $('<li id="lessons" class="active"><a href="index.php">Lessons</a></li>');
+                let lessons = $('<li id="lessons"><a href="index.php">Lessons</a></li>');
                 $(".subpage nav ul").prepend($(lessons));
-                if (authenticatedUser.login === "tanya") {
-                  let add = $('<li><a href="add.php">Add</a></li>');
-                  $(".subpage nav ul").prepend($(add));
-                }
-
+                let add = $('<li><a href="add.php">Add</a></li>');
+                $(".subpage nav ul").prepend($(add));
               }
             }
           }
@@ -99,7 +88,13 @@
          <!-- right side -->
          <section class="col-sm-8 col-xs-12">
            <div class="fill">
-
+            <h3>Remove Lesson</h3>
+            <div class="row">
+               <p id="warning"></p>
+               <div class="col-8 remove">
+                 <button type="submit" id="removeButton" class="btn btn-danger">Remove Lesson</button>
+               </div>
+            </div> <!-- /.row -->
            </div> <!-- /.fill -->
          </section>
        </div> <!-- /.row -->

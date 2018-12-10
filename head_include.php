@@ -14,7 +14,6 @@ echo "
       <script src='/js/News.js'></script>
       <script src='/js/Account.js'></script>
       <script src='/js/Instruction.js'></script>
-      <script src='/js/Search.js'></script>
       <script src='/js/init.js'></script>
 
       <!-- CSS -->

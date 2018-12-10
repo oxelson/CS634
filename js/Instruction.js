@@ -34,6 +34,30 @@ let Instruction = (function () {
     });
   }
 
+  /**
+   * Get the requested lesson from web storage and returns it as an object.
+   *
+   * @param lessonOfInterest  The lesson of interest.
+   */
+  function getLesson(lessonOfInterest) {
+    // Get lesson data from local storage.
+    let lessonData = JSON.parse(Storage.getData("lessons"));
+    // Parse lesson data and create tag elements to attach to DOM.
+    for (let i = 0; i < lessonData.length; i++) {
+      let title = lessonData[i].title;
+      if (title.replace(/ /g, "_") === lessonOfInterest) {
+        return lessonData[i];
+      }
+    }
+  }
+
+
+  /**
+   * Gathers the given lesson from web storage, formats the data for display,
+   * and attaches to the DOM.
+   *
+   * @param lessonOfInterest  The lesson of interest to display.
+   */
   function displayLesson(lessonOfInterest) {
     // If tanya or student are authenticated, show lessons; otherwise, show request instruction form.
     let user = Account.isAuthenticated();
@@ -75,9 +99,19 @@ let Instruction = (function () {
         }
         $(lessonsDiv).append(status);
 
+        // Admin links.
+        if (user.login === 'tanya') {
+          // Create list for displaying update/deletion of lessons.
+          let linkList = $('<ul class="adminLinks "></ul>');
+          let updateElement = $('<li class="admin"><a href="update.php?' + lessonOfInterest + '">Update Lesson</a></li>');
+          $(linkList).append($(updateElement));
+
+          let removeElement = $('<li class="admin"><a href="remove.php?' + lessonOfInterest + '">Remove Lesson</a></li>');
+          $(linkList).append($(removeElement));
+          $(lessonsDiv).append($(linkList));
+        }
+
         $(lessonsDiv).append('<h5>LESSON INSTRUCTIONS</h5>');
-
-
 
         // Create & attach sheet music (if applicable).
         if (lesson.sheetmusic !== "") {
@@ -104,10 +138,10 @@ let Instruction = (function () {
         if (user.login === "student") {
           if (lesson.status !== "complete") {
             // No video uploaded yet.
-            videoUpload = $('<div class="form-group">Upload your video for Tanya to review. <div class="input-group"> <div class="input-group-prepend"> <span class="input-group-text" id="inputGroupFileAddon01">Upload</span> </div> <div class="custom-file"> <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01"> <label class="custom-file-label" for="inputGroupFile01">Video of Recital</label> </div> </div> </div><div class="form-group"><textarea class="form-control rounded-0 col-form-label-sm" id="information" placeholder="Comments about video" rows="8"></textarea></div> <button type="submit" class="btn btn-primary">Submit</button> &nbsp; <button type="submit" id="reset" class="btn btn-secondary">Reset</button>');
+            videoUpload = $('<div class="form-group">Upload your video for Tanya to review. <div class="input-group"> <div class="input-group-prepend"> <span class="input-group-text" id="inputGroupFileAddon01">Upload</span> </div> <div class="custom-file"> <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01"> <label class="custom-file-label" for="inputGroupFile01">Video of Recital</label> </div> </div> </div><div class="form-group"><textarea class="form-control rounded-0 col-form-label-sm" id="information" placeholder="Comments about video" rows="8"></textarea></div> <button type="submit" id="uploadVideo" class="btn btn-primary">Submit</button> &nbsp; <button type="submit" id="reset" class="btn btn-secondary">Reset</button>');
           } else {
             // Video uploaded
-            videoUpload = $('<iframe width="560" height="315" src="' + lesson.studentVideo + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span> <div class="form-group"><textarea class="form-control rounded-0 col-form-label-sm" id="information" placeholder="" rows="3">Hi Tanya!  Please critique my video.  ;-) </textarea></div><button type="submit" class="btn btn-primary">Submit</button> &nbsp; <button type="submit" id="reset" class="btn btn-secondary">Reset</button>');
+            videoUpload = $('<iframe width="560" height="315" src="' + lesson.studentVideo + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span> <div class="form-group"><textarea class="form-control rounded-0 col-form-label-sm" id="information" placeholder="" rows="3">Hi Tanya!  Please critique my video.  ;-) </textarea></div><button type="submit" id="uploadVideo" class="btn btn-primary">Submit</button> &nbsp; <button type="submit" id="reset" class="btn btn-secondary">Reset</button>');
           }
         } else {  // Tanya
           if (lesson.status === "complete") {
@@ -124,7 +158,7 @@ let Instruction = (function () {
         let feedback;
         if (user.login === "tanya") {
           // Create feedback form group and attach to right column.
-          feedback = $('<div class="form-group"><textarea class="form-control rounded-0 col-form-label-sm" id="feedback" placeholder="Add Feedback/Critique Here" rows="8"></textarea></div><br/><button type="submit" class="btn btn-primary">Submit Feedback</button> &nbsp; <button type="submit" id="reset" class="btn btn-secondary">Reset</button>');
+          feedback = $('<div class="form-group"><textarea class="form-control rounded-0 col-form-label-sm" id="feedback" placeholder="Add Feedback/Critique Here" rows="8">' + lesson.feedback + '</textarea></div><br/><button type="submit" id="submitFeedback" class="btn btn-primary">Submit Feedback</button> &nbsp; <button type="submit" id="reset" class="btn btn-secondary">Reset</button>');
         } else {
           // Show student feedback for lesson (if it exists).
           if (lesson.feedback !== "") {
@@ -269,7 +303,7 @@ let Instruction = (function () {
     $(submitCol).append($(recaptcha));
 
     // Create submit and attach to submit column.
-    let submit= $('<button type="submit" class="btn btn-primary">Send Request For Instruction</button>');
+    let submit= $('<button type="submit" id="requestInstruction" class="btn btn-primary">Send Request For Instruction</button>');
     $(submitCol).append($(submit));
 
     // Attach columns to row.
@@ -290,6 +324,7 @@ let Instruction = (function () {
   // Expose these functions.
   return {
     verifyData: verifyData,
+    getLesson: getLesson,
     displayLesson: displayLesson,
     displayLessons: displayLessons
   };

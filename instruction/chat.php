@@ -1,37 +1,16 @@
-<!-- INSTRUCTION -->
+<!-- INSTRUCTION: CHAT -->
 <!DOCTYPE HTML>
   <html>
     <head>
-      <title>Tanya Anisimova : Student Instruction</title>
+      <title>Tanya Anisimova : Student Instruction - Chat</title>
       <meta name="description" content="Student Instruction by Tanya Anisimova" />
       <?php include '../head_include.php';?>
       <script>
         jQuery(document).ready(function(){
 
-          // If a specific lesson is requested, show its data;
-          // Otherwise get all of the lessons to display.
-          let lesson = window.location.search;
-          if (lesson === "" || lesson === undefined || lesson === null) {
-            // Load all the lessons.
-           Instruction.displayLessons();
-          } else {
-            // Load the requested lesson.
-            Instruction.displayLesson(lesson.replace(/\?/, ''));
-          }
-
           // Form submit actions.
-          $("#requestInstruction").click(function() {
-            alert("Filling out this form and clicking 'Send Request For Instruction' would send the message to Tanya.");
-          });
-          $("#submitFeedback").click(function() {
-            alert("Filling out the form and clicking 'Submit Feedback' would allow Tanya to provide feedback for the student.");
-          });
-          $("#uploadVideo").click(function() {
-            alert("This would upload the student's video and corresponding comments to the page.");
-          });
-
-          $("#reset").click(function() {
-            alert("Clicking this button would reset the form.");
+          $("button").click(function() {
+            alert("Filling out the message window and clicking Send would add a message to the chat window.");
           });
 
           // Create links depending on authentication status.
@@ -56,15 +35,14 @@
                 $(".subpage nav ul").prepend($(payment));
                 let conference = $('<li><a href="conference.php">Conference</a></li>');
                 $(".subpage nav ul").prepend($(conference));
-                let chat = $('<li><a href="chat.php">Chat</a></li>');
+                let chat = $('<li  class="active"><a href="chat.php">Chat</a></li>');
                 $(".subpage nav ul").prepend($(chat));
-                let lessons = $('<li id="lessons" class="active"><a href="index.php">Lessons</a></li>');
+                let lessons = $('<li id="lessons"><a href="index.php">Lessons</a></li>');
                 $(".subpage nav ul").prepend($(lessons));
                 if (authenticatedUser.login === "tanya") {
                   let add = $('<li><a href="add.php">Add</a></li>');
                   $(".subpage nav ul").prepend($(add));
                 }
-
               }
             }
           }
@@ -99,7 +77,33 @@
          <!-- right side -->
          <section class="col-sm-8 col-xs-12">
            <div class="fill">
-
+            <h3>Chat With Tanya</h3>
+            <div class="row">
+              <div class="chat">
+               <ul class="chatMessages">
+                <li class="student">
+                 <span class="atTime">Emma Hoster @ 7:23pm - 7 Dec 2018</span><br/>
+                   Hi Tanya!  I was wondering if you were available on December 21 for a video conference at 6pm EST?  I'm having trouble with the stretch position exercises you've assigned. I think it would be helpful to have to watch me play for a bit and give me some pointers.
+                </li>
+                <li class="tanya">
+                 <span class="atTime">Tanya Anisimova @ 7:25pm - 7 Dec 2018</span><br/>
+                   Hi Emma.  Unfortunately, I'm busy at 6pm on the 21st.  But I'm available on the 22nd?  Would that work for you?
+                </li>
+                <li class="student">
+                 <span class="atTime">Emma Hoster @ 8:05pm - 7 Dec 2018</span><br/>
+                   Yes!  That would be fine.  Thank you!
+                </li>
+                <li class="tanya">
+                 <span class="atTime">Tanya Anisimova @ 8:12pm - 7 Dec 2018</span><br/>
+                   Sounds good Emma.  You're doing very well and we'll get this problem tackled.
+                </li>
+               </ul>
+               <div class="form-group">
+                <textarea class="form-control rounded-0 col-form-label-sm" id="message" placeholder="Type your message here" rows="2"></textarea>
+               </div>
+               <button type="submit" class="btn btn-primary submit">Send</button>
+              </div> <!-- /.chat -->
+            </div> <!-- /.row -->
            </div> <!-- /.fill -->
          </section>
        </div> <!-- /.row -->

@@ -62,6 +62,8 @@
                    <li> <a href="https://thecellocompanion.info/category/intermediate-technique/">The Cello Companion</a> Online Instruction.</li>
                    <li> <a href="https://www.8notes.com/scores/411.asp">Silent Night</a> Sheet Music.</li>
                    <li> <a href="https://www.youtube.com/watch?v=qorDu6yTcbY">Video of Emma</a> playing Silent Night.</li>
+                   <li> <a href="https://developer.paypal.com/docs/checkout/integrate/">PayPal Integration Guide</a>.</li>
+                   <li> <a href="https://www.umanitoba.ca/admin/vp.../Private_Music_Instruction_Agreement.docx">Terms and Conditions of Instruction</a>, University of Manibota.</li>
                  </ul>
                  
 

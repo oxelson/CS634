@@ -1,37 +1,16 @@
-<!-- INSTRUCTION -->
+<!-- INSTRUCTION: CONFERENCE -->
 <!DOCTYPE HTML>
   <html>
     <head>
-      <title>Tanya Anisimova : Student Instruction</title>
+      <title>Tanya Anisimova : Student Instruction - Conference</title>
       <meta name="description" content="Student Instruction by Tanya Anisimova" />
       <?php include '../head_include.php';?>
       <script>
         jQuery(document).ready(function(){
 
-          // If a specific lesson is requested, show its data;
-          // Otherwise get all of the lessons to display.
-          let lesson = window.location.search;
-          if (lesson === "" || lesson === undefined || lesson === null) {
-            // Load all the lessons.
-           Instruction.displayLessons();
-          } else {
-            // Load the requested lesson.
-            Instruction.displayLesson(lesson.replace(/\?/, ''));
-          }
-
           // Form submit actions.
-          $("#requestInstruction").click(function() {
-            alert("Filling out this form and clicking 'Send Request For Instruction' would send the message to Tanya.");
-          });
-          $("#submitFeedback").click(function() {
-            alert("Filling out the form and clicking 'Submit Feedback' would allow Tanya to provide feedback for the student.");
-          });
-          $("#uploadVideo").click(function() {
-            alert("This would upload the student's video and corresponding comments to the page.");
-          });
-
-          $("#reset").click(function() {
-            alert("Clicking this button would reset the form.");
+          $("button").click(function() {
+            alert("Clicking the button would launch the Zoom client and start the video conference.");
           });
 
           // Create links depending on authentication status.
@@ -54,17 +33,16 @@
                 // Add list items.
                 let payment = $('<li><a href="payment.php">Payment</a></li>');
                 $(".subpage nav ul").prepend($(payment));
-                let conference = $('<li><a href="conference.php">Conference</a></li>');
+                let conference = $('<li class="active"><a href="conference.php">Conference</a></li>');
                 $(".subpage nav ul").prepend($(conference));
                 let chat = $('<li><a href="chat.php">Chat</a></li>');
                 $(".subpage nav ul").prepend($(chat));
-                let lessons = $('<li id="lessons" class="active"><a href="index.php">Lessons</a></li>');
+                let lessons = $('<li id="lessons"><a href="index.php">Lessons</a></li>');
                 $(".subpage nav ul").prepend($(lessons));
                 if (authenticatedUser.login === "tanya") {
                   let add = $('<li><a href="add.php">Add</a></li>');
                   $(".subpage nav ul").prepend($(add));
                 }
-
               }
             }
           }
@@ -99,7 +77,13 @@
          <!-- right side -->
          <section class="col-sm-8 col-xs-12">
            <div class="fill">
-
+            <h3>Video Conference With Tanya</h3>
+            <div class="row">
+              <div class="col conference">
+              <button type="submit" class="btn btn-primary submit">Start Video Conference</button>
+              <p>Note: Please make sure you have the <a href="https://zoom.us/">Zoom Conferencing Client</a> installed on your system.</p>
+              </div> <!-- /.col -->
+            </div> <!-- /.row -->
            </div> <!-- /.fill -->
          </section>
        </div> <!-- /.row -->

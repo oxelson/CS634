@@ -18,11 +18,14 @@
           let discographyType = dataItems[0];
           let itemToUpdate = dataItems[1];
 
-          // Start off with songs and performance forms hidden & album form visible.
+          // For page title.
+          let title;
+
+          // Start off with songs, performance, and sheet music forms hidden & album firm visible.
           $(".subpage .fill .updateSong").addClass("hidden");
           $(".subpage .fill .updatePerformance").addClass("hidden");
           $(".subpage .fill .updateAlbum").removeClass("hidden");
-
+          $(".subpage .fill .updateSheetMusic").addClass("hidden");
 
           if (discographyType === "song") {
 
@@ -36,12 +39,14 @@
             $("#trackNumber").val(songToUpdate.track);
             $("#songDuration").val(songToUpdate.duration);
 
-
-            // Hide album & performance forms, show song form.
+            // Hide album, performance, and sheet music forms, show song form.
             $(".subpage .fill .updateSong").removeClass("hidden");
             $(".subpage .fill .updatePerformance").addClass("hidden");
             $(".subpage .fill .updateAlbum").addClass("hidden");
+            $(".subpage .fill .updateSheetMusic").addClass("hidden");
 
+            // For page title.
+            title = "Song";
           }
 
           if (discographyType === "album") {
@@ -59,10 +64,14 @@
             $("#label").val(albumToUpdate.label);
 
 
-            // Hide song & performance forms, show album form.
+            // Hide song, performance, and sheet music forms, show album form.
             $(".subpage .fill .updateSong").addClass("hidden");
             $(".subpage .fill .updatePerformance").addClass("hidden");
             $(".subpage .fill .updateAlbum").removeClass("hidden");
+            $(".subpage .fill .updateSheetMusic").addClass("hidden");
+
+            // For page title.
+            title = "Album";
           }
 
           if (discographyType === "performance") {
@@ -79,11 +88,42 @@
             $("#description").val(performanceToUpdate.description);
 
 
-            // Hide album & song forms, show performance form.
+            // Hide album, song, and sheet music forms, show performance form.
             $(".subpage .fill .updateSong").addClass("hidden");
             $(".subpage .fill .updatePerformance").removeClass("hidden");
             $(".subpage .fill .updateAlbum").addClass("hidden");
+            $(".subpage .fill .updateSheetMusic").addClass("hidden");
+
+            // For page title.
+            title = "Performance";
+
           }
+
+          if (discographyType === "sheetmusic") {
+
+            // Get sheet music data to update
+            let sheetMusicToUpdate = Discography.getSheetMusic(itemToUpdate);
+
+            // Populate the web form with existing sheet music data.
+            $("#sheetMusicTitle").val(sheetMusicToUpdate.title),
+            $("#sheetMusicSummary").val(sheetMusicToUpdate.summary);
+            $("#price").val(sheetMusicToUpdate.price);
+            $("#sheetMusicDescription").val(sheetMusicToUpdate.description);
+
+            // Hide album, song, and sheet music forms, show sheet music form.
+            $(".subpage .fill .updateSong").addClass("hidden");
+            $(".subpage .fill .updatePerformance").addClass("hidden");
+            $(".subpage .fill .updateAlbum").addClass("hidden");
+            $(".subpage .fill .updateSheetMusic").removeClass("hidden");
+
+            // For page title.
+            title = "Sheet Music";
+
+          }
+
+          // Create page title & attach to DOM.
+          let pageTitle = $('<h3>Update '+ title +' in Discography</h3>');
+          $(".fauxNav").append($(pageTitle));
 
         });
       </script>
@@ -122,7 +162,6 @@
          <section class="col-sm-8 col-xs-12">
            <div class="fill">
              <div class="row fauxNav">
-               <h3>Update An Discography Item</h3>
              </div> <!--/.row -->
 
              <div class="row updateAlbum">
@@ -277,6 +316,39 @@
                  <button type="submit" id="reset" class="btn btn-secondary">Reset</button>
                </div>
              </div> <!--/.updatePerformance-->
+
+
+             <div class="row updateSheetMusic">
+
+               <div class="col-sm-6 col-xs-12">
+                 <div class="form-group">
+                   <input type="text" class="form-control col-form-label-sm" id="sheetMusicTitle" placeholder="Sheet Music Title">
+                 </div>
+                 <div class="form-group">
+                   <input type="text" class="form-control col-form-label-sm" id="sheetMusicSummary" placeholder="Summary">
+                 </div>
+                 <div class="form-group">
+                   <input type="text" class="form-control col-form-label-sm" id="price" placeholder="Price">
+                 </div>
+                 <div class="form-group">
+                   <button class="btn-sm btn-info" type="button" aria-expanded="false">
+                     Update Account At PayPal
+                   </button>
+                 </div>
+               </div>
+               <div class="col-sm-6 col-xs-12">
+                 <div class="form-group">
+                   <textarea class="form-control rounded-0 col-form-label-sm" id="sheetMusicDescription" placeholder="Description" rows="8"></textarea>
+                 </div>
+
+                 <button type="submit" id="submit" class="btn btn-primary">Update Sheet Music</button>
+                 <button type="submit" id="reset" class="btn btn-secondary">Reset</button>
+               </div>
+             </div> <!--/.updateSheetMusic-->
+
+
+
+
 
            </div> <!--/.fill -->
          </section>
