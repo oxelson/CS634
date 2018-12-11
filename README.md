@@ -43,7 +43,7 @@ None!
   * login: tanya
   * password: tanya
   
-2. A student login whose account will be more relevant for sprint 2:
+2. A student login (now with the name Emma Hoster):
   * login: student
   * password: student
 
