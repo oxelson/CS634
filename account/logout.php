@@ -48,10 +48,7 @@
               $(".success").empty();
               $(".logout span").empty();
               $(".success").append("<p>You have been logged out.</p>");
-              $(".logout span").append("<p>You will be redirected to the home page in a few seconds.</p>");
-              setTimeout(function () {
-                window.location.replace("/");
-              }, 3000);
+            
 
               // Remove create link if it exists (this will ensure no duplicates in next step).
               $(".subpage nav ul #create").remove();

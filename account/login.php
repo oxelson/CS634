@@ -65,10 +65,8 @@
               $(".success").empty();
               $(".login span").empty();
               $(".success").append("<p>Login successful!</p>");
-              $(".login span").append("<p>You are logged in as <b class='noblock'>" + authenticatedUser.login + "</b></p><p>You will be redirected to the home page in a few seconds.</p>");
-              setTimeout(function () {
-                window.location.replace("/");
-              }, 3000);
+              $(".login span").append("<p>You are logged in as <b class='noblock'>" + authenticatedUser.login + "</b></p>");
+
 
             } else {  // User NOT authenticated.
 
