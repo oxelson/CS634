@@ -49,5 +49,5 @@ None!
 
 ### Updated data in web storage
 
-IMPORTANT! The data needed to run the website has been updated for sprint2.  Therefore, _you'll need to clear all the data held for the site in local storage (if your browser has retained it) and reload the website_. (Forcing a site reload will ensure the new data is being used for sprint 2).
+IMPORTANT! The data needed to run the website has been updated for sprint2.  Therefore, _you'll need to clear all the data held for the site in local storage (if your browser has retained it) and reload the website_. 
 
