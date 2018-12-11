@@ -51,3 +51,5 @@ None!
 
 IMPORTANT! The data needed to run the website has been updated for sprint2.  Therefore, _you'll need to clear all the data held for the site in local storage (if your browser has retained it) and reload the website_. 
 
+As always, let us know if you have any question!
+
